@@ -1,5 +1,5 @@
 ---
-title: "GitHub"
+title: "`git` & GitHub"
 ---
 
 ## Version Control Background
@@ -8,7 +8,9 @@ Version control systems (including `git`) are built to preserve the iterative ve
 
 **Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.**
 
-![](images/phd_comics_final.png)
+<p align="center">
+<img src="images/phd_comics_final.png" align="center" width="60%"/>
+</p>
 
 ## `git`-Specific Background
 
@@ -33,47 +35,55 @@ Let's distinguish between `git` and GitHub:
 
 Let's navigate over to [GitHub](https://github.com/) and explore some of its features. Here is what the home screen looks like as of February 2022. 
 
-![](images/github-1-website.png)
+<img src="images/github-1-website.png" width="100%"/>
+
 Log in with your GitHub account that you should have created prior to this workshop.
 
-![](images/github-2-login.png)
+<p align="center">
+<img src="images/github-2-login.png" width="40%" />
+</p>
+
 Once you've logged in, you should see something like this:
 
-![](images/github-3-signed-in.png)
+<img src="images/github-3-signed-in.png" width="100%"/>
+
 This landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile. 
 
-![](images/github-4-profile-light.png)
+<img src="images/github-4-profile-light.png" width="100%"/>
+
 Your profile page shows the organizations that you're a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to **Settings** then **Appearances**. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.  
 
-![](images/github-5-dark-mode.png)
+<img src="images/github-5-dark-mode.png" width="100%"/>
+
 If there is anything else you would like to change about your account, the user settings page should have it.
 
 ### Looking at a GitHub Repository
 
 To check the repositories that you've created, click on the **Repositories** tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let's take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains. 
 
-![](images/github-6-my-repos.png)
+<img src="images/github-6-my-repos.png" width="100%"/>
 
 This screen shows the copy of a repository stored on GitHub,
 with its <span style="color:red">list of files</span>, <span style="color:green">when the files and directories were last modified</span>, 
 and <span style="color:blue">some information on who made the most recent changes.</span>  
 
-![](images/github-7-example-repo.png)
+<img src="images/github-7-example-repo.png" width="100%"/>
 
 If we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.
 
-![](images/github-8-commit-history.png)
+<img src="images/github-8-commit-history.png" width="100%"/>
 
 And finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:
 
-![](images/github-9-specific-changes.png)
+<img src="images/github-9-specific-changes.png" width="100%"/>
+
 The red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what `git` and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.
 
 Note: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead. 
 
-![](images/github-10-edit-file.png)
+<img src="images/github-10-edit-file.png" width="100%"/>
 
-![](images/github-11-add-file.png)
+<img src="images/github-11-add-file.png" width="100%"/>
 
 ### Creating a Repository on GitHub
 
@@ -84,7 +94,7 @@ To create a new repository, follow these steps:
 - Navigate to your profile page and click on the **Repositories** tab.
 - Click on <span style="color:green">**New**</span>.
 
-![](images/rstudio-1-github-profile.png)
+<img src="images/rstudio-1-github-profile.png" width="100%"/>
 
 - Enter a descriptive name for your new repository, here we named it `git-practice` (avoid upper case and use `-` instead of spaces or `_`).
 
@@ -94,25 +104,32 @@ To create a new repository, follow these steps:
 
 - Check **Add a README file**.
 
-![](images/rstudio-3-new-repo-edits.png)
+<img src="images/rstudio-3-new-repo-edits.png" width="100%"/>
+
 Yay! We've just created a new repository! Here is what the landing page should look like:
 
-![](images/rstudio-5-new-repo-code-tab.png)
+<img src="images/rstudio-5-new-repo-code-tab.png" width="100%"/>
 
 This repository is currently public, so it's visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the **Settings** tab for your repository and go to **Collaborators**. 
 
-![](images/rstudio-5b-collabs-2-settings-collabs.png)
+<img src="images/rstudio-5b-collabs-2-settings-collabs.png" width="100%"/>
+
 Click on <span style="color:green">**Add people**</span>. Now let's get the usernames of all of your group members and add them as collaborators to your repository.
 
-![](images/rstudio-5b-collabs-3-search-for-users.png)
-![](images/rstudio-5b-collabs-4-added-new-user.png)
+<p align="center">
+<img src="images/rstudio-5b-collabs-3-search-for-users.png" width="40%" />
+</p>
+
+<p align="center">
+<img src="images/rstudio-5b-collabs-4-added-new-user.png" width="40%" />
+</p>
 
 Great! Now everyone in the group should have access to the repository. 
 
----
+## Create a Repository on GitHub
 
-## Practice - Create a Repository on GitHub
+:::callout-note
+## Practice
 
 Now that we've walked through how to create a repository on GitHub let's try to make our own! Click over to GitHub and create your own repository (with a README.md). We'll split into breakout groups to try this out and please let us know if any questions come up.
-
----
+:::

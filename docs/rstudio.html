@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.267">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -70,50 +75,83 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Sci Comp Workshop - GitHub</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-core-topics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Core Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-core-topics">    
+        <li>
+    <a class="dropdown-item" href="./motivations.html">
+ <span class="dropdown-text">Workflows</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./github.html">
+ <span class="dropdown-text"><code>git</code> &amp; GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudio.html">
+ <span class="dropdown-text">RStudio</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-advanced-topics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Advanced Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-advanced-topics">    
+        <li>
+    <a class="dropdown-item" href="./conflicts.html">
+ <span class="dropdown-text">Conflicts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./branches.html">
+ <span class="dropdown-text">Branches</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./forks.html">
+ <span class="dropdown-text">Forks</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-management" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Management</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-management">    
+        <li>
+    <a class="dropdown-item" href="./issues.html">
+ <span class="dropdown-text">Issues</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./server.html">
+ <span class="menu-text">NCEAS’ Server</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./motivations.html">Workflows</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./github.html">GitHub</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./rstudio.html" aria-current="page">RStudio</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./issues.html">Issues</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./conflicts.html">Conflicts</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./branches.html">Branches</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./forks.html">Forks</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./server.html">Server</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">Content Creators</a>
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">Content Creators</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -129,16 +167,13 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#brief-overview-of-git-workflow" id="toc-brief-overview-of-git-workflow" class="nav-link active" data-scroll-target="#brief-overview-of-git-workflow">Brief Overview of <code>git</code> Workflow</a></li>
-  <li><a href="#git-vocabulary" id="toc-git-vocabulary" class="nav-link" data-scroll-target="#git-vocabulary"><code>git</code> Vocabulary</a></li>
   <li><a href="#cloning-a-repository" id="toc-cloning-a-repository" class="nav-link" data-scroll-target="#cloning-a-repository">Cloning a Repository</a></li>
-  <li><a href="#git-workflow-overview-reminder" id="toc-git-workflow-overview-reminder" class="nav-link" data-scroll-target="#git-workflow-overview-reminder"><code>git</code> Workflow Overview Reminder</a></li>
-  <li><a href="#stage-versus-commit" id="toc-stage-versus-commit" class="nav-link" data-scroll-target="#stage-versus-commit">Stage versus Commit</a></li>
-  <li><a href="#creating-a-new-file" id="toc-creating-a-new-file" class="nav-link" data-scroll-target="#creating-a-new-file">Creating a New File</a>
+  <li><a href="#git-workflow-overview-reminder" id="toc-git-workflow-overview-reminder" class="nav-link" data-scroll-target="#git-workflow-overview-reminder"><code>git</code> Workflow Overview Reminder</a>
   <ul class="collapse">
   <li><a href="#adding-our-script-to-the-next-commit" id="toc-adding-our-script-to-the-next-commit" class="nav-link" data-scroll-target="#adding-our-script-to-the-next-commit">Adding our Script to the Next Commit</a></li>
   <li><a href="#getting-the-latest-updates" id="toc-getting-the-latest-updates" class="nav-link" data-scroll-target="#getting-the-latest-updates">Getting the Latest Updates</a></li>
@@ -163,6 +198,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -173,48 +209,42 @@ ul.task-list{list-style: none;}
 <h2 class="anchored" data-anchor-id="brief-overview-of-git-workflow">Brief Overview of <code>git</code> Workflow</h2>
 <p>Before we get into using <code>git</code> and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.</p>
 <p>Beginning on your local computer, you make <strong><span style="color:gold">changes</span></strong> to a file in a folder that you have previously marked for version control tracking (i.e., a <strong>working directory</strong>). Once those changes are made you can <strong>stage changes</strong> within your local computer. After staging, it is best to <span style="color:blue">retrieve the latest file versions from the cloud</span>. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you’ve confirmed that you have the latest file versions, you can <span style="color:green">shift the revised file(s) to the cloud</span> where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes.</p>
-<p><img src="images/git-workflow.png" class="img-fluid"></p>
-</section>
-<section id="git-vocabulary" class="level2">
-<h2 class="anchored" data-anchor-id="git-vocabulary"><code>git</code> Vocabulary</h2>
-<p>Finally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.</p>
+<p align="center">
+<img src="images/git-workflow.png" width="70%">
+</p>
+<p>Clone** = copy the entire contents of a GitHub repository to your local computer (done once per computer)</p>
 <ul>
-<li><p><strong><span style="color:purple">Clone</span></strong> = copy the entire contents of a GitHub repository to your local computer (done once per computer)</p></li>
 <li><p><strong><span style="color:gray">Commit</span></strong> = move a changed local file to your local staging area (step 2 of the above diagram)</p></li>
 <li><p><strong><span style="color:blue">Pull</span></strong> = get file(s) <em>from</em> the cloud <em>to</em> your local computer – opposite of a “push” (step 3)</p></li>
 <li><p><strong><span style="color:green">Push</span></strong> = move file(s) <em>to</em> the cloud <em>from</em> your local computer – opposite of a “pull” (step 4)</p></li>
 </ul>
-<p><img src="images/git-vocabulary.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/git-vocabulary.png" width="70%">
+</p>
 </section>
 <section id="cloning-a-repository" class="level2">
 <h2 class="anchored" data-anchor-id="cloning-a-repository">Cloning a Repository</h2>
 <p>Now, the first step in using <code>git</code> with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, <strong>GitHub is in dark mode</strong> while <strong>RStudio is in light mode</strong>. To clone a repository, follow these steps:</p>
-<ul>
-<li>Navigate to the repository on GitHub and click on <strong><span style="color:green">Code</span></strong>. Select <strong>HTTPS</strong> and copy the link.</li>
-</ul>
-<p><img src="images/rstudio-6-new-repo-link.png" class="img-fluid"></p>
-<ul>
-<li>Open up RStudio.</li>
-</ul>
-<p><img src="images/rstudio-7-fresh-start.png" class="img-fluid"></p>
-<ul>
-<li>Go to the <strong>Project</strong> tab on the top right corner and click <strong>New Project…</strong></li>
-</ul>
-<p><img src="images/rstudio-8-new-project.png" class="img-fluid"></p>
-<ul>
-<li>Select <strong>Version Control</strong>.</li>
-</ul>
-<p><img src="images/rstudio-9-version-control.png" class="img-fluid"></p>
-<ul>
-<li>Select <strong><code>git</code></strong>.</li>
-</ul>
-<p><img src="images/rstudio-10-clone.png" class="img-fluid"></p>
-<ul>
-<li>Paste the repository URL that you just copied. Choose a file path to save your project to.</li>
-</ul>
-<p><img src="images/rstudio-11-clone-repo-details.png" class="img-fluid"></p>
+<p>Navigate to the repository on GitHub and click on <strong><span style="color:green">Code</span></strong>. Select <strong>HTTPS</strong> and copy the link.</p>
+<p><img src="images/rstudio-6-new-repo-link.png" width="100%"></p>
+<p>Now, return to (or open!) RStudio.</p>
+<p><img src="images/rstudio-7-fresh-start.png" width="100%"></p>
+<p>Go to the <strong>Project</strong> tab on the top right corner and click <strong>New Project…</strong></p>
+<p><img src="images/rstudio-8-new-project.png" width="100%"></p>
+<p>Select <strong>Version Control</strong>.</p>
+<p align="center">
+<img src="images/rstudio-9-version-control.png" width="75%">
+</p>
+<p>Select <strong><code>git</code></strong>.</p>
+<p align="center">
+<img src="images/rstudio-10-clone.png" width="75%">
+</p>
+<p>Paste the repository URL that you just copied from GitHub. Choose a file path to save your project to.</p>
+<p align="center">
+<img src="images/rstudio-11-clone-repo-details.png" width="75%">
+</p>
 <p>Now we have finished cloning the repository to our RStudio! Notice that we are working in our <code>git-practice</code> project and that our <code>README.md</code> file shows up under the list of files, just like in our GitHub repository.</p>
-<p><img src="images/rstudio-12-finished-cloning.png" class="img-fluid"></p>
+<p><img src="images/rstudio-12-finished-cloning.png" width="100%"></p>
 </section>
 <section id="git-workflow-overview-reminder" class="level2">
 <h2 class="anchored" data-anchor-id="git-workflow-overview-reminder"><code>git</code> Workflow Overview Reminder</h2>
@@ -226,32 +256,30 @@ ul.task-list{list-style: none;}
 <p><strong>Step 3</strong>: You <strong>pull</strong> the most recent changes to make sure you’ve been editing the latest versions.</p>
 <p><strong>Step 4</strong>: You <strong>push</strong> your the version of your files that you committed to GitHub.</p>
 <p>Here is the infographic from the start of this chapter again, which shows the same workflow:</p>
-<p><img src="images/git-workflow.png" width="75%"></p>
-</section>
-<section id="stage-versus-commit" class="level2">
-<h2 class="anchored" data-anchor-id="stage-versus-commit">Stage versus Commit</h2>
-<p>The functional difference between “staging” a file and “committing” one can be a little tough to grasp at first so let’s explore that briefly here. We can make an analogy with taking a family picture, where each family member would represent a file.</p>
-<ul>
-<li><strong>Staging</strong> files is like deciding which family member(s) are going to be in your next picture</li>
-<li><strong>Committing</strong> is like taking the picture</li>
-</ul>
-<p>This 2-step process enables you to flexibly group files into a specific commit. Those groupings can be helpful to you later if you’re trying to find what you changed for a specific task (because those changes likely are all in the same commit).</p>
-</section>
-<section id="creating-a-new-file" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-new-file">Creating a New File</h2>
-<p>Let’s try out a simple <code>git</code> workflow by first creating a new file. This is <strong>Step 1</strong> of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to <strong>File</strong> &gt; <strong>New File</strong> &gt; <strong>R Script</strong>. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script <code>angel-script.R</code>.</p>
+<p align="center">
+<img src="images/git-workflow.png" width="70%">
+</p>
+<p><strong>New File</strong> &gt; <strong>R Script</strong>. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script <code>angel-script.R</code>.</p>
 <p>Once you are done, navigate to the <strong><code>git</code></strong> tab on the upper left corner. You should see your new script show up there along with a <code>.gitignore</code> and <code>git-practice.Rproj</code> file. Do not worry about the <code>.gitignore</code> file for now, it was created by RStudio to make sure that some temporary files are not tracked by <code>git</code>. The <code>git-practice.Rproj</code> file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.</p>
-<p><img src="images/rstudio-13-new-script.png" class="img-fluid"> Notice that there are color-coded icons next to the files in the “Git” tab. These icons are shorthand for the status–according to <code>git</code>–of every* file in your working directory. Not technically “every” file because files that are tracked but haven’t been modified are not included. See below for definitions.</p>
-<p><img src="images/rstudio-icons.png" class="img-fluid"> In our case, it means that our R script, <code>.gitignore</code>, and <code>git-practice.Rproj</code> files have never been tracked by <code>git</code> (since these files were just created). Note also that the <code>README.md</code> file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.</p>
+<p><img src="images/rstudio-13-new-script.png" width="100%"></p>
+<p>Notice that there are color-coded icons next to the files in the “Git” tab. These icons are shorthand for the status–according to <code>git</code>–of every* file in your working directory. Not technically “every” file because files that are tracked but haven’t been modified are not included. See below for definitions.</p>
+<p align="center">
+<img src="images/rstudio-icons.png" width="65%">
+</p>
+<p>In our case, it means that our R script, <code>.gitignore</code>, and <code>git-practice.Rproj</code> files have never been tracked by <code>git</code> (since these files were just created). Note also that the <code>README.md</code> file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.</p>
 <section id="adding-our-script-to-the-next-commit" class="level3">
 <h3 class="anchored" data-anchor-id="adding-our-script-to-the-next-commit">Adding our Script to the Next Commit</h3>
 <p>Let us look at the diff of our script. Click on the <strong>Diff</strong> tab.</p>
-<p><img src="images/rstudio-13c-diff.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/rstudio-13c-diff.png" width="80%">
+</p>
 <p>Checking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for <code>git</code>. We would like to save a snapshot of this version of our script. Since we’ve just done <strong>Step 1</strong>, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:</p>
 <p><strong>Step 2</strong>: Add the file to the next commit by checking the box in front of the file name. Note that the two <code>?</code> icons will change to a single <code>A</code> on the left to show you that this file is now staged to be part of the next commit.</p>
 <p><strong>Step 3</strong>: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the <strong>Commit</strong> button to save this version of the script in the <code>git</code> database.</p>
-<p><img src="images/rstudio-14-commit-message.png" class="img-fluid"> If you did all the steps correctly, you should see something like this:</p>
-<p><img src="images/rstudio-15-finished-commiting.png" class="img-fluid"> Notice that <code>git</code> tells us that <code>1 file changed</code> because we’ve just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.</p>
+<p><img src="images/rstudio-14-commit-message.png" width="90%"></p>
+<p>If all of the above steps went well, you should see something like this:</p>
+<p><img src="images/rstudio-15-finished-commiting.png" width="90%"></p>
+<p>Notice that <code>git</code> tells us that <code>1 file changed</code> because we’ve just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.</p>
 </section>
 <section id="getting-the-latest-updates" class="level3">
 <h3 class="anchored" data-anchor-id="getting-the-latest-updates">Getting the Latest Updates</h3>
@@ -268,16 +296,27 @@ ul.task-list{list-style: none;}
 </ol>
 <p>Of course RStudio has icons for that on top of the “Git” tab, with the blue arrow down being for pull and the green arrow up being for push. Remember the icons are organized in sequence!</p>
 <p>Let us do the pull and push to synchronized the remote repositories. Click on the <strong>Pull</strong> button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use <strong><span style="color:blue">blue</span></strong> for <strong>pull</strong>-related content and <strong><span style="color:green">green</span></strong> for <strong>push</strong>-related information. Hopefully that helps cement the two ideas in your mind!</p>
-<p><img src="images/rstudio-15b-pull.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/rstudio-15b-pull.png" width="40%">
+</p>
 <p>In my case, it turns out that a new script, <code>lyon-script</code>, was added to the GitHub repository by a collaborator while I was making my own script. Since I have just pulled, <code>lyon-script</code> now shows up in my RStudio files.</p>
-<p><img src="images/rstudio-16-pulled.png" class="img-fluid"> <img src="images/rstudio-17-finished-pulling-new-script.png" class="img-fluid"> A new message has popped up for me: “Your branch is ahead of ‘origin/main’ by two commits”. This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the <code>README.md</code> and <code>lyon-script</code>. My changes are NOT in the cloud yet. You might be seeing a similar message as well.</p>
+<p align="center">
+<img src="images/rstudio-16-pulled.png" width="90%">
+</p>
+<p><img src="images/rstudio-17-finished-pulling-new-script.png" width="100%"></p>
+<p>A new message has popped up for me: “Your branch is ahead of ‘origin/main’ by two commits”. This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the <code>README.md</code> and <code>lyon-script</code>. My changes are NOT in the cloud yet. You might be seeing a similar message as well.</p>
 </section>
 <section id="sending-changes-back-to-github" class="level3">
 <h3 class="anchored" data-anchor-id="sending-changes-back-to-github">Sending Changes back to GitHub</h3>
 <p>So how do we send our changes back to GitHub? Locate the <strong>Push</strong> button on the “Git” tab and click on it. Now your script should show up in the GitHub repository!</p>
-<p><img src="images/rstudio-15b-pull.png" class="img-fluid"></p>
-<p><img src="images/rstudio-18-pushed.png" class="img-fluid"> Navigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, <code>angel-script.R</code> finally shows up in my repository.</p>
-<p><img src="images/rstudio-19-updated-repo.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/rstudio-15b-pull.png" width="40%">
+</p>
+<p align="center">
+<img src="images/rstudio-18-pushed.png" width="90%">
+</p>
+<p>Navigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, <code>angel-script.R</code> finally shows up in my repository.</p>
+<p><img src="images/rstudio-19-updated-repo.png" width="100%"></p>
 </section>
 <section id="rinse-and-repeat" class="level3">
 <h3 class="anchored" data-anchor-id="rinse-and-repeat">Rinse and Repeat</h3>
@@ -360,6 +399,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       }
     }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
   }
   const isFileUrl = () => { 
     return window.location.protocol === 'file:';
@@ -411,7 +460,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -433,7 +484,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -461,31 +529,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -493,7 +580,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

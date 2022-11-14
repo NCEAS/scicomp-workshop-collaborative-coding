@@ -20,7 +20,9 @@ So the basic steps to resolving a merge conflict using RStudio are as follows:
 
 We can see those steps visually in the following workflow diagram:
 
-![](images/git-conflict-workflow.png)
+<p align="center">
+<img src="images/git-conflict-workflow.png" width="60%"/>
+</p>
 
 ## How Merge Conflicts Happen
 
@@ -56,15 +58,21 @@ After clicking **<span style="color:blue">Pull</span>**, we get a new error mess
 
 Looking closer, the merge conflict prompted a new version of `test-script.R` to pop up. This version contains our edits and our collaborator's edits, along with the delimiter lines that start with `<<<<<<<`, `=======`, and `>>>>>>>`. `git` is urging us to manually fix the conflicted lines before continuing.
 
-![](images/conflicts-8-conflicted-lines.png)
+<p align="center"/>
+<img src="images/conflicts-8-conflicted-lines.png" width="80%"/>
+</p>
 
 Our file now has an **[U]{style="color:orange"}** icon, which stands for an unresolved merge conflict.
 
-![](images/conflicts-9-unresolved.png)
+<p align="center"/>
+<img src="images/conflicts-9-unresolved.png" width="80%"/>
+</p>
 
 In general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)
 
-![](images/git-conflict-cause.png)
+<p align="center"/>
+<img src="images/git-conflict-cause.png" width="60%"/>
+</p>
 
 ## Resolving Merge Conflicts
 
@@ -78,7 +86,9 @@ Then stage, commit the changes, and push them to GitHub!
 
 Perfect! We've fixed the merge conflict!
 
-![](images/conflicts-12-push-resolved.png)
+<p align="center"/>
+<img src="images/conflicts-12-push-resolved.png" width="80%"/>
+</p>
 
 Let's check back on the shared repository. The latest commit shows that we've successfully pushed our changes to GitHub.
 

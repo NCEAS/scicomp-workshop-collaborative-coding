@@ -16,14 +16,20 @@ website:
     background: primary
     left:
       - href: index.qmd
-        text: Home
-      - motivations.qmd
-      - github.qmd
-      - rstudio.qmd
-      - issues.qmd
-      - conflicts.qmd
-      - branches.qmd
-      - forks.qmd
+        text: "Home"
+      - text: "Core Topics"
+        menu:
+          - motivations.qmd
+          - github.qmd
+          - rstudio.qmd
+      - text: "Advanced Topics"
+        menu: 
+          - conflicts.qmd
+          - branches.qmd
+          - forks.qmd
+      - text: "Project Management"
+        menu: 
+          - issues.qmd
       - server.qmd
       - about.qmd
     right:

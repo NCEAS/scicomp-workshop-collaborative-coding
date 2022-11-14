@@ -2,19 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.267">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sci Comp Workshop - GitHub - Server</title>
+<title>Sci Comp Workshop - GitHub - NCEAS’ Server</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -53,7 +58,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -66,7 +71,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -122,7 +127,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="Sci Comp Workshop - GitHub - Server">
+<meta name="twitter:title" content="Sci Comp Workshop - GitHub - NCEAS’ Server">
 <meta name="twitter:description" content="Working on NCEAS’ Server is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work.">
 <meta name="twitter:card" content="summary">
 </head>
@@ -133,50 +138,83 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Sci Comp Workshop - GitHub</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-core-topics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Core Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-core-topics">    
+        <li>
+    <a class="dropdown-item" href="./motivations.html">
+ <span class="dropdown-text">Workflows</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./github.html">
+ <span class="dropdown-text"><code>git</code> &amp; GitHub</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rstudio.html">
+ <span class="dropdown-text">RStudio</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-advanced-topics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Advanced Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-advanced-topics">    
+        <li>
+    <a class="dropdown-item" href="./conflicts.html">
+ <span class="dropdown-text">Conflicts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./branches.html">
+ <span class="dropdown-text">Branches</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./forks.html">
+ <span class="dropdown-text">Forks</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-management" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project Management</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-management">    
+        <li>
+    <a class="dropdown-item" href="./issues.html">
+ <span class="dropdown-text">Issues</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./server.html" aria-current="page">
+ <span class="menu-text">NCEAS’ Server</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./motivations.html">Workflows</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./github.html">GitHub</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./rstudio.html">RStudio</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./issues.html">Issues</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./conflicts.html">Conflicts</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./branches.html">Branches</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./forks.html">Forks</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./server.html" aria-current="page">Server</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">Content Creators</a>
+    <a class="nav-link" href="./about.html">
+ <span class="menu-text">Content Creators</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -192,12 +230,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#server-workflow-instructions" id="toc-server-workflow-instructions" class="nav-link" data-scroll-target="#server-workflow-instructions">Server Workflow Instructions</a>
+  <li><a href="#getting-started-on-nceas-server" id="toc-getting-started-on-nceas-server" class="nav-link" data-scroll-target="#getting-started-on-nceas-server">Getting Started on NCEAS’ Server</a>
+  <ul class="collapse">
+  <li><a href="#necessary-software" id="toc-necessary-software" class="nav-link" data-scroll-target="#necessary-software">Necessary Software</a></li>
+  <li><a href="#get-your-invite-ready" id="toc-get-your-invite-ready" class="nav-link" data-scroll-target="#get-your-invite-ready">Get your Invite Ready!</a></li>
+  <li><a href="#signing-into-the-server" id="toc-signing-into-the-server" class="nav-link" data-scroll-target="#signing-into-the-server">Signing into the Server</a></li>
+  </ul></li>
+  <li><a href="#working-on-the-server" id="toc-working-on-the-server" class="nav-link" data-scroll-target="#working-on-the-server">Working on the Server</a>
   <ul class="collapse">
   <li><a href="#step-1-connect-server-rstudio-with-github" id="toc-step-1-connect-server-rstudio-with-github" class="nav-link" data-scroll-target="#step-1-connect-server-rstudio-with-github">Step 1: Connect Server RStudio with GitHub</a></li>
   <li><a href="#step-2-create-github-token" id="toc-step-2-create-github-token" class="nav-link" data-scroll-target="#step-2-create-github-token">Step 2: Create GitHub Token</a></li>
@@ -215,7 +259,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Server</h1>
+<h1 class="title">NCEAS’ Server</h1>
 </div>
 
 
@@ -223,6 +267,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -233,8 +278,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>Working on <a href="https://aurora.nceas.ucsb.edu/">NCEAS’ Server</a> is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your “RStudio” again for the instance of RStudio accessed through Aurora. GitHub’s Personal Access Token is referred to as “token” hereafter for simplicity.</p>
 </section>
-<section id="server-workflow-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="server-workflow-instructions">Server Workflow Instructions</h2>
+<section id="getting-started-on-nceas-server" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-on-nceas-server">Getting Started on NCEAS’ Server</h2>
+<section id="necessary-software" class="level3">
+<h3 class="anchored" data-anchor-id="necessary-software">Necessary Software</h3>
+<p>The only tool that you will need to get set up on NCEAS’ server is RStudio!</p>
+<p>You likely have worked in the “Console” tab of RStudio (where run lines and outputs appear; see below) but RStudio has another tab to the right of the “Console” called “Terminal” which offers RStudio users access to the <strong>command line</strong> (a.k.a. the <strong>shell</strong>). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> on Windows but for the sake of keeping your tool kit streamlined, we’ll walk through getting set up on NCEAS’ server using only RStudio’s Terminal tab.</p>
+<p align="center">
+<img src="images/server-login-1-console.png" width="85%">
+</p>
+<p>The Terminal does not accept R syntax (and the Console doesn’t accept Terminal syntax) so you may notice that some of the code we’ll walk you through below is formatted differently than you would write an R script.</p>
+<p align="center">
+<img src="images/server-login-2-terminal.png" width="85%">
+</p>
+</section>
+<section id="get-your-invite-ready" class="level3">
+<h3 class="anchored" data-anchor-id="get-your-invite-ready">Get your Invite Ready!</h3>
+<p>After your group RSVP’d for this workshop, our team contacted NCEAS’ IT team to get you an invite email to create an account on the server. An example of what that email may look like is included below but there are two key pieces of information:</p>
+<ol type="1">
+<li>Your username</li>
+<li>Your temporary password (covered by a <strong><span style="color:red">red bar</span></strong> in the screenshot).</li>
+</ol>
+<p>If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank@nceas.ucsb.edu) or Nick Outin (outin@nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.</p>
+<p align="center">
+<img src="images/server-login-3-invite-email.png" width="85%">
+</p>
+</section>
+<section id="signing-into-the-server" class="level3">
+<h3 class="anchored" data-anchor-id="signing-into-the-server">Signing into the Server</h3>
+<p>In the following instructions, all words that look <code>like this</code> should be typed into the Terminal tab and run by pressing return or enter. Note that typing these commands into an R script or R Markdown will not work because it will attempt to run in the Console. All words that look <code>[like this]</code> (i.e., bracketed) should also be typed into the Terminal tab but the specific text should be replaced in a user-specific way that is clarified in the nearby text.</p>
+<ol type="1">
+<li><p>In the Terminal pane of RStudio, you will “ssh” into the server by running the following code: <code>ssh [your username]@aurora.nceas.ucsb.edu</code>. It is <span class="citation" data-cites="aurora">@aurora</span> because <strong>the name of the server is Aurora</strong>.</p></li>
+<li><p>If this is the first time you’ve accessed the server you will need to enter <code>yes</code> to accept the server’s SSH key.</p></li>
+<li><p>You will then be prompted to enter your <code>[temporary password]</code> (see the above email example). <strong>Note that the cursor will not advance as you type but it is registering your entries! There will be no indication that you are typing (such as: “•••••••••”)</strong> This throws off many users so hopefully the above note helps set your mind at ease.</p></li>
+<li><p>You will then be prompted to change your “expired” password. We consider your temporary password to be expired as soon as you use it because sharing passwords via email is not secure and this “expiration” lets you set the password to something that only you know at the outset of your time in the server. <strong>Note again that the cursor will not advance as you type but it is working!</strong> To update your password, enter your <code>[temporary password]</code>, then <code>[your strong new password]</code> and finally re-type <code>[your strong new password]</code> to confirm it. Note that your new password should not be “your strong new password” :)</p></li>
+<li><p>You are ready to go! Run <code>exit</code> to log out of the server in the Terminal tab.</p></li>
+<li><p>Now that you have set a new password, use your favorite web browser (e.g., Firefox, Chrome, etc.) to access <a href="https://aurora.nceas.ucsb.edu/">Aurora</a> and click “Login to RStudio Server”</p></li>
+<li><p>In the resulting page, you can sign in with the same username and password you just signed in on the Terminal tab with.</p></li>
+<li><p>You should now be in something that looks very much like RStudio but is housed in a tab on your browser! We will work together from here on out so once you have reached this point, let our team know and we can gather the group before continuing.</p></li>
+</ol>
+<p>If the above steps have not resulted in successfully accessing Aurora, consult <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/first_login_to_nceas_analytical_server">NCEAS’ instructions on first login</a> and/or <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh.html">SSH-specific instructions for Mac vs.&nbsp;Windows</a> and/or email us!</p>
+</section>
+</section>
+<section id="working-on-the-server" class="level2">
+<h2 class="anchored" data-anchor-id="working-on-the-server">Working on the Server</h2>
 <section id="step-1-connect-server-rstudio-with-github" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-connect-server-rstudio-with-github">Step 1: Connect Server RStudio with GitHub</h3>
 <p>To begin, load the <code>usethis</code> package (install if needed).</p>
@@ -366,6 +453,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       }
     }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
   }
   const isFileUrl = () => { 
     return window.location.protocol === 'file:';
@@ -417,7 +514,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -439,7 +538,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -467,31 +583,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -499,7 +634,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
