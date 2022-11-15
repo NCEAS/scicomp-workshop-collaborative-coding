@@ -1,4 +1,9 @@
 ---
-title: "Projects"
+title: "GitHub Projects"
 ---
+
+## What is a Project?
+
+
+
 
