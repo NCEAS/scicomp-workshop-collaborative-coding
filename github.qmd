@@ -31,7 +31,7 @@ Let's distinguish between `git` and GitHub:
 - **An organization account**: <https://github.com/nceas>
 - **NCEAS GitHub instance**: <https://github.nceas.ucsb.edu/> 
 
-## Exploring the GitHub Website
+## Exploring GitHub
 
 Let's navigate over to [GitHub](https://github.com/) and explore some of its features. Here is what the home screen looks like as of February 2022. 
 

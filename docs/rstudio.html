@@ -171,9 +171,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brief-overview-of-git-workflow" id="toc-brief-overview-of-git-workflow" class="nav-link active" data-scroll-target="#brief-overview-of-git-workflow">Brief Overview of <code>git</code> Workflow</a></li>
+  <li><a href="#overview-of-git-workflow" id="toc-overview-of-git-workflow" class="nav-link active" data-scroll-target="#overview-of-git-workflow">Overview of <code>git</code> Workflow</a></li>
+  <li><a href="#git-vocabulary" id="toc-git-vocabulary" class="nav-link" data-scroll-target="#git-vocabulary"><code>git</code> Vocabulary</a></li>
   <li><a href="#cloning-a-repository" id="toc-cloning-a-repository" class="nav-link" data-scroll-target="#cloning-a-repository">Cloning a Repository</a></li>
-  <li><a href="#git-workflow-overview-reminder" id="toc-git-workflow-overview-reminder" class="nav-link" data-scroll-target="#git-workflow-overview-reminder"><code>git</code> Workflow Overview Reminder</a>
+  <li><a href="#workflow-refresher" id="toc-workflow-refresher" class="nav-link" data-scroll-target="#workflow-refresher">Workflow Refresher</a></li>
+  <li><a href="#stage-versus-commit" id="toc-stage-versus-commit" class="nav-link" data-scroll-target="#stage-versus-commit">Stage versus Commit</a></li>
+  <li><a href="#creating-a-new-file" id="toc-creating-a-new-file" class="nav-link" data-scroll-target="#creating-a-new-file">Creating a New File</a>
   <ul class="collapse">
   <li><a href="#adding-our-script-to-the-next-commit" id="toc-adding-our-script-to-the-next-commit" class="nav-link" data-scroll-target="#adding-our-script-to-the-next-commit">Adding our Script to the Next Commit</a></li>
   <li><a href="#getting-the-latest-updates" id="toc-getting-the-latest-updates" class="nav-link" data-scroll-target="#getting-the-latest-updates">Getting the Latest Updates</a></li>
@@ -205,15 +208,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="brief-overview-of-git-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="brief-overview-of-git-workflow">Brief Overview of <code>git</code> Workflow</h2>
+<section id="overview-of-git-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-git-workflow">Overview of <code>git</code> Workflow</h2>
 <p>Before we get into using <code>git</code> and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.</p>
 <p>Beginning on your local computer, you make <strong><span style="color:gold">changes</span></strong> to a file in a folder that you have previously marked for version control tracking (i.e., a <strong>working directory</strong>). Once those changes are made you can <strong>stage changes</strong> within your local computer. After staging, it is best to <span style="color:blue">retrieve the latest file versions from the cloud</span>. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you’ve confirmed that you have the latest file versions, you can <span style="color:green">shift the revised file(s) to the cloud</span> where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes.</p>
 <p align="center">
 <img src="images/git-workflow.png" width="70%">
 </p>
-<p>Clone** = copy the entire contents of a GitHub repository to your local computer (done once per computer)</p>
+</section>
+<section id="git-vocabulary" class="level2">
+<h2 class="anchored" data-anchor-id="git-vocabulary"><code>git</code> Vocabulary</h2>
+<p>Finally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.</p>
 <ul>
+<li><p><strong><span style="color:purple">Clone</span></strong> = copy the entire contents of a GitHub repository to your local computer (done once per computer)</p></li>
 <li><p><strong><span style="color:gray">Commit</span></strong> = move a changed local file to your local staging area (step 2 of the above diagram)</p></li>
 <li><p><strong><span style="color:blue">Pull</span></strong> = get file(s) <em>from</em> the cloud <em>to</em> your local computer – opposite of a “push” (step 3)</p></li>
 <li><p><strong><span style="color:green">Push</span></strong> = move file(s) <em>to</em> the cloud <em>from</em> your local computer – opposite of a “pull” (step 4)</p></li>
@@ -246,8 +253,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Now we have finished cloning the repository to our RStudio! Notice that we are working in our <code>git-practice</code> project and that our <code>README.md</code> file shows up under the list of files, just like in our GitHub repository.</p>
 <p><img src="images/rstudio-12-finished-cloning.png" width="100%"></p>
 </section>
-<section id="git-workflow-overview-reminder" class="level2">
-<h2 class="anchored" data-anchor-id="git-workflow-overview-reminder"><code>git</code> Workflow Overview Reminder</h2>
+<section id="workflow-refresher" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-refresher">Workflow Refresher</h2>
 <p>The typical workflow with <code>git</code> goes like this:</p>
 <p><strong>Step 1</strong>: You modify files in your working directory and save them as usual.</p>
 <p><strong>Step 2</strong>: You <strong>stage</strong> files to mark your intention to “commit” them and then <strong>commit</strong> that version of those files.</p>
@@ -259,7 +266,19 @@ ul.task-list li input[type="checkbox"] {
 <p align="center">
 <img src="images/git-workflow.png" width="70%">
 </p>
-<p><strong>New File</strong> &gt; <strong>R Script</strong>. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script <code>angel-script.R</code>.</p>
+</section>
+<section id="stage-versus-commit" class="level2">
+<h2 class="anchored" data-anchor-id="stage-versus-commit">Stage versus Commit</h2>
+<p>The functional difference between “staging” a file and “committing” one can be a little tough to grasp at first so let’s explore that briefly here. We can make an analogy with taking a family picture, where each family member would represent a file.</p>
+<ul>
+<li><strong>Staging</strong> files is like deciding which family member(s) are going to be in your next picture</li>
+<li><strong>Committing</strong> is like taking the picture</li>
+</ul>
+<p>This 2-step process enables you to flexibly group files into a specific commit. Those groupings can be helpful to you later if you’re trying to find what you changed for a specific task (because those changes likely are all in the same commit).</p>
+</section>
+<section id="creating-a-new-file" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-new-file">Creating a New File</h2>
+<p>Let’s try out a simple <code>git</code> workflow by first creating a new file. This is <strong>Step 1</strong> of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to <strong>File</strong> &gt; <strong>New File</strong> &gt; <strong>R Script</strong>. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script <code>angel-script.R</code>.</p>
 <p>Once you are done, navigate to the <strong><code>git</code></strong> tab on the upper left corner. You should see your new script show up there along with a <code>.gitignore</code> and <code>git-practice.Rproj</code> file. Do not worry about the <code>.gitignore</code> file for now, it was created by RStudio to make sure that some temporary files are not tracked by <code>git</code>. The <code>git-practice.Rproj</code> file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.</p>
 <p><img src="images/rstudio-13-new-script.png" width="100%"></p>
 <p>Notice that there are color-coded icons next to the files in the “Git” tab. These icons are shorthand for the status–according to <code>git</code>–of every* file in your working directory. Not technically “every” file because files that are tracked but haven’t been modified are not included. See below for definitions.</p>
@@ -312,6 +331,7 @@ ul.task-list li input[type="checkbox"] {
 <p align="center">
 <img src="images/rstudio-15b-pull.png" width="40%">
 </p>
+<p>Once you click that button you should get a success screen like the one pictured below.</p>
 <p align="center">
 <img src="images/rstudio-18-pushed.png" width="90%">
 </p>

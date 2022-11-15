@@ -223,15 +223,21 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="how-merge-conflicts-happen">How Merge Conflicts Happen</h2>
 <p>Below is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.</p>
 <p>Let’s say we have a repository that we’ve shared with a collaborator. Currently there’s a <code>README.md</code> and only one script, <code>test-script.R</code>, in it.</p>
-<p><img src="images/conflicts-1-example-repo.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/conflicts-1-example-repo.png" width="80%">
+</p>
 <p><code>test-script.R</code> contains one line. Suppose we want to work on this script and add more lines to it.</p>
-<p><img src="images/conflicts-2-test-script.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/conflicts-2-test-script.png" width="80%">
+</p>
 <p>Let’s go commit our edits. The green lines highlight the fact that we’ve added two new lines to our script, lines 2 and 3. We type out our commit message, and click <strong>Commit</strong>.</p>
 <p><img src="images/conflicts-3-birds.png" class="img-fluid"></p>
 <p>Great! The message “Your branch is ahead of ‘origin/main’ by 1 commit” lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.</p>
 <p><img src="images/conflicts-4-birds-commit.png" class="img-fluid"></p>
 <p>Then, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.</p>
-<p><img src="images/conflicts-5-flowers.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/conflicts-5-flowers.png" width="80%">
+</p>
 <p>When we get back to our computer, we’re ready to <strong><span style="color:green">push</span></strong> our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.</p>
 <p><img src="images/conflicts-6-birds-push.png" class="img-fluid"></p>
 <p>After clicking <strong><span style="color:blue">Pull</span></strong>, we get a new error message: “Merge conflict in test-script.R”.</p>
@@ -252,7 +258,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="resolving-merge-conflicts" class="level2">
 <h2 class="anchored" data-anchor-id="resolving-merge-conflicts">Resolving Merge Conflicts</h2>
 <p>So how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator’s lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.</p>
-<p><img src="images/conflicts-10-resolved.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/conflicts-10-resolved.png" width="80%">
+</p>
 <p>Then stage, commit the changes, and push them to GitHub!</p>
 <p><img src="images/conflicts-11-commit-resolved.png" class="img-fluid"></p>
 <p>Perfect! We’ve fixed the merge conflict!</p>
@@ -260,8 +268,12 @@ ul.task-list li input[type="checkbox"] {
 <img src="images/conflicts-12-push-resolved.png" width="80%">
 </p>
 <p>Let’s check back on the shared repository. The latest commit shows that we’ve successfully pushed our changes to GitHub.</p>
-<p><img src="images/conflicts-13-merged.png" class="img-fluid"></p>
-<p><img src="images/conflicts-14-checking-merged.png" class="img-fluid"></p>
+<p align="center">
+<img src="images/conflicts-13-merged.png" width="80%">
+</p>
+<p align="center">
+<img src="images/conflicts-14-checking-merged.png" width="80%">
+</p>
 <p>Navigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.</p>
 <p><img src="images/conflicts-15-commit-history.png" class="img-fluid"></p>
 </section>
@@ -269,8 +281,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="tips-on-avoiding-merge-conflicts">Tips on Avoiding Merge Conflicts</h2>
 <p>Merge conflicts aren’t exactly fun, so here are some tips to avoid them:</p>
 <ul>
-<li>Communicate with your team members/collaborators often to avoid working on the same files at the same time! Let each other know who is working on what</li>
-<li>Commit often in small chunks</li>
+<li><strong>Communicate with your team members <em>often</em></strong> to avoid working on the same files at the same time! Let each other know who is working on what</li>
+<li>Commit frequently and in small chunks</li>
 <li>Try <strong><span style="color:blue">pulling</span></strong> before committing</li>
 </ul>
 

@@ -2,7 +2,7 @@
 title: "RStudio"
 ---
 
-## Brief Overview of `git` Workflow
+## Overview of `git` Workflow
 
 Before we get into using `git` and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.
 
@@ -10,13 +10,13 @@ Beginning on your local computer, you make **<span style="color:gold">changes</s
 
 <p align="center">
 <img src="images/git-workflow.png" width="70%"/>
-</p
+</p>
 
 ## `git` Vocabulary
 
 Finally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.
 
-* **<span style="color:purple">Clone</span>** = copy the entire contents of a GitHub repository to your local computer (done once per computer)
+- **<span style="color:purple">Clone</span>** = copy the entire contents of a GitHub repository to your local computer (done once per computer)
 
 * **<span style="color:gray">Commit</span>** = move a changed local file to your local staging area (step 2 of the above diagram)
 
@@ -67,7 +67,7 @@ Now we have finished cloning the repository to our RStudio! Notice that we are w
 
 <img src="images/rstudio-12-finished-cloning.png" width="100%"/>
 
-## `git` Workflow Overview Reminder
+## Workflow Refresher
 
 The typical workflow with `git` goes like this:
 
@@ -86,7 +86,7 @@ Here is the infographic from the start of this chapter again, which shows the sa
 
 <p align="center">
 <img src="images/git-workflow.png" width="70%"/>
-</p
+</p>
 
 ## Stage versus Commit
 
@@ -174,6 +174,8 @@ So how do we send our changes back to GitHub? Locate the **Push** button on the 
 <p align="center">
 <img src="images/rstudio-15b-pull.png" width="40%"/>
 </p>
+
+Once you click that button you should get a success screen like the one pictured below.
 
 <p align="center">
 <img src="images/rstudio-18-pushed.png" width="90%"/>
