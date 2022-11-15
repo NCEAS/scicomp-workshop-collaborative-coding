@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sci Comp Workshop - GitHub - Conflicts</title>
+<title>Sci Comp Workshop - GitHub - Informative READMEs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="Sci Comp Workshop - GitHub - Conflicts">
-<meta name="twitter:description" content="Merge conflicts are a normal part of the git workflow so don’t get discouraged when you run into them! They occur when git cannot figure out how to automatically merge new changes together.">
+<meta name="twitter:title" content="Sci Comp Workshop - GitHub - Informative READMEs">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -175,17 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-is-a-merge-conflict" id="toc-what-is-a-merge-conflict" class="nav-link active" data-scroll-target="#what-is-a-merge-conflict">What is a Merge Conflict?</a></li>
-  <li><a href="#brief-overview-of-merge-conflict-workflow" id="toc-brief-overview-of-merge-conflict-workflow" class="nav-link" data-scroll-target="#brief-overview-of-merge-conflict-workflow">Brief Overview of Merge Conflict Workflow</a></li>
-  <li><a href="#how-merge-conflicts-happen" id="toc-how-merge-conflicts-happen" class="nav-link" data-scroll-target="#how-merge-conflicts-happen">How Merge Conflicts Happen</a></li>
-  <li><a href="#resolving-merge-conflicts" id="toc-resolving-merge-conflicts" class="nav-link" data-scroll-target="#resolving-merge-conflicts">Resolving Merge Conflicts</a></li>
-  <li><a href="#tips-on-avoiding-merge-conflicts" id="toc-tips-on-avoiding-merge-conflicts" class="nav-link" data-scroll-target="#tips-on-avoiding-merge-conflicts">Tips on Avoiding Merge Conflicts</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
 </div></div></div>
@@ -194,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Conflicts</h1>
+<h1 class="title">Informative READMEs</h1>
 </div>
 
 
@@ -209,93 +198,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="what-is-a-merge-conflict" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-merge-conflict">What is a Merge Conflict?</h2>
-<p>Merge conflicts are a normal part of the <code>git</code> workflow so don’t get discouraged when you run into them! They occur when <code>git</code> cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.</p>
-</section>
-<section id="brief-overview-of-merge-conflict-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="brief-overview-of-merge-conflict-workflow">Brief Overview of Merge Conflict Workflow</h2>
-<p>So the basic steps to resolving a merge conflict using RStudio are as follows:</p>
-<ol type="1">
-<li><p>When a conflict happens, your local file will automatically be modified to include both possible lines (wrapped in some formatting characters described in greater detail below)</p></li>
-<li><p>Edit the lines in your file(s) that caused the merge conflict to your desired status</p></li>
-<li><p><strong>Commit</strong> those changes</p></li>
-<li><p><strong><span style="color:green">Push</span></strong> your changes to GitHub</p></li>
-</ol>
-<p>We can see those steps visually in the following workflow diagram:</p>
-<p align="center">
-<img src="images/conflicts/git-conflict-workflow.png" width="60%">
-</p>
-</section>
-<section id="how-merge-conflicts-happen" class="level2">
-<h2 class="anchored" data-anchor-id="how-merge-conflicts-happen">How Merge Conflicts Happen</h2>
-<p>Below is a common scenario that can lead to merge conflicts and then the steps to address a conflict when it occurs.</p>
-<p>Let’s say we have a repository that we’ve shared with a collaborator. Currently there’s a <code>README.md</code> and only one script, <code>test-script.R</code>, in it.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-1-example-repo.png" width="80%">
-</p>
-<p><code>test-script.R</code> contains one line. Suppose we want to work on this script and add more lines to it.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-2-test-script.png" width="80%">
-</p>
-<p>Let’s go commit our edits. The green lines highlight the fact that we’ve added two new lines to our script, lines 2 and 3. We type out our commit message, and click <strong>Commit</strong>.</p>
-<p><img src="images/conflicts/conflicts-3-birds.png" class="img-fluid"></p>
-<p>Great! The message “Your branch is ahead of ‘origin/main’ by 1 commit” lets us know that everything is proceeding smoothly. Suppose that we decided to take a break and stepped away from our computer.</p>
-<p><img src="images/conflicts/conflicts-4-birds-commit.png" class="img-fluid"></p>
-<p>Then, unbeknownst to us, our collaborator made their edits to the same script and committed and pushed their changes to the GitHub repository. At the moment, here is what the shared repository looks like.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-5-flowers.png" width="80%">
-</p>
-<p>When we get back to our computer, we’re ready to <strong><span style="color:green">push</span></strong> our changes to GitHub, but an error shows up. Basically, it is telling us that our GitHub repository contains changes that we do not have on our local computer. To remedy this, the message suggests that we pull the changes from GitHub to our machine to catch our local machine back up.</p>
-<p><img src="images/conflicts/conflicts-6-birds-push.png" class="img-fluid"></p>
-<p>After clicking <strong><span style="color:blue">Pull</span></strong>, we get a new error message: “Merge conflict in test-script.R”.</p>
-<p><img src="images/conflicts/conflicts-7-birds-pull.png" class="img-fluid"></p>
-<p>Looking closer, the merge conflict prompted a new version of <code>test-script.R</code> to pop up. This version contains our edits and our collaborator’s edits, along with the delimiter lines that start with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. <code>git</code> is urging us to manually fix the conflicted lines before continuing.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-8-conflicted-lines.png" width="80%">
-</p>
-<p>Our file now has an <strong><span style="color:orange">U</span></strong> icon, which stands for an unresolved merge conflict.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-9-unresolved.png" width="80%">
-</p>
-<p>In general terms the steps that come before a merge conflict are displayed in the visual below. Note that though this has visual similarity to the workflow diagrams throughout this bookdown we do not recommend intentionally causing a merge conflict :)</p>
-<p align="center">
-<img src="images/conflicts/git-conflict-cause.png" width="60%">
-</p>
-</section>
-<section id="resolving-merge-conflicts" class="level2">
-<h2 class="anchored" data-anchor-id="resolving-merge-conflicts">Resolving Merge Conflicts</h2>
-<p>So how do we resolve this merge conflict? We need to edit the script so that it looks like how we want it. We can either pick our lines to keep, our collaborator’s lines, some combination, or something new altogether. Be sure to communicate with your collaborator to discuss exactly how it should be fixed. After merging the changes wherever appropriate, delete the delimiter lines.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-10-resolved.png" width="80%">
-</p>
-<p>Then stage, commit the changes, and push them to GitHub!</p>
-<p><img src="images/conflicts/conflicts-11-commit-resolved.png" class="img-fluid"></p>
-<p>Perfect! We’ve fixed the merge conflict!</p>
-<p align="center">
-<img src="images/conflicts/conflicts-12-push-resolved.png" width="80%">
-</p>
-<p>Let’s check back on the shared repository. The latest commit shows that we’ve successfully pushed our changes to GitHub.</p>
-<p align="center">
-<img src="images/conflicts/conflicts-13-merged.png" width="80%">
-</p>
-<p align="center">
-<img src="images/conflicts/conflicts-14-checking-merged.png" width="80%">
-</p>
-<p>Navigating to the commit history, we see that first we committed our changes, then our collaborator committed and pushed their changes, causing a merge conflict since we were editing the same lines in the same file. To resolve this, we edited those lines directly in our RStudio and committed and pushed our changes once more. Finally, the merge conflict is resolved and all the necessary changes are merged.</p>
-<p><img src="images/conflicts/conflicts-15-commit-history.png" class="img-fluid"></p>
-</section>
-<section id="tips-on-avoiding-merge-conflicts" class="level2">
-<h2 class="anchored" data-anchor-id="tips-on-avoiding-merge-conflicts">Tips on Avoiding Merge Conflicts</h2>
-<p>Merge conflicts aren’t exactly fun, so here are some tips to avoid them:</p>
-<ul>
-<li><strong>Communicate with your team members <em>often</em></strong> to avoid working on the same files at the same time! Let each other know who is working on what</li>
-<li>Commit frequently and in small chunks</li>
-<li>Try <strong><span style="color:blue">pulling</span></strong> before committing</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

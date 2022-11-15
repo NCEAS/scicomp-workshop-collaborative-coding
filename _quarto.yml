@@ -30,6 +30,8 @@ website:
       - text: "Project Management"
         menu: 
           - issues.qmd
+          - projects.qmd
+          - read_mes.qmd
       - server.qmd
       - about.qmd
     right:
