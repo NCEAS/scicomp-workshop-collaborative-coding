@@ -15,13 +15,13 @@ The only tool that you will need to get set up on NCEAS' server is RStudio!
 You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
 
 <p align="center">
-<img src="images/server-login-1-console.png" width="85%"/>
+<img src="images/server/server-login-1-console.png" width="85%"/>
 </p>
 
 The Terminal does not accept R syntax (and the Console doesn't accept Terminal syntax) so you may notice that some of the code we'll walk you through below is formatted differently than you would write an R script.
 
 <p align="center">
-<img src="images/server-login-2-terminal.png" width="85%"/>
+<img src="images/server/server-login-2-terminal.png" width="85%"/>
 </p>
 
 ### Get your Invite Ready!
@@ -34,7 +34,7 @@ After your group RSVP'd for this workshop, our team contacted NCEAS' IT team to 
 If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank@nceas.ucsb.edu) or Nick Outin (outin@nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.
 
 <p align="center">
-<img src="images/server-login-3-invite-email.png" width="85%"/>
+<img src="images/server/server-login-3-invite-email.png" width="85%"/>
 </p>
 
 ### Signing into the Server

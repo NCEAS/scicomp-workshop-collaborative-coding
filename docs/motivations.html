@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <p>There are variants of this where you may be archiving everything on your hard drive (e.g., Time Machine on Mac OS, etc.) and you may be using a “save as” feature to preserve some iterations of your code. You may also perform this same operation within a cloud-based storage system (e.g., Box, Dropbox, Google Drive, etc.) so that some versions of both code and data are preserved based on time stamps.</p>
 <p>This approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).</p>
 <p>Another limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.</p>
-<p><img src="images/workflow-no-version-control.png" class="img-fluid"></p>
+<p><img src="images/workflow_options/workflow-no-version-control.png" class="img-fluid"></p>
 </section>
 <section id="data-lifecycle-considerations" class="level3">
 <h3 class="anchored" data-anchor-id="data-lifecycle-considerations">Data Lifecycle Considerations</h3>
@@ -221,14 +221,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Individual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not <em>as</em> limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.</p>
 <p>However, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.</p>
 <p>Collaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.</p>
-<p><img src="images/data-lifecycle.png" class="img-fluid"></p>
+<p><img src="images/workflow_options/data-lifecycle.png" class="img-fluid"></p>
 </section>
 <section id="synthesis-workflow" class="level3">
 <h3 class="anchored" data-anchor-id="synthesis-workflow">Synthesis Workflow</h3>
 <p>Version control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the “right” version of the code.</p>
 <p>However, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs.&nbsp;cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.</p>
 <p>Further, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.</p>
-<p><img src="images/workflow-no-server.png" class="img-fluid"></p>
+<p><img src="images/workflow_options/workflow-no-server.png" class="img-fluid"></p>
 </section>
 <section id="synthesis-workflow-on-nceas-server" class="level3">
 <h3 class="anchored" data-anchor-id="synthesis-workflow-on-nceas-server">Synthesis Workflow on NCEAS’ Server</h3>
@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Data can be moved from a specific computer onto the server by using any “<strong>File Transfer Protocol</strong>” (FTP) software (or “SSH FTP” a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/remote_file_access.html">tutorial on how to go about setting up an FTP or SFTP program on your computer</a> that we are also happy to go over in greater depth as needed!</p>
 <p>Adding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server <em>ad infinitum</em> thereafter.</p>
 <p>An ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)</p>
-<p><img src="images/workflow-server.png" class="img-fluid"></p>
+<p><img src="images/workflow_options/workflow-server.png" class="img-fluid"></p>
 </section>
 <section id="summary" class="level3">
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
