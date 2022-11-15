@@ -31,7 +31,7 @@ website:
         menu: 
           - issues.qmd
           - projects.qmd
-          - read_mes.qmd
+          - readmes.qmd
       - server.qmd
       - about.qmd
     right:
