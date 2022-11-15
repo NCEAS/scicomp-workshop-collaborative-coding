@@ -65,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Sci Comp Workshop - GitHub - Informative READMEs">
+<meta name="twitter:description" content="A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder’s contents.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -174,7 +175,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-a-readme" id="toc-what-is-a-readme" class="nav-link active" data-scroll-target="#what-is-a-readme">What is a README?</a></li>
+  <li><a href="#example-readme" id="toc-example-readme" class="nav-link" data-scroll-target="#example-readme">Example README</a></li>
+  <li><a href="#writing-a-readme" id="toc-writing-a-readme" class="nav-link" data-scroll-target="#writing-a-readme">Writing a README</a></li>
+  <li><a href="#other-resources-for-readmes" id="toc-other-resources-for-readmes" class="nav-link" data-scroll-target="#other-resources-for-readmes">Other Resources for READMEs</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
 </div></div></div>
@@ -198,8 +208,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="what-is-a-readme" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-readme">What is a README?</h2>
+<p>A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder’s contents. However, you are responsible for creating a README and adding content to it so it’s value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.</p>
+<p>In GitHub, READMEs can be particularly useful because they form a landing page at the bottom of your repository’s GitHub page that can be a great way of introducing new people to your project or refreshing ‘future you’ on how you stored things for a given project.</p>
+<p>A README is almost always either a Markdown file (ending in “.md”) or an R markdown file (“.Rmd”). The default for a GitHub repository is “.md” but if you want your README to run R code (e.g., to create graphs, run analysis, etc.) you can create a .Rmd one that can support R code chunks.</p>
+</section>
+<section id="example-readme" class="level2">
+<h2 class="anchored" data-anchor-id="example-readme">Example README</h2>
+<p><img src="images/logos/lterpalettefinder_hex.png" align="right" width="20%"></p>
+<p>Let’s check out <a href="https://github.com/lter/lterpalettefinder#readme">the README for the R package <code>lterpalettefinder</code></a> as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from <em>any</em> user-supplied photo.</p>
+<p>The README for <code>lterpalettefinder</code> is crucial because it provides the following information:</p>
+<ul>
+<li>Brief description of the purpose / utility of the package</li>
+<li>Instructions on how to install the “development version” of the package
+<ul>
+<li>This is useful because the version of a package that is on CRAN (and can be installed with <code>install.packages()</code>) is often less up-to-date than the version that is available on GitHub</li>
+</ul></li>
+<li>List of current functions and what they do</li>
+<li>Hex logo of the package</li>
+</ul>
+<p>Visitors to <a href="https://github.com/lter/lterpalettefinder#readme">the README</a> see the following:</p>
+<p><img src="images/readme/readme-1-example.png" width="100%"></p>
+<p>This README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.</p>
+<p>The “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).</p>
+<p><img src="images/readme/readme-2-example-home.png" width="100%"></p>
+<p>If you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.</p>
+<p><strong>The main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file.</strong> Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!</p>
+<p><img src="images/readme/readme-3-example-raw-1.png" width="100%"></p>
+<p><img src="images/readme/readme-4-example-raw-2.png" width="100%"></p>
+</section>
+<section id="writing-a-readme" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-readme">Writing a README</h2>
+<p>[Under construction, check back later!]</p>
+</section>
+<section id="other-resources-for-readmes" class="level2">
+<h2 class="anchored" data-anchor-id="other-resources-for-readmes">Other Resources for READMEs</h2>
+<p><a href="https://github.com/navendu-pottekkat">Navendu Pottekkat</a> made <a href="https://github.com/navendu-pottekkat/awesome-readme/tree/master#readme">a really cool “Awesome README”</a> that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. <em>This type of aesthetic modification is <strong>not</strong> required</em> but can be a fun way of making your README stand out!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
