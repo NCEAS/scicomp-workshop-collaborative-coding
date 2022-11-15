@@ -9,7 +9,7 @@ Version control systems (including `git`) are built to preserve the iterative ve
 **Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.**
 
 <p align="center">
-<img src="images/github/phd_comics_final.png" align="center" width="60%"/>
+<img src="images/comics/phd_comics_final.png" align="center" width="60%"/>
 </p>
 
 ## `git`-Specific Background

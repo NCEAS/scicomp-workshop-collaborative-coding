@@ -8,7 +8,7 @@ execute:
 
 website:
   title: "Sci Comp Workshop - GitHub"
-  favicon: images/scicomptools_hex.png
+  favicon: images/logos/scicomptools_hex.png
   repo-url: https://github.com/NCEAS/scicomp-workshop-collaborative-coding
   repo-actions: [issue]
   twitter-card: true
@@ -39,8 +39,8 @@ website:
     center: "Copyright 2022, NCEAS"
     background: secondary
   margin-footer: |
-    <img src="images/nceas_logo_square.png" width="40%"/>
-    <img src="images/lter_logo_square.png" width="40%"/>
+    <img src="images/logos/nceas_logo_square.png" width="40%"/>
+    <img src="images/logos/lter_logo_square.png" width="40%"/>
 
 format:
   html:
