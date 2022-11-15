@@ -6,9 +6,9 @@ This workshop was created and facilitated by a dynamic team that is here to assi
 
 ## Julien Brun
 
-[brunj7.github.io](https://brunj7.github.io/) -- <img src="images/github_logo.png" width="2%"/> [brunj7](https://github.com/brunj7) -- <img src="images/twitter_logo.png" width="2%"/> [\@brunj7](https://twitter.com/brunj7) -- **brun@nceas.ucsb.edu**
+[brunj7.github.io](https://brunj7.github.io/) -- {{< fa brands github >}} [brunj7](https://github.com/brunj7) -- {{< fa brands twitter >}} [\@brunj7](https://twitter.com/brunj7) -- **brun@nceas.ucsb.edu**
 
-<img src="images/jbrun.jpeg" align="right" width="25%"/>
+<img src="images/staff/jbrun.jpeg" align="right" width="25%"/>
 
 As a senior data scientist, the core of Julien's work is to understand the data and computing challenges researchers are facing and help them to translate these challenges into solvable tasks. Julien advises and mentors on how to clean, structure, combine, and analyze their heterogeneous data sets, as well as scaling up their analysis while promoting open and reproducible data science principles.
 
@@ -16,16 +16,16 @@ Julien is also a Lecturer in the [Master in Environmental Data Science](https://
 
 ## Angel Chen
 
-<img src="images/github_logo.png" width="2%"/> [angelchen7](https://github.com/angelchen7) -- **anchen@nceas.ucsb.edu**
+{{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen@nceas.ucsb.edu**
 
-<img src="images/achen.jpeg" align="right" width="25%"/>
+<img src="images/staff/achen.jpeg" align="right" width="25%"/>
 
 Angel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. Angel recently completed a B.S. in statistics & data science at the University of California, Santa Barbara.
 
 ## Nick Lyon
 
-[njlyon0.github.io](https://njlyon0.github.io/) -- <img src="images/github_logo.png" width="2%"/> [njlyon0](https://github.com/njlyon0) -- <img src="images/twitter_logo.png" width="2%"/> [\@scilyon](https://twitter.com/scilyon) -- **lyon@nceas.ucsb.edu**
+[njlyon0.github.io](https://njlyon0.github.io/) -- {{< fa brands github >}} [njlyon0](https://github.com/njlyon0) -- {{< fa brands twitter >}} [\@scilyon](https://twitter.com/scilyon) -- **lyon@nceas.ucsb.edu**
 
-<img src="images/nlyon.png" align="right" width="25%"/>
+<img src="images/staff/nlyon.png" align="right" width="25%"/>
 
 Nick has been working on GitHub for years but has only relatively recently started using it to code collaboratively. When he first heard of `git`/GitHub (as a graduate student) he used it exclusively to track his own solo work. Now that he collaborates with others via GitHub, Nick has a renewed appreciation for the value of version control in team coding work. Nick completed his MS in Ecology and Evolutionary Biology at Iowa State University
