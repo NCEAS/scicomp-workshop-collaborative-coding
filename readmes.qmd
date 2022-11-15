@@ -44,7 +44,15 @@ If you click that file, you can view the "raw" file which is written in "markdow
 
 ## Writing a README
 
-[Under construction, check back later!]
+We recommend that you edit your README to include (some of) the following components:
+
+- An informative, un-abbreviated title (beginning with one `#` to make it a header)
+- A brief (likely bulleted) description of the major folders in the repository
+- *How / in which folder to contribute new files to the repository*
+- Contact information for primary contact for questions
+- If applicable, links to related repositories (e.g., other repositories created by your working group)
+
+**The most important thing is that you structure your README in a way that is intuitive to your team** so that you feel capable to maintain it so that is remains useful and relevant as a landing page for your project.
 
 ## Other Resources for READMEs
 
