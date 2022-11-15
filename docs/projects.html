@@ -65,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Sci Comp Workshop - GitHub - GitHub Projects">
+<meta name="twitter:description" content="Projects are GitHub’s primary strategic project management tool.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -179,6 +180,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-is-a-project" id="toc-what-is-a-project" class="nav-link active" data-scroll-target="#what-is-a-project">What is a Project?</a></li>
+  <li><a href="#project-locations" id="toc-project-locations" class="nav-link" data-scroll-target="#project-locations">Project Locations</a>
+  <ul class="collapse">
+  <li><a href="#organization-projects" id="toc-organization-projects" class="nav-link" data-scroll-target="#organization-projects">Organization Projects</a></li>
+  <li><a href="#user-projects" id="toc-user-projects" class="nav-link" data-scroll-target="#user-projects">User Projects</a></li>
+  <li><a href="#repository-projects" id="toc-repository-projects" class="nav-link" data-scroll-target="#repository-projects">Repository Projects</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -206,8 +213,48 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-a-project" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-project">What is a Project?</h2>
+<p>Projects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. <strong>A Project acts as an umbrella that includes many issues</strong> and tracks their inter-relationships and where they fit in a bigger-picture view of a project.</p>
+</section>
+<section id="project-locations" class="level2">
+<h2 class="anchored" data-anchor-id="project-locations">Project Locations</h2>
+<p>Projects can be created in one of three places with meaningful differences for each:</p>
+<ol type="1">
+<li>A Project can be created for an Organization</li>
+<li>A Project can be created for a User</li>
+<li>A Project can be created for a Repository</li>
+</ol>
+<section id="organization-projects" class="level3">
+<h3 class="anchored" data-anchor-id="organization-projects">Organization Projects</h3>
+<p><img src="images/projects/projects-1-org.png" width="100%"></p>
+<p>A Project created for an Organization allows all GitHub users <em>with access to that organization</em> to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both <a href="https://github.com/lter">LTER</a> and <a href="https://github.com/NCEAS">NCEAS</a> have existing organizations that can support Projects created for working groups.</p>
+<ul>
+<li>Supports issues from <em>any repository</em></li>
+<li>Editable by any user <strong>in the organization</strong></li>
+</ul>
+</section>
+<section id="user-projects" class="level3">
+<h3 class="anchored" data-anchor-id="user-projects">User Projects</h3>
+<p><img src="images/projects/projects-2-user.png" width="100%"></p>
+<p>A Project created within a particular user’s “self” can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.</p>
+<ul>
+<li>Supports issues from <em>any repository</em></li>
+<li>Editable by <strong>only this user</strong>*
+<ul>
+<li>* Unless that user tweaks their settings to allow other specified users to have admin-level powers in that Project</li>
+</ul></li>
+</ul>
+</section>
+<section id="repository-projects" class="level3">
+<h3 class="anchored" data-anchor-id="repository-projects">Repository Projects</h3>
+<p><img src="images/projects/projects-3-repo.png" width="100%"></p>
+<p>A Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. <strong>This is the most narrowly-defined type of Project.</strong> That said, it can be very valuable if you anticipate <strong>(1)</strong> that the repository that “owns” this Project will involve many large goals that would require the level of project management supported by GitHub Projects and <strong>(2)</strong> that these tasks will <em>never</em> grow to involve other repositories.</p>
+<ul>
+<li>Supports issues <strong>only from that repository</strong></li>
+<li>Editable by any user with access to the repository</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

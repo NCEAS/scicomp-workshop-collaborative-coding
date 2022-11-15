@@ -77,6 +77,20 @@
     "text": "Closing an Issue\nSo, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.\nIf you scroll to the bottom of that issue (where the adding comment textbox is) you will see a purple button titled “Close issue”.\n\nAfter clicking that button a purple check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.\n\nWhen you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.\n\nClicking that “Closed” button will access all past issues that are now closed.\n\nSo, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.\nThis greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.\nAs pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!"
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "GitHub Projects",
+    "section": "",
+    "text": "Projects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. A Project acts as an umbrella that includes many issues and tracks their inter-relationships and where they fit in a bigger-picture view of a project."
+  },
+  {
+    "objectID": "projects.html#project-locations",
+    "href": "projects.html#project-locations",
+    "title": "GitHub Projects",
+    "section": "Project Locations",
+    "text": "Project Locations\nProjects can be created in one of three places with meaningful differences for each:\n\nA Project can be created for an Organization\nA Project can be created for a User\nA Project can be created for a Repository\n\n\nOrganization Projects\n\nA Project created for an Organization allows all GitHub users with access to that organization to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both LTER and NCEAS have existing organizations that can support Projects created for working groups.\n\nSupports issues from any repository\nEditable by any user in the organization\n\n\n\nUser Projects\n\nA Project created within a particular user’s “self” can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.\n\nSupports issues from any repository\nEditable by only this user*\n\n* Unless that user tweaks their settings to allow other specified users to have admin-level powers in that Project\n\n\n\n\nRepository Projects\n\nA Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. This is the most narrowly-defined type of Project. That said, it can be very valuable if you anticipate (1) that the repository that “owns” this Project will involve many large goals that would require the level of project management supported by GitHub Projects and (2) that these tasks will never grow to involve other repositories.\n\nSupports issues only from that repository\nEditable by any user with access to the repository"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Overview",
