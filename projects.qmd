@@ -6,9 +6,25 @@ title: "GitHub Projects"
 
 Projects are GitHub's primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. **A Project acts as an umbrella that includes many issues** and tracks their inter-relationships and where they fit in a bigger-picture view of a project.
 
+## Using Projects
 
+Within the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues *and* ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.
 
+See below for a screencap of what such a Project looks like for one team member.
 
+<img src="images/projects/projects-4-example.png" width="100%"/>
+
+When using a Project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the "Done" column).
+
+## Maximizing Project Utility
+
+It may go without saying, but Projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of Projects are as follows:
+
+1. Giving Issues clear and short titles
+2. "Assigning" Issues to particular users
+3. Using labels to group Issues into useful categories
+
+If your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult [our page on Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) for more information!
 
 ## Project Locations
 

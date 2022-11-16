@@ -84,6 +84,20 @@
     "text": "Projects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. A Project acts as an umbrella that includes many issues and tracks their inter-relationships and where they fit in a bigger-picture view of a project."
   },
   {
+    "objectID": "projects.html#using-projects",
+    "href": "projects.html#using-projects",
+    "title": "GitHub Projects",
+    "section": "Using Projects",
+    "text": "Using Projects\nWithin the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues and ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.\nSee below for a screencap of what such a Project looks like for one team member.\n\nWhen using a Project you can add or remove the columns (the above example has four columns) and individual issue “cards” can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the “Done” column)."
+  },
+  {
+    "objectID": "projects.html#maximizing-project-utility",
+    "href": "projects.html#maximizing-project-utility",
+    "title": "GitHub Projects",
+    "section": "Maximizing Project Utility",
+    "text": "Maximizing Project Utility\nIt may go without saying, but Projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of Projects are as follows:\n\nGiving Issues clear and short titles\n“Assigning” Issues to particular users\nUsing labels to group Issues into useful categories\n\nIf your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult our page on Issues for more information!"
+  },
+  {
     "objectID": "projects.html#project-locations",
     "href": "projects.html#project-locations",
     "title": "GitHub Projects",
