@@ -196,34 +196,6 @@
     "text": "Update Local Repository\nNow that GitHub has been told to integrate your branch content with the “main” branch, you need to let RStudio know that integration has taken place!\nFirst, click the name of the branch to see all the branch names in your repository and select the “main” branch to flip your local repository over to that branch.\n\n\n\nNotice though that our script went back to the pre-merge version but don’t panic!\nIn order to update your local version of the repository all that you need to do is click the pull button. This brings the content you just merged via GitHub (see above) into your local repository.\n\nYou will get a success message indicating the changes to each file in the same way any other pull would. You can notice between this picture and the previous that the code automatically changes when the pull is complete.\n\n\n\nNow that you merged your branch with the main branch on GitHub and pulled that merged content down to your local version you have successfully start-to-finish used branches in your workflow.\nMany branches can exist at the same time and sometimes it helpful to create a branch starting from another branch, but these special cases obey the same basic structure described above and are outside the scope of this primer.\nThat said, we recommend branches as one way to avoid conflicts when you and your collaborators want to work simultaneously in the same repository on different scripts!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Content Creators",
-    "section": "",
-    "text": "This workshop was created and facilitated by a dynamic team that is here to assist you before, during, and after your attendance at the workshop! To learn a bit more about us, see our bios and relevant links below."
-  },
-  {
-    "objectID": "about.html#julien-brun",
-    "href": "about.html#julien-brun",
-    "title": "Content Creators",
-    "section": "Julien Brun",
-    "text": "Julien Brun\nbrunj7.github.io –  brunj7 –  @brunj7 – brun@nceas.ucsb.edu\n\nAs a senior data scientist, the core of Julien’s work is to understand the data and computing challenges researchers are facing and help them to translate these challenges into solvable tasks. Julien advises and mentors on how to clean, structure, combine, and analyze their heterogeneous data sets, as well as scaling up their analysis while promoting open and reproducible data science principles.\nJulien is also a Lecturer in the Master in Environmental Data Science program at Bren School of Environmental Science and Management at UC Santa Barbara, where he teaches “good enough” practices in reproducible and collaborative data science."
-  },
-  {
-    "objectID": "about.html#angel-chen",
-    "href": "about.html#angel-chen",
-    "title": "Content Creators",
-    "section": "Angel Chen",
-    "text": "Angel Chen\n angelchen7 – anchen@nceas.ucsb.edu\n\nAngel supports LTER synthesis working groups by developing data pipelines and reproducible analytical workflows to integrate various sources of data. Angel previously worked as a data curator for the Arctic Data Center, helping researchers archive and store their data. Angel recently completed a B.S. in statistics & data science at the University of California, Santa Barbara."
-  },
-  {
-    "objectID": "about.html#nick-lyon",
-    "href": "about.html#nick-lyon",
-    "title": "Content Creators",
-    "section": "Nick Lyon",
-    "text": "Nick Lyon\nnjlyon0.github.io –  njlyon0 –  @scilyon – lyon@nceas.ucsb.edu\n\nNick has been working on GitHub for years but has only relatively recently started using it to code collaboratively. When he first heard of git/GitHub (as a graduate student) he used it exclusively to track his own solo work. Now that he collaborates with others via GitHub, Nick has a renewed appreciation for the value of version control in team coding work. Nick completed his MS in Ecology and Evolutionary Biology at Iowa State University"
-  },
-  {
     "objectID": "motivations.html",
     "href": "motivations.html",
     "title": "Workflows",
