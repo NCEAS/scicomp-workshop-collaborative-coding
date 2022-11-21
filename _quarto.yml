@@ -50,7 +50,7 @@ website:
             text: "GitHub"
           - href: https://nceas.github.io/scicomp-workshop-tidyverse/
             text: "Tidyverse"
-          - href: https://njlyon0.github.io/asm-2022_github-workshop/
+          - href: https://njlyon0.github.io/asm-2022_shiny-workshop/
             text: "R Shiny"
       - icon: github
         href: https://github.com/NCEAS/scicomp-workshop-collaborative-coding
