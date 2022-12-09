@@ -64,9 +64,9 @@ website:
 format:
   html:
     theme:
-       light: yeti
-       dark: cyborg
-    css: styles.css
+       light: scicomplight.scss
+       dark: scicompdark.scss
+    mainfont: Lato
     toc: true
     link-external-newwindow: true
     link-external-icon: false
