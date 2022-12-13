@@ -4,7 +4,7 @@ title: "Informative READMEs"
 
 ## What is a README?
 
-A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder's contents. However, you are responsible for creating a README and adding content to it so it's value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.
+A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder's contents. However, you are responsible for creating a README and adding content to it so its value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.
 
 In GitHub, READMEs can be particularly useful because they form a landing page at the bottom of your repository's GitHub page that can be a great way of introducing new people to your project or refreshing 'future you' on how you stored things for a given project.
 
