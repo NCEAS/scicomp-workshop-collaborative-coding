@@ -4,7 +4,7 @@ project:
   output-dir: docs
 
 execute:
-  freeze: auto
+  freeze: true
 
 website:
   title: "Sci Comp Workshop - Collaborative Coding with GitHub"
