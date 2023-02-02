@@ -10,7 +10,7 @@ Working on [NCEAS' Server](https://aurora.nceas.ucsb.edu/) is similar to working
 
 ### Necessary Software
 
-The only tool that you will need to get set up on NCEAS' server is RStudio!
+The only software that you will need on your personal computer to get set up on NCEAS' server is RStudio!
 
 You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
 
