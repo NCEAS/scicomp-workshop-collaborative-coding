@@ -43,3 +43,6 @@ vignettes/*.pdf
 
 # Ignore quarto
 /.quarto/
+
+# Ignore docs
+docs/
