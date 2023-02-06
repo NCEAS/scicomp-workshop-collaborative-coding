@@ -7,7 +7,7 @@ execute:
   freeze: auto
 
 website:
-  title: "Sci Comp Workshop - Collaborative Coding with GitHub"
+  title: "SciComp Workshop - Collaborative Coding with GitHub"
   favicon: images/logos/scicomptools_hex.png
   repo-url: https://github.com/NCEAS/scicomp-workshop-collaborative-coding
   repo-actions: [issue]
@@ -38,7 +38,7 @@ website:
   navbar:
     background: primary
     right:
-      - text: "Sci Comp Team"
+      - text: "SciComp Team"
         menu:
           - href: https://nceas.github.io/scicomp.github.io/
             text: "Home"
