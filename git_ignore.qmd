@@ -20,7 +20,7 @@ Underneath the title "Add .gitignore" there is a dropdown menu for various templ
 <img src="images/git_ignore/ignore-3-template-search.png" width = "70%"/>
 </p>
 
-Unfortunately for R users, typing just "R" returns all templates that contain the letter 'r' so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from ".gitignore template: None" to ".gitignore template: <your pick>".
+Unfortunately for R users, typing just "R" returns all templates that contain the letter 'r' so you will need to scroll a bit to find the option that is actually for the R Statistical Environment. Once you find the option you want, click it and the template dropdown should change from ".gitignore template: None" to ".gitignore template: \<your pick\>".
 
 <p align="center">
 <img src="images/git_ignore/ignore-4-template-pick.png" width = "70%"/>
@@ -83,12 +83,16 @@ There are many different opinions on what should go into a `.gitignore` but we h
 
 ## Exceptions to the `.gitignore`
 
-Say that you commit something and later decide you actually don't want that file to be tracked by `git` any more. In this case, you'll need to do the following:
+Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by `git` and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop `git` from tracking *future* changes to the file. If this is the case, you'll need to do the following:
 
-1. Delete the file (or move it out of the repository's folder)
+1. Either (A) delete the file or (B) move it out of the repository's folder
+
+    - Either option will register as "deleting" the file from `git`'s perspective
 
 2. **Commit** the deletion
 
 3. **<span style="color:green">Push</span>** that change
 
-Once you've done these three steps your file won't be tracked by `git` even if you add it back to your repository.
+4. Add the name of that file to your `.gitignore`
+
+Once you've done these steps, even if you put the file back in your repository, `git` won't track its addition or any changes to it over time.
