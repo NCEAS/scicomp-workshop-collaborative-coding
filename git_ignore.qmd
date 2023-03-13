@@ -77,7 +77,7 @@ There are many different opinions on what should go into a `.gitignore` but we h
 
 4. Do you have another idea for what you typically add to a `.gitignore`?
 
-    - Please share it with us by [posting an Issue](https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues); we'd love to hear from you!
+    - Please share it with us by [posting an Issue](https://github.com/NCEAS/scicomptasks/issues); we'd love to hear from you!
 
 ## Exceptions to the `.gitignore`
 
