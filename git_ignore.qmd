@@ -79,6 +79,52 @@ There are many different opinions on what should go into a `.gitignore` but we h
 
     - Please share it with us by [posting an Issue](https://github.com/NCEAS/scicomptasks/issues); we'd love to hear from you!
 
+### Should You Ignore the .Rproj File?
+
+If you are an RStudio user, you *could* choose to add the R project file to your `.gitignore`. <u>However</u>, this is a somewhat thorny decision with strong arguments on both sides. We'll try to summarize some of the big considerations below to help inform your decision.
+
+#### Option A: **Commit** the .Rproj
+
+There are (in our opinion) three strong arguments for committing the .Rproj:
+
+1. Ease of Access
+
+    - For non-R users, it can be really helpful to have just one file that they need to double click in order to open and interact with the whole R project. By committing the .Rproj, you make the post-clone start up instructions much simpler (i.e., "click the file ending in '.Rproj' and you're good to go")
+
+2. Facilitate Cloning Outside of RStudio
+
+    - While our workshop has exclusively covered cloning a repo through RStudio, it is absolutely possible to clone without using RStudio. If someone goes this route, and the .Rproj is not already included in the repo, they will be left without one. So, after the clone they would then have an extra step to create their own .Rproj if they wanted to use RStudio to interact with the code
+    - Note that if everyone on your team is cloning via RStudio, this is not really an issue because cloning via RStudio *creates* a new .Rproj if one does not already exist
+
+3. Enforce Project Settings
+
+    - Fundamentally, the .Rproj is a list of settings that you're using for a specific project in RStudio. If you wanted to create some defaults of those settings for anyone who cloned your repository, you could commit your .Rproj with your preferred settings
+    - That said, any member of your team who changed those settings would have the option to commit the corresponding change to the .Rproj file and the next time you **<span style="color:blue">pull</span>** you would have their settings instead
+
+#### Option B: Ignore the .Rproj
+
+We feel there are some serious reasons for ignoring the .Rproj as well:
+
+1. Risk of Deletion
+
+    - Say you decide to commit your .Rproj, what happens if someone deletes it and **<span style="color:green">pushes</span>** that deletion? This can happen if team members clone their version of the repo with a different name resulting in two local .Rproj files where one is redundant from that team member's perspective
+    - If a .Rproj is committed and then subsequently deleted, everyone who **<span style="color:blue">pulls</span>** that change will delete their local project. This results in an instant error that can be difficult to recognize if you don't know beforehand about this risk. The only fix is for all affected users to re-clone the repository
+    - So, if you add the .Rproj to the `.gitignore` preemptively, you can avoid the risk of this happening at some later stage; you could also add it as "`*.Rproj`" so regardless of the name of the file it will be ignored if the file type is .Rproj
+
+2. Loss of Flexibility
+
+    - When you commit your .Rproj you are "locking in" the name of your project. If your preliminary data exploration and analyses bring new hypotheses and goals to light you may want to change your project name to better match this new framing. If you had previously committed your .Rproj, it can be a hassle to change its name and **<span style="color:green">push</span>** this change
+    - Alternatively, you may want to change your GitHub repository name after publication to share keywords with your final manuscript title or the journal name to make the repository more easily searchable by your readers. Technically you could change the GitHub repository name without changing the corresponding .Rproj filename but there will be some disonance there if your readers clone your code
+
+3. Preserve Team Members' Local Filing Decisions
+
+    - Most working group members are involved in a staggering variety of pursuits in addition to their role in a synthesis working group. People tend to have their own filing systems in their computers to help them quickly and easily navigate among their different projects
+    - If you **commit** the .Rproj, you force everyone who clones your repository to use your naming convention which can be a hurdle (albeit likely a minor one) as they juggle their responsibilities
+
+#### Decision
+
+Ultimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the `.gitignore` help inform this decision and we are happy to discuss this more if you have follow up questions!
+
 ## Exceptions to the `.gitignore`
 
 Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by `git` and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop `git` from tracking *future* changes to the file. If this is the case, you'll need to do the following:
