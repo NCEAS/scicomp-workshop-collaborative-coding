@@ -26,7 +26,7 @@ Unfortunately for R users, typing just "R" returns all templates that contain th
 <img src="images/git_ignore/ignore-4-template-pick.png" width = "70%"/>
 </p>
 
-If you create a repository without choosing a `.gitignore` template, don't worry you an always create one later! Actually when cloning a repository using RStudio, a `.gitignore` file will be automatically created when setting up the RStudio project on your local computer. You can then add whatever information you want and make it contain the same information as the starter template.
+If you create a repository without choosing a `.gitignore` template, don't worry you an always create one later! Actually when cloning a repository using RStudio, a `.gitignore` file will be automatically created when setting up the RStudio project on your local computer.
 
 ## Interacting with the `.gitignore`
 
