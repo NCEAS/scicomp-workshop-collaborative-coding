@@ -125,7 +125,7 @@ We feel there are some serious reasons for ignoring the .Rproj as well:
 
 Ultimately, this is up to you and your team to decide! Hopefully our outlined reasons for and against adding the .Rproj to the `.gitignore` help inform this decision and we are happy to discuss this more if you have follow up questions!
 
-## Exceptions to the `.gitignore`
+## Ignoring Previously Tracked Content
 
 Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by `git` and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop `git` from tracking *future* changes to the file. If this is the case, you'll need to do the following:
 
