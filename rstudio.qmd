@@ -2,6 +2,14 @@
 title: "RStudio"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Describe</u> the computer-to-GitHub order of operations
+- <u>Define</u> fundamental `git` vocabulary
+- <u>Create</u> a local version-controlled repository that is connected to GitHub
+
 ## Overview of `git` Workflow
 
 Before we get into using `git` and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.
