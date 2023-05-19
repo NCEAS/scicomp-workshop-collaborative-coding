@@ -2,6 +2,14 @@
 title: "Forks"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> "fork" in the context of `git`/GitHub
+- <u>Contrast</u> forks with branches
+- <u>Use</u> the fork feature on GitHub for an existing repository
+
 ## What is a Fork?
 
 A **fork** is a duplicate of a `git` repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.

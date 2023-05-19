@@ -2,6 +2,14 @@
 title: "Branches"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> "branch" in the context of `git`/GitHub 
+- <u>Summarize</u> the main steps of a workflow that uses branches
+- <u>Create</u> a branch on an existing repository
+
 ## What is a Branch?
 
 A **branch** is essentially a working environment in your `git` repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don't want to risk damaging the version of your code that already works. Note that "branch" can be either a noun or a verb as with many of the `git` vocabulary words discussed earlier (e.g., "commit", "push", etc.).
