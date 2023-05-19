@@ -2,6 +2,13 @@
 title: "Informative READMEs"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Describe</u> the value of an informative README
+- <u>Refine</u> a README on an existing repository
+
 ## What is a README?
 
 A README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder's contents. However, you are responsible for creating a README and adding content to it so its value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.

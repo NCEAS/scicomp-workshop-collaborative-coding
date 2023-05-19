@@ -2,6 +2,14 @@
 title: "GitHub Issues"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> an issue in the context of GitHub
+- <u>Create</u> a new issue in an existing repository
+- <u>Explain</u> considerations for creating a useful, appropriately-scoped issue
+
 ## What is an Issue?
 
 Issues are a convenient way of identifying and delegating tasks within a repository as well as documenting progress over time. They can also be used as a digital 'lab notebook' for personal use to brainstorm on a novel topic or preserve important links or supplementary material for easy distribution across a whole team.
