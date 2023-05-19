@@ -2,6 +2,14 @@
 title: "The `.gitignore`"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Create</u> a `.gitignore` in a repository using a GitHub template
+- <u>Explain</u> the purpose of a `.gitignore` in collaborative projects
+- <u>Evaluate</u> the content you think might warrant adding to the `.gitignore`
+
 ## Overview
 
 The purpose of the `.gitignore` is evident in its name: anything included in it is *ignored by `git`*. This can be useful if you want to include data in your local version of your repository but don't want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.
