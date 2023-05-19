@@ -2,6 +2,14 @@
 title: "Conflicts"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Describe</u> the causes of merge conflicts
+- <u>Explain</u> how to avoid merge conflicts
+- <u>Summarize</u> what to do if a merge conflict occurs
+
 ## What is a Merge Conflict?
 
 Merge conflicts are a normal part of the `git` workflow so don't get discouraged when you run into them! They occur when `git` cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.
