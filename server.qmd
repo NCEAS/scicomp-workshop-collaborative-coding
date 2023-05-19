@@ -2,6 +2,13 @@
 title: "NCEAS' Server"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Summarize</u> the primary steps for getting set up on a server
+- <u>Connect</u> your GitHub self with your server self
+
 ## Overview
 
 Working on [NCEAS' Server](https://aurora.nceas.ucsb.edu/) is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your "RStudio" again for the instance of RStudio accessed through Aurora. GitHub's Personal Access Token is referred to as "token" hereafter for simplicity.
