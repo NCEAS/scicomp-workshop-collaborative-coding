@@ -2,6 +2,13 @@
 title: "GitHub Projects"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Define</u> a project in the context of GitHub
+- <u>Summarize</u> the different features of projects created within (A) organizations, (B) users, and (C) repositories
+
 ## What is a Project?
 
 Projects are GitHub's primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. **A Project acts as an umbrella that includes many issues** and tracks their inter-relationships and where they fit in a bigger-picture view of a project.

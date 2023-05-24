@@ -2,6 +2,15 @@
 title: "`git` & GitHub"
 ---
 
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Describe</u> the difference between `git` and GitHub
+- <u>Navigate</u> GitHub via a web browser
+- <u>Use</u> GitHub to create a new repository
+- <u>Edit</u> a new repository through GitHub's interface
+
 ## Version Control Background
 
 Version control systems (including `git`) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don't necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).
