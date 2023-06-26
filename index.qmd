@@ -70,6 +70,8 @@ The reproducibility and collaborative benefits of GitHub for working scientists 
 
 In the ecology and evolutionary biology sphere, Pereira Braga et al. published "[Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108)" in _Methods in Ecology & Evolution_. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper's second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) [Pereira Braga et al. 2023](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108) for more detail than we've included in this blurb.
 
+If you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the **<span style="color:blue">blue</span>** bars). We also think that some of the intermediate technical difficulty uses (**<span style="color:orange">orange</span>** bars) may be relevant to working group priorities and goals.
+
 <p align="center">
 <img src="images/external_images/Fig2_Pereira-Braga-etal_2023.jpeg" width="85%"/>
 </p>
