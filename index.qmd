@@ -64,4 +64,12 @@ gitcreds::gitcreds_set()
 
 At the end of the above steps your token should be set! For additional information, see [GitHub's PAT Tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or the [Happy Git with R PAT Tutorial](https://happygitwithr.com/https-pat.html). If this seems a little intimidating, please keep in mind that your experience with downloading programs and creating web accounts will help with these tasks even if you have more minimal coding experience!
 
+## GitHub + Science Publications
 
+The reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team's disciplinary backgrounds and motivations.
+
+In the ecology and evolutionary biology sphere, Pereira Braga et al. published "[Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108)" in _Methods in Ecology & Evolution_. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper's second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) [Pereira Braga et al. 2023](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108) for more detail than we've included in this blurb.
+
+<p align="center">
+<img src="images/external_images/Fig2_Pereira-Braga-etal_2023.jpeg" width="85%"/>
+</p>
