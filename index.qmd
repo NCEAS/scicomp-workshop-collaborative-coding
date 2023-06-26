@@ -64,8 +64,4 @@ gitcreds::gitcreds_set()
 
 At the end of the above steps your token should be set! For additional information, see [GitHub's PAT Tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or the [Happy Git with R PAT Tutorial](https://happygitwithr.com/https-pat.html). If this seems a little intimidating, please keep in mind that your experience with downloading programs and creating web accounts will help with these tasks even if you have more minimal coding experience!
 
-## Websites to Visit
 
-### Supplemental Material
-
-While not technically necessary to attend the workshop, if you'd like you can see the content that created the workshop website you are viewing by visiting our [GitHub repository here](https://github.com/NCEAS/scicomp-workshop-collaborative-coding).
