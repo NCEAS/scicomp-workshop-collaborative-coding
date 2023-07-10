@@ -38,9 +38,7 @@ If your version starts with a 3 (e.g., the above code returns "R version 3..."),
 
 **[Create a GitHub account](https://happygitwithr.com/github-acct.html)** using your web browser of choice.
 
-**[Connect `git` to your GitHub profile](https://happygitwithr.com/hello-git.html)**. You may want to [review the "shell"](https://happygitwithr.com/shell.html#shell) (also known as the "terminal" or "command line") to help with this step.
-
-**Create a personal access token (PAT)**. A token is essentially a more secure password that `git` requires and you can create one by running the following code in RStudio:
+Next, you will have to **connect `git` to your GitHub profile** and then **create a personal access token (PAT)**. A token is essentially a more secure password that `git` requires. You can accomplish these two steps by running the following code in RStudio:
 
 ```{r token-process, eval = FALSE}
 # Install the `usethis` and `gitcreds` packages
