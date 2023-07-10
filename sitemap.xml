@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/server.html</loc>
-    <lastmod>2023-06-26T17:50:54.050Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/conflicts.html</loc>
-    <lastmod>2023-06-26T17:50:52.458Z</lastmod>
-  </url>
-  <url>
     <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/motivations.html</loc>
-    <lastmod>2023-06-26T17:50:51.398Z</lastmod>
+    <lastmod>2023-07-10T21:14:18.947Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/forks.html</loc>
-    <lastmod>2023-06-26T17:50:50.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/branches.html</loc>
-    <lastmod>2023-06-26T17:50:49.034Z</lastmod>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/server.html</loc>
+    <lastmod>2023-07-10T21:14:17.659Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/github.html</loc>
-    <lastmod>2023-06-26T17:50:47.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/index.html</loc>
-    <lastmod>2023-06-26T17:50:46.378Z</lastmod>
+    <lastmod>2023-07-10T21:14:16.159Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues.html</loc>
-    <lastmod>2023-06-26T17:50:48.318Z</lastmod>
+    <lastmod>2023-07-10T21:14:15.047Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/readmes.html</loc>
-    <lastmod>2023-06-26T17:50:49.530Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/rstudio.html</loc>
-    <lastmod>2023-06-26T17:50:50.818Z</lastmod>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/conflicts.html</loc>
+    <lastmod>2023-07-10T21:14:13.935Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/projects.html</loc>
-    <lastmod>2023-06-26T17:50:51.886Z</lastmod>
+    <lastmod>2023-07-10T21:14:12.739Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/index.html</loc>
+    <lastmod>2023-07-10T21:14:11.567Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/rstudio.html</loc>
+    <lastmod>2023-07-10T21:14:13.435Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/readmes.html</loc>
+    <lastmod>2023-07-10T21:14:14.439Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/forks.html</loc>
+    <lastmod>2023-07-10T21:14:15.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/branches.html</loc>
+    <lastmod>2023-07-10T21:14:16.875Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp-workshop-collaborative-coding/git_ignore.html</loc>
-    <lastmod>2023-06-26T17:50:53.226Z</lastmod>
+    <lastmod>2023-07-10T21:14:18.395Z</lastmod>
   </url>
 </urlset>

@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "motivations.html",
+    "href": "motivations.html",
+    "title": "Workflows",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products"
+  },
+  {
+    "objectID": "motivations.html#module-learning-objectives",
+    "href": "motivations.html#module-learning-objectives",
+    "title": "Workflows",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products"
+  },
+  {
+    "objectID": "motivations.html#workflow-options",
+    "href": "motivations.html#workflow-options",
+    "title": "Workflows",
+    "section": "Workflow Options",
+    "text": "Workflow Options\nIf you are working on any file that is the product of iterative edits, you have had to develop a workflow to approach that task. This could be a scientific paper, analytic code, or a presentation. There are many possible ways you could approach this task leveraging any number of software and hardware options but before we get into our discussion today about collaborative research using GitHub we would like to–briefly–outline some of the typical forms these workflows can take and how they fit into a broader framework of individual and synthesis science.\n\nIndividual Workflow\nAt its simplest, you could be storing your data and code on your local machine and doing the entirety of your work alone. When working on your code you would iteratively edit and save the same code file and you would have a static folder (or folders) for data that you added to as you collected and entered or downloaded additional data.\nThere are variants of this where you may be archiving everything on your hard drive (e.g., Time Machine on Mac OS, etc.) and you may be using a “save as” feature to preserve some iterations of your code. You may also perform this same operation within a cloud-based storage system (e.g., Box, Dropbox, Google Drive, etc.) so that some versions of both code and data are preserved based on time stamps.\nThis approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).\nAnother limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.\n\n\n\n\n\nData Lifecycle Considerations\nThe above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.\nIndividual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not as limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.\nHowever, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.\nCollaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.\n\n\n\n\n\nSynthesis Workflow\nVersion control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the “right” version of the code.\nHowever, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs. cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.\nFurther, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.\n\n\n\n\n\nSynthesis Workflow on NCEAS’ Server\nFinally (for our purposes), you could build NCEAS’ server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!\nThis method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members on the same folder path.\nThis means that even though each group member could code separately in their own ‘home’ folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the ‘shares’ folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data file.\nData can be moved from a specific computer onto the server by using any “File Transfer Protocol” (FTP) software (or “SSH FTP” a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a tutorial on how to go about setting up an FTP or SFTP program on your computer that we are also happy to go over in greater depth as needed!\nAdding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server ad infinitum thereafter.\nAn ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)\n\n\n\n\n\nSummary\nWhile each approach offers its own strengths and weaknesses, in our experience many scientists avoid the latter two options due to knowledge barriers about how to get set up in these programs and websites, much less how to actually navigate those systems once set up!\nToday, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and–for some groups, depending on interest–how to extend that workflow further and leverage NCEAS’ server to share data and work on code.\nPlease don’t hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows."
+  },
+  {
     "objectID": "server.html",
     "href": "server.html",
     "title": "NCEAS’ Server",
@@ -33,6 +54,111 @@
     "title": "NCEAS’ Server",
     "section": "Working on the Server",
     "text": "Working on the Server\n\nStep 1: Connect Server RStudio with GitHub\nTo begin, load the usethis package (install if needed).\n\n# install.packages(\"usethis\")\nlibrary(usethis)\n\nNext, configure your name and the email address you use for your GitHub account.\n\nusethis::use_git_config(user.name = \"Jane Doe\",\n                        user.email = \"jane@example.org\")\n\nIf you would like to check that this worked, you can go to the “Terminal” tab (next to the “Console” tab) and run git config --global --list.\n\n\nStep 2: Create GitHub Token\nYou may use your token that you already generated for your local RStudio if that is easiest, but you can also create a new token specifically for your Server identity.\nTo create a token, you can again use the usethis package to send you to the relevant part of the GitHub website.\n\nusethis::create_github_token()\n\nOnce you have walked through that process and created a new token COPY the long string of letters and numbers. It is often a good move to take a screenshot of the token and store it on your computer for a rainy day.\n\n\nStep 3: Store GitHub Token\nTo store the token in your server identity, run the following line of code:\n\ngitcreds::gitcreds_set()\n\nIn the “Console” tab you will be prompted to follow a short set of questions (answered via entering numbers in the Console) including the Console requesting your GitHub token.\nPASTE the long string you copied in the previous step into the supplied field and continue. Note that if you did not copy the token (or copied something else between then and now thus losing the token from your clipboard) you can refer to the screenshot we recommended you take upon first generating the token.\n\n\nStep 4: Preserve GitHub Token\nYou will also need to tell the server to remember your token so that you don’t need to re-do the “Store GitHub Token” section every time you start a new R session.\nUnfortunately, there are two limitations to this step:\n\nStorage can only be done in the “Terminal” pane with the command line (don’t worry, it’s only one line!)\nStorage must be for a finite amount of time (though it can be a long time!)\n\nTo make the system remember your token, in the “Terminal” pane of RStudio type the following:\ngit config --global credential.helper 'cache --timeout=10000000'\nThis will cache your “credentials” (i.e., your token) for a long time so that you need not worry about this for the time being.\nNot running the above line will make your personal access token expire immediately in the system, even though GitHub considers its expiration date (that you set earlier) separately.\n\n\nOptional Other Steps\nYou may want to configure additional settings, such as:\n\nThe default branch name (for new repositories)\n\n\nusethis::git_default_branch_configure(name = \"main\")"
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "git & GitHub",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface"
+  },
+  {
+    "objectID": "github.html#module-learning-objectives",
+    "href": "github.html#module-learning-objectives",
+    "title": "git & GitHub",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface"
+  },
+  {
+    "objectID": "github.html#version-control-background",
+    "href": "github.html#version-control-background",
+    "title": "git & GitHub",
+    "section": "Version Control Background",
+    "text": "Version Control Background\nVersion control systems (including git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).\nVersion control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version."
+  },
+  {
+    "objectID": "github.html#git-specific-background",
+    "href": "github.html#git-specific-background",
+    "title": "git & GitHub",
+    "section": "git-Specific Background",
+    "text": "git-Specific Background\ngit can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In git (and other version control systems) terms, this “tracked folder” is called a repository (which formally is a specific data structure storing versioning information).\nAlthough there many ways to start a new repository, GitHub (or any other cloud solutions, such as GitLab) provide among the most convenient way of starting a repository.\nLet’s distinguish between git and GitHub:\n\ngit: version control software used to track files in a folder (a repository)\n\ngit creates the versioned history of a repository\n\nGitHub: website that allows users to store their git repositories and share them with others (i.e. a graphical user interface or “GUI”)\n\nGitHub is a company that hosts git repositories online and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to git, also adding great visualization/rendering capacities of your data.\n\nGitHub.com: https://github.com\nA user account: https://github.com/brunj7\nAn organization account: https://github.com/nceas\nNCEAS GitHub instance: https://github.nceas.ucsb.edu/"
+  },
+  {
+    "objectID": "github.html#exploring-github",
+    "href": "github.html#exploring-github",
+    "title": "git & GitHub",
+    "section": "Exploring GitHub",
+    "text": "Exploring GitHub\nLet’s navigate over to GitHub and explore some of its features. Here is what the home screen looks like as of February 2022.\n\nLog in with your GitHub account that you should have created prior to this workshop.\n\n\n\nOnce you’ve logged in, you should see something like this:\n\nThis landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile.\n\nYour profile page shows the organizations that you’re a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to Settings then Appearances. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.\n\nIf there is anything else you would like to change about your account, the user settings page should have it.\n\nLooking at a GitHub Repository\nTo check the repositories that you’ve created, click on the Repositories tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let’s take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains.\n\nThis screen shows the copy of a repository stored on GitHub, with its list of files, when the files and directories were last modified, and some information on who made the most recent changes.\n\nIf we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.\n\nAnd finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:\n\nThe red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.\nNote: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.\n\n\n\n\nCreating a Repository on GitHub\nTo stimulate a collaborative GitHub/RStudio workflow, we are going to have 1 person from each group create a new repository on their GitHub account. This will be the repository where everyone shares their files and code.\nTo create a new repository, follow these steps:\n\nNavigate to your profile page and click on the Repositories tab.\nClick on New.\n\n\n\nEnter a descriptive name for your new repository, here we named it git-practice (avoid upper case and use - instead of spaces or _).\nWrite a 1-sentence description about the repository content.\nChoose Public (as of January 2019, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators).\nCheck Add a README file.\n\n\nYay! We’ve just created a new repository! Here is what the landing page should look like:\n\nThis repository is currently public, so it’s visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the Settings tab for your repository and go to Collaborators.\n\nClick on Add people. Now let’s get the usernames of all of your group members and add them as collaborators to your repository.\n\n\n\n\n\n\nGreat! Now everyone in the group should have access to the repository."
+  },
+  {
+    "objectID": "github.html#create-a-repository-on-github",
+    "href": "github.html#create-a-repository-on-github",
+    "title": "git & GitHub",
+    "section": "Create a Repository on GitHub",
+    "text": "Create a Repository on GitHub\n\n\n\n\n\n\nPractice\n\n\n\nNow that we’ve walked through how to create a repository on GitHub let’s try to make our own! Click over to GitHub and create your own repository (with a README.md). We’ll split into breakout groups to try this out and please let us know if any questions come up."
+  },
+  {
+    "objectID": "issues.html",
+    "href": "issues.html",
+    "title": "GitHub Issues",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue"
+  },
+  {
+    "objectID": "issues.html#module-learning-objectives",
+    "href": "issues.html#module-learning-objectives",
+    "title": "GitHub Issues",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue"
+  },
+  {
+    "objectID": "issues.html#what-is-an-issue",
+    "href": "issues.html#what-is-an-issue",
+    "title": "GitHub Issues",
+    "section": "What is an Issue?",
+    "text": "What is an Issue?\nIssues are a convenient way of identifying and delegating tasks within a repository as well as documenting progress over time. They can also be used as a digital ‘lab notebook’ for personal use to brainstorm on a novel topic or preserve important links or supplementary material for easy distribution across a whole team.\nImportantly, while issues can definitely be helpful they are not required to successfully use GitHub for collaborating as a team. Issues absolutely have the potential to facilitate division of labor within a team though and are thus worth covering in this training.\nAn additional function that may be outside of the scope of what you need to use within your team is that it allows non-members to flag issues that they’ve had with code written by your team or request additional functionality that doesn’t yet exist in your framework. Depending on your use of packages in R you may have already opened an issue on an existing R package to do just that!\nTo see a more complete example of how issues can be used we can examine the open issues of an established R package.\n\nIssues Example with the googledrive Package\nBelow is the GitHub landing page for the googldrive package and you can see that next to the underlined “Code” tab is an “Issues” tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package’s GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.\n\nIf you click over to the issues tab you will see the titles of all current “open” (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a # as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue’s thumbnail you can see the number of comments added to it.\n\nComments can be used to have a full dialogue among different users – potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard."
+  },
+  {
+    "objectID": "issues.html#creating-your-first-issue",
+    "href": "issues.html#creating-your-first-issue",
+    "title": "GitHub Issues",
+    "section": "Creating your First Issue",
+    "text": "Creating your First Issue\nWhen you first visit the Issues tab of your repository it won’t include any open issues and will look like this.\n\nTo create an issue, click the green button and a new page will open that looks like the below.\n\nIn this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.\nWhile issue comments are completely free for you to use as you see fit, it is important to remember that your most frequent collaborator is yourself in the future so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.\nIn addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the “Assignees” and “Labels” sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.\nReturning to our googledrive example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.\n\nWhen you are creating your first issue however you won’t have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.\nTo see the current label options, click the “Labels” text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click “Edit labels” to create new labels or modify the template labels."
+  },
+  {
+    "objectID": "issues.html#practice---labels",
+    "href": "issues.html#practice---labels",
+    "title": "GitHub Issues",
+    "section": "Practice - Labels",
+    "text": "Practice - Labels\nWhat are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories?"
+  },
+  {
+    "objectID": "issues.html#opening-an-issue",
+    "href": "issues.html#opening-an-issue",
+    "title": "GitHub Issues",
+    "section": "Opening an Issue",
+    "text": "Opening an Issue\nOnce you’ve filled out the title and comment of the issue the green “Submit new issue” button will become clickable and you can click it to open your issue. You can either add labels or assign users to the issue during the initial opening phase or after the fact.\nIssues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.\nAt the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.\nThere is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful."
+  },
+  {
+    "objectID": "issues.html#appropriate-issue-scope",
+    "href": "issues.html#appropriate-issue-scope",
+    "title": "GitHub Issues",
+    "section": "Appropriate Issue Scope",
+    "text": "Appropriate Issue Scope\nAs a brief aside from the nuts and bolts of how to create and manage an issue, it is important to discuss appropriate issue scope.\nEssentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.\nPersonally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are Specific, Measurable, Attainable, Relevant, and Time-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.\nIf issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general ‘rules of thumb’ for the scope of tasks identified by issues."
+  },
+  {
+    "objectID": "issues.html#practice---create-an-issue",
+    "href": "issues.html#practice---create-an-issue",
+    "title": "GitHub Issues",
+    "section": "Practice - Create an Issue",
+    "text": "Practice - Create an Issue\nNow that we’ve covered what issues are and how to open them, let’s take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!"
+  },
+  {
+    "objectID": "issues.html#closing-an-issue",
+    "href": "issues.html#closing-an-issue",
+    "title": "GitHub Issues",
+    "section": "Closing an Issue",
+    "text": "Closing an Issue\nSo, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.\nIf you scroll to the bottom of that issue (where the adding comment textbox is) you will see a purple button titled “Close issue”.\n\nAfter clicking that button a purple check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.\n\nWhen you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.\n\nClicking that “Closed” button will access all past issues that are now closed.\n\nSo, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.\nThis greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.\nAs pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!"
   },
   {
     "objectID": "conflicts.html",
@@ -84,25 +210,172 @@
     "text": "Tips on Avoiding Merge Conflicts\nMerge conflicts aren’t exactly fun, so here are some tips to avoid them:\n\nCommunicate with your team members often to avoid working on the same files at the same time! Let each other know who is working on what\nCommit frequently and in small chunks\nTry pulling before committing"
   },
   {
-    "objectID": "motivations.html",
-    "href": "motivations.html",
-    "title": "Workflows",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "GitHub Projects",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products"
+    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nSummarize the different features of projects created within (A) organizations, (B) users, and (C) repositories"
   },
   {
-    "objectID": "motivations.html#module-learning-objectives",
-    "href": "motivations.html#module-learning-objectives",
-    "title": "Workflows",
+    "objectID": "projects.html#module-learning-objectives",
+    "href": "projects.html#module-learning-objectives",
+    "title": "GitHub Projects",
     "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe various coding workflows\nParaphrase how version control workflows facilitate collaboration on code products"
+    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nSummarize the different features of projects created within (A) organizations, (B) users, and (C) repositories"
   },
   {
-    "objectID": "motivations.html#workflow-options",
-    "href": "motivations.html#workflow-options",
-    "title": "Workflows",
-    "section": "Workflow Options",
-    "text": "Workflow Options\nIf you are working on any file that is the product of iterative edits, you have had to develop a workflow to approach that task. This could be a scientific paper, analytic code, or a presentation. There are many possible ways you could approach this task leveraging any number of software and hardware options but before we get into our discussion today about collaborative research using GitHub we would like to–briefly–outline some of the typical forms these workflows can take and how they fit into a broader framework of individual and synthesis science.\n\nIndividual Workflow\nAt its simplest, you could be storing your data and code on your local machine and doing the entirety of your work alone. When working on your code you would iteratively edit and save the same code file and you would have a static folder (or folders) for data that you added to as you collected and entered or downloaded additional data.\nThere are variants of this where you may be archiving everything on your hard drive (e.g., Time Machine on Mac OS, etc.) and you may be using a “save as” feature to preserve some iterations of your code. You may also perform this same operation within a cloud-based storage system (e.g., Box, Dropbox, Google Drive, etc.) so that some versions of both code and data are preserved based on time stamps.\nThis approach has the advantage of relatively few moving parts but such editing of your code loses all previous versions that aren’t explicitly preserved (as well as a record of the changes).\nAnother limitation of this approach is that to work collaboratively, everything would need to be manually shared with your collaborator(s) which introduces a significant risk that someone in the research team would accidentally use the “wrong” version of either the code or the data.\n\n\n\n\n\nData Lifecycle Considerations\nThe above approach works when doing largely individual research, but what about at other stages in the typical lifecycle of data? Said lifecycle is displayed below where data is acquired via planning and collection, data are assessed and preserved, and finally, data are synthesized and used to inform future plans.\nIndividual workflows performed by a small research team can be well-served by the relatively bare-bones workflow illustrated above but such projects often emphasize data acquisition and preservation over synthesis and thus are not as limited by a need for real-time collaboration on coding scripts across a team. Individual projects certainly do data synthesis, they just by their nature have to emphasize data collection at least as much as the synthetic components of research.\nHowever, for larger teams–especially those that span disciplinary boundaries or have ongoing data collection protocols (e.g., research coordination networks, working groups, etc.)–the synthesis part of the data lifecycle often becomes progressively more important. This importance is tightly linked to a need for collaboration among team members on wrangling, analysis, and visualization scripts that in individual workflows can be managed by a single team member but cannot be in synthesis projects.\nCollaboration on coding can be accomplished by manually sharing code and data among group members but there are programs and websites that are specifically dedicated to meeting the need for collaboration. One example is “version control” systems (e.g., GitHub, SVN, etc.) that provide a framework for reproducible group work.\n\n\n\n\n\nSynthesis Workflow\nVersion control systems preserve the iterative changes you and your team make to code and allow for informative titles and messages to be attached to these snapshots. This offers a clear advantage over ambiguous time-stamped versions preserved by cloud storage systems as it facilitates re-visiting code long after or by new team members who were not present for the initial writing. This approach is what we will be covering in greater depth in a few moments but the broad strokes are that you would preserve the history of your work and ensure that everyone uses the “right” version of the code.\nHowever, despite its advantages for collaborative coding, version control is not meant for preserving data so you would need to share data with your collaborators either via email or by storing data in the cloud and sharing links with team members. Depending upon how you implement either route for sharing data (email vs. cloud) your group is still at risk for group members using different versions of the data–especially if your group is involved in ongoing data collection.\nFurther, an inconvenience associated with this workflow is that each group member will store their copy of the data in a different network of nested folders on their local machine. This means that all references in the code to the path of the data (e.g., “home/users/me/project/data/…”) will differ, so running a collaboratively-developed piece of code would require careful specification to avoid getting a ‘this folder does not exist’ error. This is absolutely surmountable but can be a source of frustration over longer project timelines.\n\n\n\n\n\nSynthesis Workflow on NCEAS’ Server\nFinally (for our purposes), you could build NCEAS’ server into your workflow to not only collaborate with colleagues on code but also centralize your data storage!\nThis method has all of the coding advantages of a workflow with version control (see above) in that it still facilitates reproducibility, transparency, and collaborative work. However, it also offers a secure location for all of your data to be stored that is accessible to all members on the same folder path.\nThis means that even though each group member could code separately in their own ‘home’ folder on the server (and send those changes back and forth with GitHub) all code could reference the same data location in the ‘shares’ folder on the server. This guarantees not only that all team members are using the same version of the data but that they are using the same exact data file.\nData can be moved from a specific computer onto the server by using any “File Transfer Protocol” (FTP) software (or “SSH FTP” a.k.a. SFTP). These programs function very much like the file manager on your computer (e.g., Finder on Mac) and allow simple dragging-and-dropping of files between your computer and the server. NCEAS has a tutorial on how to go about setting up an FTP or SFTP program on your computer that we are also happy to go over in greater depth as needed!\nAdding the server to your team’s workflow also allows you to work on code both on your folder in the server and on your personal computer as needed. This means that using the server for some of your coding needs does not mean that you are limited to solely using the server ad infinitum thereafter.\nAn ancillary benefit of this approach is the dramatic improvement in computational power when using the server (as compared to even a fast personal computer)\n\n\n\n\n\nSummary\nWhile each approach offers its own strengths and weaknesses, in our experience many scientists avoid the latter two options due to knowledge barriers about how to get set up in these programs and websites, much less how to actually navigate those systems once set up!\nToday, we will strive to cover the fundamentals of using a version control system in your workflow (Option 2) and–for some groups, depending on interest–how to extend that workflow further and leverage NCEAS’ server to share data and work on code.\nPlease don’t hesitate to ask questions and remember that this link is a resource that you should feel free to refer back to if you ever need a refresher or wish to teach peers! There are supplementary appendices as well which we do not anticipate being able to get to today but we do think are likely to be valuable to you as your confidence with these systems grows."
+    "objectID": "projects.html#what-is-a-project",
+    "href": "projects.html#what-is-a-project",
+    "title": "GitHub Projects",
+    "section": "What is a Project?",
+    "text": "What is a Project?\nProjects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. A Project acts as an umbrella that includes many issues and tracks their inter-relationships and where they fit in a bigger-picture view of a project."
+  },
+  {
+    "objectID": "projects.html#using-projects",
+    "href": "projects.html#using-projects",
+    "title": "GitHub Projects",
+    "section": "Using Projects",
+    "text": "Using Projects\nWithin the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues and ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.\nSee below for a screencap of what such a Project looks like for one team member.\n\nWhen using a Project you can add or remove the columns (the above example has four columns) and individual issue “cards” can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the “Done” column)."
+  },
+  {
+    "objectID": "projects.html#maximizing-project-utility",
+    "href": "projects.html#maximizing-project-utility",
+    "title": "GitHub Projects",
+    "section": "Maximizing Project Utility",
+    "text": "Maximizing Project Utility\nIt may go without saying, but Projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of Projects are as follows:\n\nGiving Issues clear and short titles\n“Assigning” Issues to particular users\nUsing labels to group Issues into useful categories\n\nIf your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult our page on Issues for more information!"
+  },
+  {
+    "objectID": "projects.html#project-locations",
+    "href": "projects.html#project-locations",
+    "title": "GitHub Projects",
+    "section": "Project Locations",
+    "text": "Project Locations\nProjects can be created in one of three places with meaningful differences for each:\n\nA Project can be created for an Organization\nA Project can be created for a User\nA Project can be created for a Repository\n\n\nOrganization Projects\n\nA Project created for an Organization allows all GitHub users with access to that organization to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both LTER and NCEAS have existing organizations that can support Projects created for working groups.\n\nSupports issues from any repository\nEditable by any user in the organization\n\n\n\nUser Projects\n\nA Project created within a particular user’s “self” can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.\n\nSupports issues from any repository\nEditable by only this user*\n\n* Unless that user tweaks their settings to allow other specified users to have admin-level powers in that Project\n\n\n\n\nRepository Projects\n\nA Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. This is the most narrowly-defined type of Project. That said, it can be very valuable if you anticipate (1) that the repository that “owns” this Project will involve many large goals that would require the level of project management supported by GitHub Projects and (2) that these tasks will never grow to involve other repositories.\n\nSupports issues only from that repository\nEditable by any user with access to the repository"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "This workshop provides an overview of what “version control” systems are and how they fit into collaborative coding within your team. Specifically, we are focusing here on an introductory approach to version control that focuses on using git via RStudio and GitHub. We are always happy to improve workshop content so please don’t hesitate to post an Issue on our GitHub repository if you see clear areas for improvement!\n\nTo maximize the value of this workshop to you, we recommend that you take the following steps before the day of the workshop. Depending on whether you’ve used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the “Content Creators” tab."
+  },
+  {
+    "objectID": "index.html#programs-to-install",
+    "href": "index.html#programs-to-install",
+    "title": "Overview",
+    "section": "Programs to Install",
+    "text": "Programs to Install\nNote for those of you with a dedicated IT team that has sole power to install software on your computer: you will need to contact them before the workshop to install the following programs.\n\nR & RStudio\nInstall R and its more convenient (in our opinion) user-interface: RStudio.\nIf you already have R, check that you have at least version 4.0.0 by running the following code:\n\nversion$version.string\n\nIf your version starts with a 3 (e.g., the above code returns “R version 3…”), please update R to make sure all packages behave as expected.\n\n\ngit\nInstall git\nIf you are a Windows user, be sure to follow along with “Option 1” in the instructions linked above! That variant gives some under-the-hood tools we’ll implicitly rely on later."
+  },
+  {
+    "objectID": "index.html#accounts-to-create-connect",
+    "href": "index.html#accounts-to-create-connect",
+    "title": "Overview",
+    "section": "Accounts to Create / Connect",
+    "text": "Accounts to Create / Connect\n\nGitHub\nCreate a GitHub account using your web browser of choice.\nNext, you will have to connect git to your GitHub profile and then create a personal access token (PAT). A token is essentially a more secure password that git requires. You can accomplish these two steps by running the following code in RStudio:\n\n# Install the `usethis` and `gitcreds` packages\n#install.packages(c(\"usethis\", \"gitcreds\"))\nlibrary(usethis); library(gitcreds)\n\n# Add your GitHub username and email\nusethis::use_git_config(user.name = \"Jane Doe\",\n                        user.email = \"jane@example.org\")\n\n# Create a token (Note this will open a GitHub browser tab)\n# See steps 6-10 in GitHub's tutorial (link below)\nusethis::create_github_token()\n\n# Copy your Personal Access Token at the end of the above step!\n\n# Now, give your token to RStudio\n# After you run this line you'll follow some prompts in the \"Console\" tab of RStudio\ngitcreds::gitcreds_set()\n\nAt the end of the above steps your token should be set! For additional information, see GitHub’s PAT Tutorial or the Happy Git with R PAT Tutorial. If this seems a little intimidating, please keep in mind that your experience with downloading programs and creating web accounts will help with these tasks even if you have more minimal coding experience!"
+  },
+  {
+    "objectID": "index.html#github-science-publications",
+    "href": "index.html#github-science-publications",
+    "title": "Overview",
+    "section": "GitHub + Science Publications",
+    "text": "GitHub + Science Publications\nThe reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team’s disciplinary backgrounds and motivations.\nIn the ecology and evolutionary biology sphere, Pereira Braga et al. published “Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution” in Methods in Ecology & Evolution. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper’s second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) Pereira Braga et al. 2023 for more detail than we’ve included in this blurb.\nIf you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the blue bars). We also think that some of the intermediate technical difficulty uses (orange bars) may be relevant to working group priorities and goals."
+  },
+  {
+    "objectID": "rstudio.html",
+    "href": "rstudio.html",
+    "title": "RStudio",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the computer-to-GitHub order of operations\nDefine fundamental git vocabulary\nCreate a local version-controlled repository that is connected to GitHub"
+  },
+  {
+    "objectID": "rstudio.html#module-learning-objectives",
+    "href": "rstudio.html#module-learning-objectives",
+    "title": "RStudio",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the computer-to-GitHub order of operations\nDefine fundamental git vocabulary\nCreate a local version-controlled repository that is connected to GitHub"
+  },
+  {
+    "objectID": "rstudio.html#overview-of-git-workflow",
+    "href": "rstudio.html#overview-of-git-workflow",
+    "title": "RStudio",
+    "section": "Overview of git Workflow",
+    "text": "Overview of git Workflow\nBefore we get into using git and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.\nBeginning on your local computer, you make changes to a file in a folder that you have previously marked for version control tracking (i.e., a working directory). Once those changes are made you can stage changes within your local computer. After staging, it is best to retrieve the latest file versions from the cloud. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you’ve confirmed that you have the latest file versions, you can shift the revised file(s) to the cloud where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes."
+  },
+  {
+    "objectID": "rstudio.html#git-vocabulary",
+    "href": "rstudio.html#git-vocabulary",
+    "title": "RStudio",
+    "section": "git Vocabulary",
+    "text": "git Vocabulary\nFinally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.\n\nClone = copy the entire contents of a GitHub repository to your local computer (done once per computer)\nCommit = move a changed local file to your local staging area (step 2 of the above diagram)\nPull = get file(s) from the cloud to your local computer – opposite of a “push” (step 3)\nPush = move file(s) to the cloud from your local computer – opposite of a “pull” (step 4)"
+  },
+  {
+    "objectID": "rstudio.html#cloning-a-repository",
+    "href": "rstudio.html#cloning-a-repository",
+    "title": "RStudio",
+    "section": "Cloning a Repository",
+    "text": "Cloning a Repository\nNow, the first step in using git with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, GitHub is in dark mode while RStudio is in light mode. To clone a repository, follow these steps:\nNavigate to the repository on GitHub and click on Code. Select HTTPS and copy the link.\n\nNow, return to (or open!) RStudio.\n\nGo to the Project tab on the top right corner and click New Project…\n\nSelect Version Control.\n\n\n\nSelect git.\n\n\n\nPaste the repository URL that you just copied from GitHub. Choose a file path to save your project to.\n\n\n\nNow we have finished cloning the repository to our RStudio! Notice that we are working in our git-practice project and that our README.md file shows up under the list of files, just like in our GitHub repository."
+  },
+  {
+    "objectID": "rstudio.html#workflow-refresher",
+    "href": "rstudio.html#workflow-refresher",
+    "title": "RStudio",
+    "section": "Workflow Refresher",
+    "text": "Workflow Refresher\nThe typical workflow with git goes like this:\nStep 1: You modify files in your working directory and save them as usual.\nStep 2: You stage files to mark your intention to “commit” them and then commit that version of those files.\n- In RStudio, \"staging\" is done by checking the box next to a given file in the \"Git\" tab\n- Committing files permanently stores them as snapshots to your `git` directory\nStep 3: You pull the most recent changes to make sure you’ve been editing the latest versions.\nStep 4: You push your the version of your files that you committed to GitHub.\nHere is the infographic from the start of this chapter again, which shows the same workflow:"
+  },
+  {
+    "objectID": "rstudio.html#stage-versus-commit",
+    "href": "rstudio.html#stage-versus-commit",
+    "title": "RStudio",
+    "section": "Stage versus Commit",
+    "text": "Stage versus Commit\nThe functional difference between “staging” a file and “committing” one can be a little tough to grasp at first so let’s explore that briefly here. We can make an analogy with taking a family picture, where each family member would represent a file.\n\nStaging files is like deciding which family member(s) are going to be in your next picture\nCommitting is like taking the picture\n\nThis 2-step process enables you to flexibly group files into a specific commit. Those groupings can be helpful to you later if you’re trying to find what you changed for a specific task (because those changes likely are all in the same commit)."
+  },
+  {
+    "objectID": "rstudio.html#creating-a-new-file",
+    "href": "rstudio.html#creating-a-new-file",
+    "title": "RStudio",
+    "section": "Creating a New File",
+    "text": "Creating a New File\nLet’s try out a simple git workflow by first creating a new file. This is Step 1 of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to File &gt; New File &gt; R Script. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script angel-script.R.\nOnce you are done, navigate to the git tab on the upper left corner. You should see your new script show up there along with a .gitignore and git-practice.Rproj file. Do not worry about the .gitignore file for now, it was created by RStudio to make sure that some temporary files are not tracked by git. The git-practice.Rproj file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.\n\nNotice that there are color-coded icons next to the files in the “Git” tab. These icons are shorthand for the status–according to git–of every* file in your working directory. Not technically “every” file because files that are tracked but haven’t been modified are not included. See below for definitions.\n\n\n\nIn our case, it means that our R script, .gitignore, and git-practice.Rproj files have never been tracked by git (since these files were just created). Note also that the README.md file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.\n\nAdding our Script to the Next Commit\nLet us look at the diff of our script. Click on the Diff tab.\n\n\n\nChecking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for git. We would like to save a snapshot of this version of our script. Since we’ve just done Step 1, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:\nStep 2: Add the file to the next commit by checking the box in front of the file name. Note that the two ? icons will change to a single A on the left to show you that this file is now staged to be part of the next commit.\nStep 3: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the Commit button to save this version of the script in the git database.\n\nIf all of the above steps went well, you should see something like this:\n\nNotice that git tells us that 1 file changed because we’ve just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.\n\n\nGetting the Latest Updates\nThere are two git commands to exchange between a local and remote versions of a repository:\n\npull: git will get the latest remote version and try to merge it with your local version\npush: git will send your local version to the remote version of the repository (in our case GitHub)\n\nBefore sending your local version to the remote, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way git protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:\n\nCommit\npull\npush\n\nOf course RStudio has icons for that on top of the “Git” tab, with the blue arrow down being for pull and the green arrow up being for push. Remember the icons are organized in sequence!\nLet us do the pull and push to synchronized the remote repositories. Click on the Pull button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use blue for pull-related content and green for push-related information. Hopefully that helps cement the two ideas in your mind!\n\n\n\nIn my case, it turns out that a new script, lyon-script, was added to the GitHub repository by a collaborator while I was making my own script. Since I have just pulled, lyon-script now shows up in my RStudio files.\n\n\n\n\nA new message has popped up for me: “Your branch is ahead of ‘origin/main’ by two commits”. This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the README.md and lyon-script. My changes are NOT in the cloud yet. You might be seeing a similar message as well.\n\n\nSending Changes back to GitHub\nSo how do we send our changes back to GitHub? Locate the Push button on the “Git” tab and click on it. Now your script should show up in the GitHub repository!\n\n\n\nOnce you click that button you should get a success screen like the one pictured below.\n\n\n\nNavigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, angel-script.R finally shows up in my repository.\n\n\n\nRinse and Repeat\nGreat! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to RStudio and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your RStudio files.\nMake sure to work on your own script. If you and another group member work on the same script at the same time, this may lead to merge conflicts with git. If two people were to work on the same script, they may be making different edits on the same lines, and git would not know which edits to keep. To avoid merge conflicts, be mindful of what files you are working on and always communicate this to your group members!"
+  },
+  {
+    "objectID": "readmes.html",
+    "href": "readmes.html",
+    "title": "Informative READMEs",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository"
+  },
+  {
+    "objectID": "readmes.html#module-learning-objectives",
+    "href": "readmes.html#module-learning-objectives",
+    "title": "Informative READMEs",
+    "section": "",
+    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository"
+  },
+  {
+    "objectID": "readmes.html#what-is-a-readme",
+    "href": "readmes.html#what-is-a-readme",
+    "title": "Informative READMEs",
+    "section": "What is a README?",
+    "text": "What is a README?\nA README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder’s contents. However, you are responsible for creating a README and adding content to it so its value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.\nIn GitHub, READMEs can be particularly useful because they form a landing page at the bottom of your repository’s GitHub page that can be a great way of introducing new people to your project or refreshing ‘future you’ on how you stored things for a given project.\nA README is almost always either a Markdown file (ending in “.md”) or an R markdown file (“.Rmd”). The default for a GitHub repository is “.md” but if you want your README to run R code (e.g., to create graphs, run analysis, etc.) you can create a .Rmd one that can support R code chunks."
+  },
+  {
+    "objectID": "readmes.html#example-readme",
+    "href": "readmes.html#example-readme",
+    "title": "Informative READMEs",
+    "section": "Example README",
+    "text": "Example README\n\nLet’s check out the README for the R package lterpalettefinder as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from any user-supplied photo.\nThe README for lterpalettefinder is crucial because it provides the following information:\n\nBrief description of the purpose / utility of the package\nInstructions on how to install the “development version” of the package\n\nThis is useful because the version of a package that is on CRAN (and can be installed with install.packages()) is often less up-to-date than the version that is available on GitHub\n\nList of current functions and what they do\nHex logo of the package\n\nVisitors to the README see the following:\n\nThis README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.\nThe “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).\n\nIf you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.\nThe main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file. Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!"
+  },
+  {
+    "objectID": "readmes.html#writing-a-readme",
+    "href": "readmes.html#writing-a-readme",
+    "title": "Informative READMEs",
+    "section": "Writing a README",
+    "text": "Writing a README\nWe recommend that you edit your README to include (some of) the following components:\n\nAn informative, un-abbreviated title (beginning with one # to make it a header)\nA brief (likely bulleted) description of the major folders in the repository\nHow / in which folder to contribute new files to the repository\nContact information for primary contact for questions\nIf applicable, links to related repositories (e.g., other repositories created by your working group)\n\nThe most important thing is that you structure your README in a way that is intuitive to your team so that you feel capable to maintain it so that is remains useful and relevant as a landing page for your project."
+  },
+  {
+    "objectID": "readmes.html#other-resources-for-readmes",
+    "href": "readmes.html#other-resources-for-readmes",
+    "title": "Informative READMEs",
+    "section": "Other Resources for READMEs",
+    "text": "Other Resources for READMEs\nNavendu Pottekkat made a really cool “Awesome README” that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. This type of aesthetic modification is not required but can be a fun way of making your README stand out!"
   },
   {
     "objectID": "forks.html",
@@ -201,279 +474,6 @@
     "title": "Branches",
     "section": "Update Local Repository",
     "text": "Update Local Repository\nNow that GitHub has been told to integrate your branch content with the “main” branch, you need to let RStudio know that integration has taken place!\nFirst, click the name of the branch to see all the branch names in your repository and select the “main” branch to flip your local repository over to that branch.\n\n\n\nNotice though that our script went back to the pre-merge version but don’t panic!\nIn order to update your local version of the repository all that you need to do is click the pull button. This brings the content you just merged via GitHub (see above) into your local repository.\n\nYou will get a success message indicating the changes to each file in the same way any other pull would. You can notice between this picture and the previous that the code automatically changes when the pull is complete.\n\n\n\nNow that you merged your branch with the main branch on GitHub and pulled that merged content down to your local version you have successfully start-to-finish used branches in your workflow.\nMany branches can exist at the same time and sometimes it helpful to create a branch starting from another branch, but these special cases obey the same basic structure described above and are outside the scope of this primer.\nThat said, we recommend branches as one way to avoid conflicts when you and your collaborators want to work simultaneously in the same repository on different scripts!"
-  },
-  {
-    "objectID": "github.html",
-    "href": "github.html",
-    "title": "git & GitHub",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface"
-  },
-  {
-    "objectID": "github.html#module-learning-objectives",
-    "href": "github.html#module-learning-objectives",
-    "title": "git & GitHub",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the difference between git and GitHub\nNavigate GitHub via a web browser\nUse GitHub to create a new repository\nEdit a new repository through GitHub’s interface"
-  },
-  {
-    "objectID": "github.html#version-control-background",
-    "href": "github.html#version-control-background",
-    "title": "git & GitHub",
-    "section": "Version Control Background",
-    "text": "Version Control Background\nVersion control systems (including git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).\nVersion control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version."
-  },
-  {
-    "objectID": "github.html#git-specific-background",
-    "href": "github.html#git-specific-background",
-    "title": "git & GitHub",
-    "section": "git-Specific Background",
-    "text": "git-Specific Background\ngit can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In git (and other version control systems) terms, this “tracked folder” is called a repository (which formally is a specific data structure storing versioning information).\nAlthough there many ways to start a new repository, GitHub (or any other cloud solutions, such as GitLab) provide among the most convenient way of starting a repository.\nLet’s distinguish between git and GitHub:\n\ngit: version control software used to track files in a folder (a repository)\n\ngit creates the versioned history of a repository\n\nGitHub: website that allows users to store their git repositories and share them with others (i.e. a graphical user interface or “GUI”)\n\nGitHub is a company that hosts git repositories online and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to git, also adding great visualization/rendering capacities of your data.\n\nGitHub.com: https://github.com\nA user account: https://github.com/brunj7\nAn organization account: https://github.com/nceas\nNCEAS GitHub instance: https://github.nceas.ucsb.edu/"
-  },
-  {
-    "objectID": "github.html#exploring-github",
-    "href": "github.html#exploring-github",
-    "title": "git & GitHub",
-    "section": "Exploring GitHub",
-    "text": "Exploring GitHub\nLet’s navigate over to GitHub and explore some of its features. Here is what the home screen looks like as of February 2022.\n\nLog in with your GitHub account that you should have created prior to this workshop.\n\n\n\nOnce you’ve logged in, you should see something like this:\n\nThis landing page has a nice summary of your recent repositories and activity on the left panel. Click on your icon at the top left corner and navigate to your profile.\n\nYour profile page shows the organizations that you’re a part of, as well as a more detailed view of your GitHub contributions/activities over time. There are also tabs at the top that lead you to your repositories, projects, packages, and starred repositories. If you would like, you can change your GitHub theme to dark mode by clicking on your icon at the top left corner and going to Settings then Appearances. For the purposes of this workshop, the rest of the screenshots for the GitHub website will be in dark mode to differentiate it from RStudio.\n\nIf there is anything else you would like to change about your account, the user settings page should have it.\n\nLooking at a GitHub Repository\nTo check the repositories that you’ve created, click on the Repositories tab. Note that the top left corner has a green button that will allow you to create new repositories. We will come back to that later. Let’s take a closer look at what the ucsb-ds-capstone-2021.github.io repository contains.\n\nThis screen shows the copy of a repository stored on GitHub, with its list of files, when the files and directories were last modified, and some information on who made the most recent changes.\n\nIf we look at the blue rectangle, we can see that there have been 151 commits made to this repository. By clicking on them, we can see the history of changes made to all of the files. Looks like 3 users were making changes in April.\n\nAnd finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:\n\nThe red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.\nNote: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.\n\n\n\n\nCreating a Repository on GitHub\nTo stimulate a collaborative GitHub/RStudio workflow, we are going to have 1 person from each group create a new repository on their GitHub account. This will be the repository where everyone shares their files and code.\nTo create a new repository, follow these steps:\n\nNavigate to your profile page and click on the Repositories tab.\nClick on New.\n\n\n\nEnter a descriptive name for your new repository, here we named it git-practice (avoid upper case and use - instead of spaces or _).\nWrite a 1-sentence description about the repository content.\nChoose Public (as of January 2019, GitHub now offers unlimited free private repositories with a maximum of 3 collaborators).\nCheck Add a README file.\n\n\nYay! We’ve just created a new repository! Here is what the landing page should look like:\n\nThis repository is currently public, so it’s visible to anyone, but since we are working in groups, we will need to give access to your group members. Click on the Settings tab for your repository and go to Collaborators.\n\nClick on Add people. Now let’s get the usernames of all of your group members and add them as collaborators to your repository.\n\n\n\n\n\n\nGreat! Now everyone in the group should have access to the repository."
-  },
-  {
-    "objectID": "github.html#create-a-repository-on-github",
-    "href": "github.html#create-a-repository-on-github",
-    "title": "git & GitHub",
-    "section": "Create a Repository on GitHub",
-    "text": "Create a Repository on GitHub\n\n\n\n\n\n\nPractice\n\n\n\nNow that we’ve walked through how to create a repository on GitHub let’s try to make our own! Click over to GitHub and create your own repository (with a README.md). We’ll split into breakout groups to try this out and please let us know if any questions come up."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Overview",
-    "section": "",
-    "text": "This workshop provides an overview of what “version control” systems are and how they fit into collaborative coding within your team. Specifically, we are focusing here on an introductory approach to version control that focuses on using git via RStudio and GitHub. We are always happy to improve workshop content so please don’t hesitate to post an Issue on our GitHub repository if you see clear areas for improvement!\n\nTo maximize the value of this workshop to you, we recommend that you take the following steps before the day of the workshop. Depending on whether you’ve used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the “Content Creators” tab."
-  },
-  {
-    "objectID": "index.html#programs-to-install",
-    "href": "index.html#programs-to-install",
-    "title": "Overview",
-    "section": "Programs to Install",
-    "text": "Programs to Install\nNote for those of you with a dedicated IT team that has sole power to install software on your computer: you will need to contact them before the workshop to install the following programs.\n\nR & RStudio\nInstall R and its more convenient (in our opinion) user-interface: RStudio.\nIf you already have R, check that you have at least version 4.0.0 by running the following code:\n\nversion$version.string\n\nIf your version starts with a 3 (e.g., the above code returns “R version 3…”), please update R to make sure all packages behave as expected.\n\n\ngit\nInstall git\nIf you are a Windows user, be sure to follow along with “Option 1” in the instructions linked above! That variant gives some under-the-hood tools we’ll implicitly rely on later."
-  },
-  {
-    "objectID": "index.html#accounts-to-create-connect",
-    "href": "index.html#accounts-to-create-connect",
-    "title": "Overview",
-    "section": "Accounts to Create / Connect",
-    "text": "Accounts to Create / Connect\n\nGitHub\nCreate a GitHub account using your web browser of choice.\nConnect git to your GitHub profile. You may want to review the “shell” (also known as the “terminal” or “command line”) to help with this step.\nCreate a personal access token (PAT). A token is essentially a more secure password that git requires and you can create one by running the following code in RStudio:\n\n# Install the `usethis` and `gitcreds` packages\n#install.packages(c(\"usethis\", \"gitcreds\"))\nlibrary(usethis); library(gitcreds)\n\n# Add your GitHub username and email\nusethis::use_git_config(user.name = \"Jane Doe\",\n                        user.email = \"jane@example.org\")\n\n# Create a token (Note this will open a GitHub browser tab)\n# See steps 6-10 in GitHub's tutorial (link below)\nusethis::create_github_token()\n\n# Copy your Personal Access Token at the end of the above step!\n\n# Now, give your token to RStudio\n# After you run this line you'll follow some prompts in the \"Console\" tab of RStudio\ngitcreds::gitcreds_set()\n\nAt the end of the above steps your token should be set! For additional information, see GitHub’s PAT Tutorial or the Happy Git with R PAT Tutorial. If this seems a little intimidating, please keep in mind that your experience with downloading programs and creating web accounts will help with these tasks even if you have more minimal coding experience!"
-  },
-  {
-    "objectID": "index.html#github-science-publications",
-    "href": "index.html#github-science-publications",
-    "title": "Overview",
-    "section": "GitHub + Science Publications",
-    "text": "GitHub + Science Publications\nThe reproducibility and collaborative benefits of GitHub for working scientists is well appreciated and increasingly well published upon. See below for brief synopses of papers published in this realm that we think may resonate with your team’s disciplinary backgrounds and motivations.\nIn the ecology and evolutionary biology sphere, Pereira Braga et al. published “Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution” in Methods in Ecology & Evolution. This paper is a phenomenal resource for ecologists and evolutionary biologists who are considering the value of GitHub to them in and outside of a working group context. The authors identify 12 uses of GitHub for the EEB community and arrange them by technical difficulty (ranging from beginner to advanced) and degree of collaboration (low to high). We have embedded this paper’s second figure in this website below as it is a neat summarization of many of their central points. That said, we definitely recommend reading (and citing!) Pereira Braga et al. 2023 for more detail than we’ve included in this blurb.\nIf you are concerned about the technical side of GitHub for yourself and/or your lab group, we recommend focusing on the lower technical difficulty benefits of GitHub (see the blue bars). We also think that some of the intermediate technical difficulty uses (orange bars) may be relevant to working group priorities and goals."
-  },
-  {
-    "objectID": "issues.html",
-    "href": "issues.html",
-    "title": "GitHub Issues",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue"
-  },
-  {
-    "objectID": "issues.html#module-learning-objectives",
-    "href": "issues.html#module-learning-objectives",
-    "title": "GitHub Issues",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine an issue in the context of GitHub\nCreate a new issue in an existing repository\nExplain considerations for creating a useful, appropriately-scoped issue"
-  },
-  {
-    "objectID": "issues.html#what-is-an-issue",
-    "href": "issues.html#what-is-an-issue",
-    "title": "GitHub Issues",
-    "section": "What is an Issue?",
-    "text": "What is an Issue?\nIssues are a convenient way of identifying and delegating tasks within a repository as well as documenting progress over time. They can also be used as a digital ‘lab notebook’ for personal use to brainstorm on a novel topic or preserve important links or supplementary material for easy distribution across a whole team.\nImportantly, while issues can definitely be helpful they are not required to successfully use GitHub for collaborating as a team. Issues absolutely have the potential to facilitate division of labor within a team though and are thus worth covering in this training.\nAn additional function that may be outside of the scope of what you need to use within your team is that it allows non-members to flag issues that they’ve had with code written by your team or request additional functionality that doesn’t yet exist in your framework. Depending on your use of packages in R you may have already opened an issue on an existing R package to do just that!\nTo see a more complete example of how issues can be used we can examine the open issues of an established R package.\n\nIssues Example with the googledrive Package\nBelow is the GitHub landing page for the googldrive package and you can see that next to the underlined “Code” tab is an “Issues” tab with a gray circle with the number 22 in it. This number notifies us that as of this screen capture, there were twenty two open issues on this package’s GitHub repository. Note that your GitHub interface may be white but it will not change the position of buttons or tabs.\n\nIf you click over to the issues tab you will see the titles of all current “open” (i.e., ongoing) issues on the repository. Each issue has a title and beneath that a unique number following a # as well as how long ago the issue was opened and the GitHub username of the person who opened the issue. On the right side of each issue’s thumbnail you can see the number of comments added to it.\n\nComments can be used to have a full dialogue among different users – potentially both in and outside of the team responsible for managing the code! The conversational aspect of issues can make them functionally similar to an email thread or messaging app chain. This communication can help keep the solutions to tasks well-documented while ensuring that every member of your group can have their voice heard."
-  },
-  {
-    "objectID": "issues.html#creating-your-first-issue",
-    "href": "issues.html#creating-your-first-issue",
-    "title": "GitHub Issues",
-    "section": "Creating your First Issue",
-    "text": "Creating your First Issue\nWhen you first visit the Issues tab of your repository it won’t include any open issues and will look like this.\n\nTo create an issue, click the green button and a new page will open that looks like the below.\n\nIn this page you can create a brief title (these are better if they are concise while still trying to convey the broader context for the task identified by the issue) and add a longer comment into the body of the issue. That longer comment can be as simple as a few bullet points of what the problem is or as complex as a markdown-formatted hyperlink-supported thesis on the task at hand.\nWhile issue comments are completely free for you to use as you see fit, it is important to remember that your most frequent collaborator is yourself in the future so a future version of yourself will absolutely thank you for including extra information when you first open an issue. In a team setting like this one, extra detail can also really help when the person opening the issue is not the person responsible for editing the code to address it.\nIn addition to the title and main body of the issue you can also see a sidebar on the right containing other options for adding detail to an issue. In particular, the “Assignees” and “Labels” sections can be useful in delegating a task to a specific person or naming the category that this task falls under respectively.\nReturning to our googledrive example for a moment, you can see that the package maintainers use multiple labels on some issues to help communicate across their team what processes are affected by or relevant to each particular issue.\n\nWhen you are creating your first issue however you won’t have any of those customized labels. However, GitHub does offer some pre-built template labels that may suit your needs and makes adding your own customized labels very approachable.\nTo see the current label options, click the “Labels” text or the gear to its right and either scroll and click the desired label(s) from the list or scroll to the bottom and click “Edit labels” to create new labels or modify the template labels."
-  },
-  {
-    "objectID": "issues.html#practice---labels",
-    "href": "issues.html#practice---labels",
-    "title": "GitHub Issues",
-    "section": "Practice - Labels",
-    "text": "Practice - Labels\nWhat are some labels that might be useful for your project to divide up issues? Can labels divide tasks related to analysis versus visualization of data? Or use them to further subdivide within those categories?"
-  },
-  {
-    "objectID": "issues.html#opening-an-issue",
-    "href": "issues.html#opening-an-issue",
-    "title": "GitHub Issues",
-    "section": "Opening an Issue",
-    "text": "Opening an Issue\nOnce you’ve filled out the title and comment of the issue the green “Submit new issue” button will become clickable and you can click it to open your issue. You can either add labels or assign users to the issue during the initial opening phase or after the fact.\nIssues are automatically viewed as a sequential series of events from the first comment so all future additions to the issue will be added beneath that first comment that defines the title of the issue.\nAt the bottom of the issue there will be an open text box that you can add to with whatever information you feel is valuable in the context of this task. We will talk about closing issues in a moment but even when issues are closed they are always accessible so all documentation within an issue can be used later and is well worth any energy investment you can make.\nThere is also not a time limit on issue comments so issues can remain open and active for as long as you find them useful."
-  },
-  {
-    "objectID": "issues.html#appropriate-issue-scope",
-    "href": "issues.html#appropriate-issue-scope",
-    "title": "GitHub Issues",
-    "section": "Appropriate Issue Scope",
-    "text": "Appropriate Issue Scope\nAs a brief aside from the nuts and bolts of how to create and manage an issue, it is important to discuss appropriate issue scope.\nEssentially, an issue should- as much as possible-directly correspond to either a single task or a single conversation. It is not always possible to predict how projects can evolve at the outset so you may find issues spanning multiple tasks despite your best efforts but as much as you can plan to keep a 1-to-1 ratio of tasks to issues you will find delegation and tracking of task completion that much easier.\nPersonally, I am a longtime believer in S.M.A.R.T. goals (i.e., goals that are Specific, Measurable, Attainable, Relevant, and Time-specific), but there are many established ways of partitioning a larger project to achievable sub-tasks and you should use whichever is most intuitive to you.\nIf issues seem like something that your group is broadly interested in it may be worthwhile to have a conversation about some general ‘rules of thumb’ for the scope of tasks identified by issues."
-  },
-  {
-    "objectID": "issues.html#practice---create-an-issue",
-    "href": "issues.html#practice---create-an-issue",
-    "title": "GitHub Issues",
-    "section": "Practice - Create an Issue",
-    "text": "Practice - Create an Issue\nNow that we’ve covered what issues are and how to open them, let’s take a minute and create some issues on your repository! On your GitHub repository, click over to the Issues tab and create a new issue. This can be either a placeholder just to have experience creating an issue or a real task that you think the team will have to deal with in the future. We are here if you need clarification!"
-  },
-  {
-    "objectID": "issues.html#closing-an-issue",
-    "href": "issues.html#closing-an-issue",
-    "title": "GitHub Issues",
-    "section": "Closing an Issue",
-    "text": "Closing an Issue\nSo, let’s imagine that you have worked through whatever task you identified and are ready to be done with this issue and move on to the next task.\nIf you scroll to the bottom of that issue (where the adding comment textbox is) you will see a purple button titled “Close issue”.\n\nAfter clicking that button a purple check mark will appear on the bottom of the issue’s timeline that identifies the issue as closed and credits the user who closed it.\n\nWhen you return to your issue list you will see that issue is now absent from the list. However, next to the “[number] Open” button you can see a check mark with the number of closed issues.\n\nClicking that “Closed” button will access all past issues that are now closed.\n\nSo, even if an issue was closed in the distant past of your repository on GitHub, you can still easily access and view all of its contents.\nThis greatly facilitates the use of issues in tracking problem solving, brainstorm sessions, and supporting documents. The Scientific Computing Support team at NCEAS uses issues as personal lab notebooks (in addition to the aforementioned uses) to ensure that individual process is well documented while still being easily accessible by other team members.\nAs pointed out earlier though, issues are fundamentally optional to the use of GitHub and may not be needed by your team right now. However, we’d encourage you to try using them in case they do prove helpful to your team!"
-  },
-  {
-    "objectID": "readmes.html",
-    "href": "readmes.html",
-    "title": "Informative READMEs",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository"
-  },
-  {
-    "objectID": "readmes.html#module-learning-objectives",
-    "href": "readmes.html#module-learning-objectives",
-    "title": "Informative READMEs",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the value of an informative README\nRefine a README on an existing repository"
-  },
-  {
-    "objectID": "readmes.html#what-is-a-readme",
-    "href": "readmes.html#what-is-a-readme",
-    "title": "Informative READMEs",
-    "section": "What is a README?",
-    "text": "What is a README?\nA README does exactly what its name suggests: it contains a summary of all of the information needed to navigate a given folder’s contents. However, you are responsible for creating a README and adding content to it so its value is somewhat dependent upon the time you are willing and able to spend on fleshing it out.\nIn GitHub, READMEs can be particularly useful because they form a landing page at the bottom of your repository’s GitHub page that can be a great way of introducing new people to your project or refreshing ‘future you’ on how you stored things for a given project.\nA README is almost always either a Markdown file (ending in “.md”) or an R markdown file (“.Rmd”). The default for a GitHub repository is “.md” but if you want your README to run R code (e.g., to create graphs, run analysis, etc.) you can create a .Rmd one that can support R code chunks."
-  },
-  {
-    "objectID": "readmes.html#example-readme",
-    "href": "readmes.html#example-readme",
-    "title": "Informative READMEs",
-    "section": "Example README",
-    "text": "Example README\n\nLet’s check out the README for the R package lterpalettefinder as one example of an informative README. This R package was developed by the LTER Network Office to share official palettes derived from photos taken at LTER sites and evolved to include a suite of R functions that allow color palettes to be extracted from any user-supplied photo.\nThe README for lterpalettefinder is crucial because it provides the following information:\n\nBrief description of the purpose / utility of the package\nInstructions on how to install the “development version” of the package\n\nThis is useful because the version of a package that is on CRAN (and can be installed with install.packages()) is often less up-to-date than the version that is available on GitHub\n\nList of current functions and what they do\nHex logo of the package\n\nVisitors to the README see the following:\n\nThis README contains a bunch of “bonus” information including nice aesthetic touches and various “badges” denoting timing of last commit and that the package has no errors among other things.\nThe “README.Rmd” file in the GitHub repository can be found at the bottom of the repository list of files (which works out to be just above the rendered README landing page!).\n\nIf you click that file, you can view the “raw” file which is written in “markdown syntax”. Markdown syntax is a simplified (relatively) way of formatting text that provides coarse control without getting bogged down in potentially unnecessary levels of detail. Markdown syntax is discussed extensively elsewhere and your README can be very valuable with just plain text in a .md file so we will avoid discussing it in detail here.\nThe main take away here is that “under the hood”, this package’s README landing page is generated from the formatting specified in this “raw” file. Flip back and forth between the raw view and the displayed README and see if you can catch how various text formatting was accomplished!"
-  },
-  {
-    "objectID": "readmes.html#writing-a-readme",
-    "href": "readmes.html#writing-a-readme",
-    "title": "Informative READMEs",
-    "section": "Writing a README",
-    "text": "Writing a README\nWe recommend that you edit your README to include (some of) the following components:\n\nAn informative, un-abbreviated title (beginning with one # to make it a header)\nA brief (likely bulleted) description of the major folders in the repository\nHow / in which folder to contribute new files to the repository\nContact information for primary contact for questions\nIf applicable, links to related repositories (e.g., other repositories created by your working group)\n\nThe most important thing is that you structure your README in a way that is intuitive to your team so that you feel capable to maintain it so that is remains useful and relevant as a landing page for your project."
-  },
-  {
-    "objectID": "readmes.html#other-resources-for-readmes",
-    "href": "readmes.html#other-resources-for-readmes",
-    "title": "Informative READMEs",
-    "section": "Other Resources for READMEs",
-    "text": "Other Resources for READMEs\nNavendu Pottekkat made a really cool “Awesome README” that includes several optional features to make a README awesome-r. In particular that README includes special badges showing the timing of the last commit and features embedded header and footer images. This type of aesthetic modification is not required but can be a fun way of making your README stand out!"
-  },
-  {
-    "objectID": "rstudio.html",
-    "href": "rstudio.html",
-    "title": "RStudio",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the computer-to-GitHub order of operations\nDefine fundamental git vocabulary\nCreate a local version-controlled repository that is connected to GitHub"
-  },
-  {
-    "objectID": "rstudio.html#module-learning-objectives",
-    "href": "rstudio.html#module-learning-objectives",
-    "title": "RStudio",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDescribe the computer-to-GitHub order of operations\nDefine fundamental git vocabulary\nCreate a local version-controlled repository that is connected to GitHub"
-  },
-  {
-    "objectID": "rstudio.html#overview-of-git-workflow",
-    "href": "rstudio.html#overview-of-git-workflow",
-    "title": "RStudio",
-    "section": "Overview of git Workflow",
-    "text": "Overview of git Workflow\nBefore we get into using git and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.\nBeginning on your local computer, you make changes to a file in a folder that you have previously marked for version control tracking (i.e., a working directory). Once those changes are made you can stage changes within your local computer. After staging, it is best to retrieve the latest file versions from the cloud. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you’ve confirmed that you have the latest file versions, you can shift the revised file(s) to the cloud where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes."
-  },
-  {
-    "objectID": "rstudio.html#git-vocabulary",
-    "href": "rstudio.html#git-vocabulary",
-    "title": "RStudio",
-    "section": "git Vocabulary",
-    "text": "git Vocabulary\nFinally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.\n\nClone = copy the entire contents of a GitHub repository to your local computer (done once per computer)\nCommit = move a changed local file to your local staging area (step 2 of the above diagram)\nPull = get file(s) from the cloud to your local computer – opposite of a “push” (step 3)\nPush = move file(s) to the cloud from your local computer – opposite of a “pull” (step 4)"
-  },
-  {
-    "objectID": "rstudio.html#cloning-a-repository",
-    "href": "rstudio.html#cloning-a-repository",
-    "title": "RStudio",
-    "section": "Cloning a Repository",
-    "text": "Cloning a Repository\nNow, the first step in using git with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, GitHub is in dark mode while RStudio is in light mode. To clone a repository, follow these steps:\nNavigate to the repository on GitHub and click on Code. Select HTTPS and copy the link.\n\nNow, return to (or open!) RStudio.\n\nGo to the Project tab on the top right corner and click New Project…\n\nSelect Version Control.\n\n\n\nSelect git.\n\n\n\nPaste the repository URL that you just copied from GitHub. Choose a file path to save your project to.\n\n\n\nNow we have finished cloning the repository to our RStudio! Notice that we are working in our git-practice project and that our README.md file shows up under the list of files, just like in our GitHub repository."
-  },
-  {
-    "objectID": "rstudio.html#workflow-refresher",
-    "href": "rstudio.html#workflow-refresher",
-    "title": "RStudio",
-    "section": "Workflow Refresher",
-    "text": "Workflow Refresher\nThe typical workflow with git goes like this:\nStep 1: You modify files in your working directory and save them as usual.\nStep 2: You stage files to mark your intention to “commit” them and then commit that version of those files.\n- In RStudio, \"staging\" is done by checking the box next to a given file in the \"Git\" tab\n- Committing files permanently stores them as snapshots to your `git` directory\nStep 3: You pull the most recent changes to make sure you’ve been editing the latest versions.\nStep 4: You push your the version of your files that you committed to GitHub.\nHere is the infographic from the start of this chapter again, which shows the same workflow:"
-  },
-  {
-    "objectID": "rstudio.html#stage-versus-commit",
-    "href": "rstudio.html#stage-versus-commit",
-    "title": "RStudio",
-    "section": "Stage versus Commit",
-    "text": "Stage versus Commit\nThe functional difference between “staging” a file and “committing” one can be a little tough to grasp at first so let’s explore that briefly here. We can make an analogy with taking a family picture, where each family member would represent a file.\n\nStaging files is like deciding which family member(s) are going to be in your next picture\nCommitting is like taking the picture\n\nThis 2-step process enables you to flexibly group files into a specific commit. Those groupings can be helpful to you later if you’re trying to find what you changed for a specific task (because those changes likely are all in the same commit)."
-  },
-  {
-    "objectID": "rstudio.html#creating-a-new-file",
-    "href": "rstudio.html#creating-a-new-file",
-    "title": "RStudio",
-    "section": "Creating a New File",
-    "text": "Creating a New File\nLet’s try out a simple git workflow by first creating a new file. This is Step 1 of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to File &gt; New File &gt; R Script. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script angel-script.R.\nOnce you are done, navigate to the git tab on the upper left corner. You should see your new script show up there along with a .gitignore and git-practice.Rproj file. Do not worry about the .gitignore file for now, it was created by RStudio to make sure that some temporary files are not tracked by git. The git-practice.Rproj file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.\n\nNotice that there are color-coded icons next to the files in the “Git” tab. These icons are shorthand for the status–according to git–of every* file in your working directory. Not technically “every” file because files that are tracked but haven’t been modified are not included. See below for definitions.\n\n\n\nIn our case, it means that our R script, .gitignore, and git-practice.Rproj files have never been tracked by git (since these files were just created). Note also that the README.md file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.\n\nAdding our Script to the Next Commit\nLet us look at the diff of our script. Click on the Diff tab.\n\n\n\nChecking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for git. We would like to save a snapshot of this version of our script. Since we’ve just done Step 1, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:\nStep 2: Add the file to the next commit by checking the box in front of the file name. Note that the two ? icons will change to a single A on the left to show you that this file is now staged to be part of the next commit.\nStep 3: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the Commit button to save this version of the script in the git database.\n\nIf all of the above steps went well, you should see something like this:\n\nNotice that git tells us that 1 file changed because we’ve just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.\n\n\nGetting the Latest Updates\nThere are two git commands to exchange between a local and remote versions of a repository:\n\npull: git will get the latest remote version and try to merge it with your local version\npush: git will send your local version to the remote version of the repository (in our case GitHub)\n\nBefore sending your local version to the remote, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way git protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:\n\nCommit\npull\npush\n\nOf course RStudio has icons for that on top of the “Git” tab, with the blue arrow down being for pull and the green arrow up being for push. Remember the icons are organized in sequence!\nLet us do the pull and push to synchronized the remote repositories. Click on the Pull button to pull changes (if any) from the GitHub repository to the copy on RStudio. We have now synchronized the local (our computer) and remote (on GitHub) versions of our repository. You may have noticed that all of our preceding graphics use blue for pull-related content and green for push-related information. Hopefully that helps cement the two ideas in your mind!\n\n\n\nIn my case, it turns out that a new script, lyon-script, was added to the GitHub repository by a collaborator while I was making my own script. Since I have just pulled, lyon-script now shows up in my RStudio files.\n\n\n\n\nA new message has popped up for me: “Your branch is ahead of ‘origin/main’ by two commits”. This means that I have two additional commits on my local machine that I never shared back to the remote repository on GitHub. If I look at the content of my repository on GitHub, I will see just the README.md and lyon-script. My changes are NOT in the cloud yet. You might be seeing a similar message as well.\n\n\nSending Changes back to GitHub\nSo how do we send our changes back to GitHub? Locate the Push button on the “Git” tab and click on it. Now your script should show up in the GitHub repository!\n\n\n\nOnce you click that button you should get a success screen like the one pictured below.\n\n\n\nNavigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, angel-script.R finally shows up in my repository.\n\n\n\nRinse and Repeat\nGreat! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to RStudio and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your RStudio files.\nMake sure to work on your own script. If you and another group member work on the same script at the same time, this may lead to merge conflicts with git. If two people were to work on the same script, they may be making different edits on the same lines, and git would not know which edits to keep. To avoid merge conflicts, be mindful of what files you are working on and always communicate this to your group members!"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "GitHub Projects",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nSummarize the different features of projects created within (A) organizations, (B) users, and (C) repositories"
-  },
-  {
-    "objectID": "projects.html#module-learning-objectives",
-    "href": "projects.html#module-learning-objectives",
-    "title": "GitHub Projects",
-    "section": "",
-    "text": "By the end of this module, you will be able to:\n\nDefine a project in the context of GitHub\nSummarize the different features of projects created within (A) organizations, (B) users, and (C) repositories"
-  },
-  {
-    "objectID": "projects.html#what-is-a-project",
-    "href": "projects.html#what-is-a-project",
-    "title": "GitHub Projects",
-    "section": "What is a Project?",
-    "text": "What is a Project?\nProjects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. A Project acts as an umbrella that includes many issues and tracks their inter-relationships and where they fit in a bigger-picture view of a project."
-  },
-  {
-    "objectID": "projects.html#using-projects",
-    "href": "projects.html#using-projects",
-    "title": "GitHub Projects",
-    "section": "Using Projects",
-    "text": "Using Projects\nWithin the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues and ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.\nSee below for a screencap of what such a Project looks like for one team member.\n\nWhen using a Project you can add or remove the columns (the above example has four columns) and individual issue “cards” can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the “Done” column)."
-  },
-  {
-    "objectID": "projects.html#maximizing-project-utility",
-    "href": "projects.html#maximizing-project-utility",
-    "title": "GitHub Projects",
-    "section": "Maximizing Project Utility",
-    "text": "Maximizing Project Utility\nIt may go without saying, but Projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of Projects are as follows:\n\nGiving Issues clear and short titles\n“Assigning” Issues to particular users\nUsing labels to group Issues into useful categories\n\nIf your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult our page on Issues for more information!"
-  },
-  {
-    "objectID": "projects.html#project-locations",
-    "href": "projects.html#project-locations",
-    "title": "GitHub Projects",
-    "section": "Project Locations",
-    "text": "Project Locations\nProjects can be created in one of three places with meaningful differences for each:\n\nA Project can be created for an Organization\nA Project can be created for a User\nA Project can be created for a Repository\n\n\nOrganization Projects\n\nA Project created for an Organization allows all GitHub users with access to that organization to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both LTER and NCEAS have existing organizations that can support Projects created for working groups.\n\nSupports issues from any repository\nEditable by any user in the organization\n\n\n\nUser Projects\n\nA Project created within a particular user’s “self” can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.\n\nSupports issues from any repository\nEditable by only this user*\n\n* Unless that user tweaks their settings to allow other specified users to have admin-level powers in that Project\n\n\n\n\nRepository Projects\n\nA Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. This is the most narrowly-defined type of Project. That said, it can be very valuable if you anticipate (1) that the repository that “owns” this Project will involve many large goals that would require the level of project management supported by GitHub Projects and (2) that these tasks will never grow to involve other repositories.\n\nSupports issues only from that repository\nEditable by any user with access to the repository"
   },
   {
     "objectID": "git_ignore.html",
