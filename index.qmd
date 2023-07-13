@@ -31,7 +31,15 @@ If your version starts with a 3 (e.g., the above code returns "R version 3..."),
 **[Install `git`](https://happygitwithr.com/install-git.html)**
 
 **If you are a Windows user**, be sure to follow along with "Option 1" in the instructions linked above! That variant gives some under-the-hood tools we'll implicitly rely on later.
-  
+
+:::callout-tip
+## RStudio not detecting `git`?
+
+If you had your RStudio session open while you installed `git` for the first time, RStudio may not have detected `git` on your computer. In that case, please close and restart RStudio. Check if RStudio is able to detect it now by going to Tools -> Global Options -> Git/SVN. If you see a file path under "Git executable" then you are good to go!
+:::
+
+Once you've successfully installed R, RStudio, and `git`, follow the rest of the setup instructions below.
+
 ## Accounts to Create / Connect
 
 ### GitHub
