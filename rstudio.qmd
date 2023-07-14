@@ -196,7 +196,7 @@ Navigate back to the GitHub website and find your repository. Check to see if yo
 :::callout-note
 ## If RStudio ever asks for a "password"...
 
-If your personal access token (PAT) was not set up correctly with RStudio or if it expired, then RStudio will ask for your GitHub username and password in a pop-up when you try to push. Please be aware that when they ask for a "password", they actually meant your token! Enter your token in the field and you should be able to push now. Make sure to run `gitcreds::gitcreds_set()` to set a valid token afterwards so you don't have to enter it manually every time!  
+If your personal access token (PAT) was not set up correctly with RStudio or if it expired, then RStudio will ask for your GitHub username and password in a pop-up when you try to push. **Please be aware that when they ask for a "password", they actually meant your token!** Enter your token in the field and you should be able to push now. Make sure to run `gitcreds::gitcreds_set()` to set a valid token afterwards so you don't have to enter it manually every time!  
 :::
 
 ### Rinse and Repeat
