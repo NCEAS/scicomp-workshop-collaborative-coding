@@ -193,6 +193,12 @@ Navigate back to the GitHub website and find your repository. Check to see if yo
 
 <img src="images/rstudio/rstudio-19-updated-repo.png" width="100%"/>
 
+:::callout-note
+## If RStudio ever asks for a "password"...
+
+If your personal access token (PAT) was not set up correctly with RStudio or if it expired, then RStudio will ask for your GitHub username and password in a pop-up when you try to push. **Please be aware that when they ask for a "password", they actually meant your token!** Enter your token in the field and you should be able to push now. Make sure to run `gitcreds::gitcreds_set()` to set a valid token afterwards so you don't have to enter it manually every time!  
+:::
+
 ### Rinse and Repeat
 
 Great! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to RStudio and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your RStudio files. 
