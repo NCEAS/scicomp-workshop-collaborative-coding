@@ -451,6 +451,19 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <p>Navigate back to the GitHub website and find your repository. Check to see if your script has been added correctly. In my case, <code>angel-script.R</code> finally shows up in my repository.</p>
 <p><img src="images/rstudio/rstudio-19-updated-repo.png" width="100%"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+If RStudio ever asks for a “password”…
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If your personal access token (PAT) was not set up correctly with RStudio or if it expired, then RStudio will ask for your GitHub username and password in a pop-up when you try to push. <strong>Please be aware that when they ask for a “password”, they actually meant your token!</strong> Enter your token in the field and you should be able to push now. Make sure to run <code>gitcreds::gitcreds_set()</code> to set a valid token afterwards so you don’t have to enter it manually every time!</p>
+</div>
+</div>
 </section>
 <section id="rinse-and-repeat" class="level3">
 <h3 class="anchored" data-anchor-id="rinse-and-repeat">Rinse and Repeat</h3>
