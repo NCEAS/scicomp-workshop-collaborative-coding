@@ -35,6 +35,7 @@ website:
           - issues.qmd
           - projects.qmd
           - readmes.qmd
+          - portfolio.qmd
       - server.qmd
   navbar:
     background: primary

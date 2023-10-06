@@ -1,0 +1,103 @@
+---
+title: "GitHub as a Portfolio"
+---
+
+## Module Learning Objectives
+
+By the end of this module, you will be able to:
+
+- <u>Explain</u> the benefits of using GitHub as a portfolio
+- <u>Identify</u> ways to strengthen your profile's presence on GitHub 
+- <u>Add</u> a special README to your profile
+- <u>Add</u> informative READMEs to your repos
+
+## Why Use GitHub as a Portfolio?
+
+Aside from tracking code, GitHub is also great to use as a way to showcase your portfolio! A fully fleshed-out GitHub profile will clearly capture who you are, what you do, and allow people to get a neat overview of your work. For example, if you're applying to jobs and/or grad programs and want to stand out in a sea of applicants, then a well-organized GitHub profile can be crucial to grab people's attention. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you've accomplished as well! You can utilize GitHub's existing functionalities to curate your own portfolio. 
+
+## Strengthen your presence on GitHub
+
+### Flesh out your profile
+
+Filling out your profile details is an easy way to get started on your portfolio! To edit your profile, click on your icon in the top left corner and go to "Your profile". 
+
+<p align="center">
+<img src="images/portfolio/portfolio-profile-1.png" align="center" width="30%"/>
+</p>
+
+Then select "Edit profile" on the right hand panel. 
+
+<p align="center">
+<img src="images/portfolio/portfolio-profile-2.png" align="center" width="30%"/>
+</p>
+
+There, you will have options to edit your icon, name, biography, pronouns, workplace, location, website, and social media accounts. If you have links to other websites that contain your work, it's a good idea to cross-reference them here so people can find you elsewhere.
+
+<p align="center">
+<img src="images/portfolio/portfolio-profile-3.png" align="center" width="30%"/>
+</p>
+
+Alternatively, you can also edit your profile by clicking on your icon in the top left corner to go to "Settings", then "Public profile". 
+
+### Pin repositories
+
+Additionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility among visitors. 
+
+To pin your repos, navigate to the "Your profile" tab again and click "Customize your pins". Choose the repos that best showcase your skills or contain projects you're especially proud of. You can also reorder your pinned repos however you like by dragging the 6 dots at the top right corner. 
+
+<img src="images/portfolio/portfolio-pinned.png" align="center" width="100%"/>
+
+## Special README
+
+A fun secret feature of GitHub is that you can have a special README displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile. 
+
+To get started, from your profile landing page, click on the ➕ button and select "New repository".
+
+<p align="center">
+<img src="images/portfolio/portfolio-README-1.png" align="center" width="50%"/>
+</p>
+
+Name your new repo the same name as your username. A notification should pop up indicating that you're creating a special repo.
+
+<p align="center">
+<img src="images/portfolio/portfolio-README-2.png" align="center" width="80%"/>
+</p>
+
+Feel free to write an optional description. Set the repo visibility to public and make sure to check the box to initialize the repo with a README file. Click on the "Create repository" button once you're done!
+
+<p align="center">
+<img src="images/portfolio/portfolio-README-3.png" align="center" width="80%"/>
+</p>
+
+This is how the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the "Edit README" button to get started.
+
+<img src="images/portfolio/portfolio-README-4.png" align="center" width="100%"/>
+
+GitHub will have already populated README.md with a template that you can use as a starting point. Edit this Markdown file to your own liking. Here is a [handy guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github) on formatting your text if you are not familiar with Markdown syntax. 
+
+Some nice sections to include in your README.md are an "About me" section that gives a background on your work and interests, a contributions/achievements section, and a section on any other communities you're involved in. 
+
+<img src="images/portfolio/portfolio-README-5.png" align="center" width="100%"/>
+
+You can add [emojis](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#using-emoji), [images and GIFs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) so have fun editing your special README. 
+
+## Informative READMEs
+
+On a related note, READMEs are crucial to guiding your audience to the files you want to show them. It's good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the SciComp team's guide to writing informative READMEs [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/readmes.html)!
+
+## How to Stand Out
+
+Wondering how to make yourself and your work stand out amongst the sea of people on the Internet? Here are some ideas below! 
+
+### Create Your Own Personal Website to Host on GitHub
+
+Personal websites are a cool way to visually convey everything that goes into a portfolio— your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone's personal website rather than their GitHub profile. 
+
+Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you're interested, check out the SciComp team's tutorial on [building a website with Quarto](https://nceas.github.io/scicomp.github.io/tutorials.html#building-a-website-with-quarto). Also feel free to check out Sam Csik's tutorials on how to [create](https://ucsb-meds.github.io/creating-quarto-websites/) and [customize](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) your website using Quarto. 
+
+Since this will be a personal website deployed through [GitHub Pages](https://pages.github.com/), remember to name your Quarto project and GitHub repo: `<YOUR-GITHUB-USERNAME>.github.io`, replacing `<YOUR-GITHUB-USERNAME>` with your actual username. You're only allowed one user website with the github.io suffix. Follow the instructions in the linked tutorials to deploy the website via GitHub when you're done! If all goes well, your website will be live at: https://\<YOUR-GITHUB-USERNAME\>.github.io/
+
+
+
+
+
