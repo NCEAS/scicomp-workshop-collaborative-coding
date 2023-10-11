@@ -56,7 +56,7 @@ When you're picking out your top repositories we recommend including repositorie
 
 ## Special README
 
-A fun secret feature of GitHub is that you can have a special README displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile. 
+A fun secret feature of GitHub is that you can have a "special README" displayed at the top of your profile! This is an easy way to present your work and interests to the rest of the GitHub community and anyone who visits your profile. 
 
 To get started, from your profile landing page, click on the ➕ button and select "New repository".
 
@@ -76,7 +76,7 @@ Feel free to write an optional description. Set the repo visibility to public an
 <img src="images/portfolio/portfolio-README-3.png" align="center" width="80%"/>
 </p>
 
-This is how the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the "Edit README" button to get started.
+This is what the special repo will look like. Notice the notification on the right hand side informing you that the README.md file will appear on your profile. Click on the "Edit README" button to get started. Note that you _could_ clone the special repo and edit from whatever code/text editor you prefer but given that the only editing you'll do is to a markdown file that seems excessive to us.
 
 <img src="images/portfolio/portfolio-README-4.png" align="center" width="100%"/>
 
@@ -90,15 +90,15 @@ You can add [emojis](https://docs.github.com/en/get-started/writing-on-github/ge
 
 ## Informative READMEs
 
-On a related note, READMEs are crucial to guiding your audience to the files you want to show them. It's good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the SciComp team's guide to writing informative READMEs [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/readmes.html)!
+On a related note, an informative README **in each repository** is crucial to orienting your audience to the files in and purpose of each repository. It's good practice to add an informative README to every repository so visitors know its purpose and what it contains. A well-written README will be useful to both coders and non-coders alike. Check out the Scientific Computing team's guide to writing informative READMEs [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/readmes.html)!
 
 ## How to Stand Out
 
-Wondering how to make yourself and your work stand out amongst the sea of people on the Internet? Here are some ideas below! 
+If you act on the suggestions we've outlined above you will already be well on the way to fully leveraging GitHub as a professional portfolio. That said, there are always means of making yourself and your work stand out even more! Below is a non-exhaustive list of some ideas for continuing to improve your portfolio.
 
 ### Create Your Own Personal Website to Host on GitHub
 
-Personal websites are a cool way to visually convey everything that goes into a portfolio— your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone's personal website rather than their GitHub profile. 
+Personal websites are a cool way to visually convey everything that goes into a portfolio--your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone's personal website rather than their GitHub profile. 
 
 Although the topic of creating your own personal website is outside the scope of this workshop, there are tons of resources on how to get started. If you're interested, check out the SciComp team's tutorial on [building a website with Quarto](https://nceas.github.io/scicomp.github.io/tutorials.html#building-a-website-with-quarto). Also feel free to check out Sam Csik's tutorials on how to [create](https://ucsb-meds.github.io/creating-quarto-websites/) and [customize](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) your website using Quarto. 
 
