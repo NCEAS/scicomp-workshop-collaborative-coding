@@ -41,11 +41,18 @@ Alternatively, you can also edit your profile by clicking on your icon in the to
 
 ### Pin repositories
 
-Additionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility among visitors. 
+Additionally, you can choose to pin up to 6 public repositories to show off to anyone who visits your profile. These pinned repos will be at the top of your profile page, greatly increasing their visibility to visitors. 
 
-To pin your repos, navigate to the "Your profile" tab again and click "Customize your pins". Choose the repos that best showcase your skills or contain projects you're especially proud of. You can also reorder your pinned repos however you like by dragging the 6 dots at the top right corner. 
+To choose which repositories to pin, navigate to the "Your profile" tab again and click "Customize your pins". Once you've pinned the repositories you particularly want to highlight you can reorder your pinned repos by dragging the 6 dots at the top right corner.
 
 <img src="images/portfolio/portfolio-pinned.png" align="center" width="100%"/>
+
+When you're picking out your top repositories we recommend including repositories that:
+
+- You're excited about (passion is always worth highlighting!)
+- Showcase a breadth of skills
+- Demonstrate significant expertise in a narrow range of skills
+- You're proud of / were significant to your career
 
 ## Special README
 
