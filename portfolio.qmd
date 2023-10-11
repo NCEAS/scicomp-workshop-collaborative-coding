@@ -96,7 +96,7 @@ On a related note, an informative README **in each repository** is crucial to or
 
 If you act on the suggestions we've outlined above you will already be well on the way to fully leveraging GitHub as a professional portfolio. That said, there are always means of making yourself and your work stand out even more! Below is a non-exhaustive list of some ideas for continuing to improve your portfolio.
 
-### Create Your Own Personal Website to Host on GitHub
+### Create a Personal Website
 
 Personal websites are a cool way to visually convey everything that goes into a portfolio--your background, work experiences, interests, accomplishments, projects, contact information, etc. With a website, you can be more creative and flexible in how you want to present yourself to others. Plus, non-GitHub users may be more inclined to navigate someone's personal website rather than their GitHub profile. A further benefit of creating a personal website is that you will learn (and demonstrate!) a suite of additional skills that contribute to your portfolio in and of themselves.
 
@@ -106,5 +106,8 @@ Since this will be a personal website deployed through [GitHub Pages](https://pa
 
 If you're looking for some inspiration, check out Angel's ([angelchen7.github.io](https://angelchen7.github.io/)) and Nick's websites ([njlyon0.github.io](https://njlyon0.github.io/))!
 
+### Team up with Peers
 
+Within any career path some of the best people to get professional feedback from are your peers! Your colleagues have applied to the same types of positions that you have and often have crucial insight that can help you learn from both the successes and the pitfalls that they have encountered. In addition, they can a well-trained critical eye that can help you improve your portfolio in ways you may never have imagined by yourself.
 
+Once you have a draft portfolio, share it with your peers, advisers, and mentors for feedback. Write down their suggestions and act on all of the ones that seem reasonable to you. If you'd like, repeat this process of iterative revision for as long as you feel that it is needed! It may also make sense to gather other peers without GitHub portfolios into a journal club-style group and meet regularly to develop and critique one another's materials.
