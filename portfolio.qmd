@@ -8,12 +8,12 @@ By the end of this module, you will be able to:
 
 - <u>Explain</u> the benefits of using GitHub as a portfolio
 - <u>Identify</u> ways to strengthen your profile's presence on GitHub 
-- <u>Add</u> a special README to your profile
-- <u>Add</u> informative READMEs to your repos
+- <u>Create</u> a "special README" on your profile
+- <u>Add</u> informative READMEs to your repositories
 
 ## Why Use GitHub as a Portfolio?
 
-Aside from tracking code, GitHub is also great to use as a way to showcase your portfolio! A fully fleshed-out GitHub profile will clearly capture who you are, what you do, and allow people to get a neat overview of your work. For example, if you're applying to jobs and/or grad programs and want to stand out in a sea of applicants, then a well-organized GitHub profile can be crucial to grab people's attention. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you've accomplished as well! You can utilize GitHub's existing functionalities to curate your own portfolio. 
+GitHub is useful for tracking changes and hosting code which makes it a great place to showcase those same products! A fully fleshed-out GitHub profile will clearly capture who you are as a programmer/scientist, what you do, and allow people to get a neat overview of your work. A strong GitHub presence can help you stand out from a pool of many applicants for graduate school programs or other jobs; particularly when a proven track record of tech-savvy and knowledge of collaborative tools are listed as requirements. Having a detailed portfolio is a nice way to personally keep track of all the work and achievements you've accomplished as well! You can utilize GitHub's existing functionalities to curate your own portfolio. 
 
 ## Strengthen your presence on GitHub
 
