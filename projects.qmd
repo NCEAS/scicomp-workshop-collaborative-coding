@@ -33,15 +33,42 @@ It may go without saying, but Projects are at their most valuable as project man
 
 If your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult [our page on Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) for more information!
 
-## Project Locations
+## Project Ownership
 
-Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab.
+Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them.
 
 <img src="images/projects/projects-2-org.png" width="100%"/>
 
-Note that this tab's name is consistent for Users and Organizations (Organizations just have more tabs to support the expanded set of tools available to them).
+Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired.
+
+<img src="images/projects/projects-3-linking.png" width="100%"/>
+
+## Integrating Issues & Projects
+
+Once you've created the Project(s) you want, issues can be added to them as desired! You can either add issues at the Issue creation stage or from the Project itself after the Issue has been created.
+
+### Adding from an Issue
+
+When you first create an issue you can add it to one or more Projects by clicking the gear icon in the sidebar of options on the right side of the screen.
+
+<img src="images/projects/projects-4-add-from-issue.png" width="100%"/>
+
+Upon clicking that icon, a small window will pop up and will allow you to choose any Project (A) you've interacted with recently, (B) that is linked to this particular repository, and/or (C) that is owned by the Organization/User that owns the repository. If there are many projects that meet these criteria there is also a handy search bar that lets you search through for a specific Project by name.
+
+<p align="center">
+<img src="images/projects/projects-4b-add-from-issue.png" width="40%"/>
+</p>
+
+### Adding from a Project
+
+If you'd prefer, you can add existing issues to a Project from the Project's home screen. Once in the Project, click the "Add item" button at the bottom of the screen and begin typing the name of the issue. Clicking an issue's name will then automatically add it to the Project and will allow you to "triage" it (i.e., add the issue to the column indicating its current status).
+
+<p align="center">
+<img src="images/projects/projects-5-add-from-project.png" width="75%"/>
+</p>
 
 
+## OLD
 
 
 
