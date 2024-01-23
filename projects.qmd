@@ -19,7 +19,7 @@ Within the team that created this workshop, we use GitHub Issues to track and do
 
 See below for a screencap of what such a Project looks like for one team member.
 
-<img src="images/projects/projects-4-example.png" width="100%"/>
+<img src="images/projects/projects-1-example.png" width="100%"/>
 
 When using a Project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the "Done" column).
 
@@ -35,6 +35,20 @@ If your team is considering these three points, then adopting GitHub Projects wi
 
 ## Project Locations
 
+Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab.
+
+<img src="images/projects/projects-2-org.png" width="100%"/>
+
+Note that this tab's name is consistent for Users and Organizations (Organizations just have more tabs to support the expanded set of tools available to them).
+
+
+
+
+
+
+Projects can be created for a particular User (or Organization) and subsequently "linked" to any repositories owned by the same entity. The Project is then visible to 
+
+
 Projects can be created in one of three places with meaningful differences for each:
 
 1. A Project can be created for an Organization
@@ -43,7 +57,6 @@ Projects can be created in one of three places with meaningful differences for e
 
 ### Organization Projects
 
-<img src="images/projects/projects-1-org.png" width="100%"/>
 
 A Project created for an Organization allows all GitHub users *with access to that organization* to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both [LTER](https://github.com/lter) and [NCEAS](https://github.com/NCEAS) have existing organizations that can support Projects created for working groups.
 
@@ -52,7 +65,6 @@ A Project created for an Organization allows all GitHub users *with access to th
 
 ### User Projects
 
-<img src="images/projects/projects-2-user.png" width="100%"/>
 
 A Project created within a particular user's "self" can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.
 
@@ -62,7 +74,6 @@ A Project created within a particular user's "self" can also accept issues from 
 
 ### Repository Projects
 
-<img src="images/projects/projects-3-repo.png" width="100%"/>
 
 A Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. **This is the most narrowly-defined type of Project.** That said, it can be very valuable if you anticipate **(1)** that the repository that "owns" this Project will involve many large goals that would require the level of project management supported by GitHub Projects and **(2)** that these tasks will *never* grow to involve other repositories.
 
