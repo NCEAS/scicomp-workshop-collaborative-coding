@@ -1,1 +1,1 @@
-Sitemap: https://github.com/NCEAS/scicomp-workshop-collaborative-coding/sitemap.xml
+Sitemap: https://NCEAS.github.io/scicomp-workshop-collaborative-coding/sitemap.xml

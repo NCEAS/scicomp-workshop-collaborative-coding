@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -66,19 +73,16 @@ ul.task-list li input[type="checkbox"] {
 
 <meta name="twitter:title" content="SciComp Workshop - Collaborative Coding with GitHub - GitHub Projects">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/images/projects/projects-4-example.png">
-<meta name="twitter:image-height" content="1482">
-<meta name="twitter:image-width" content="2854">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SciComp Workshop - Collaborative Coding with GitHub</span>
     </a>
@@ -90,59 +94,59 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-scicomp-team" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-scicomp-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">SciComp Team</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-scicomp-team">    
         <li>
-    <a class="dropdown-item" href="https://nceas.github.io/scicomp.github.io/" rel="" target="">
+    <a class="dropdown-item" href="https://nceas.github.io/scicomp.github.io/">
  <span class="dropdown-text">Home</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://nceas.github.io/scicomp.github.io/staff.html" rel="" target="">
+    <a class="dropdown-item" href="https://nceas.github.io/scicomp.github.io/staff.html">
  <span class="dropdown-text">People</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-workshops" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-workshops" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Other Workshops</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-other-workshops">    
         <li>
-    <a class="dropdown-item" href="https://nceas.github.io/scicomp-workshop-collaborative-coding/" rel="" target="">
+    <a class="dropdown-item" href="https://nceas.github.io/scicomp-workshop-collaborative-coding/">
  <span class="dropdown-text">GitHub</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://nceas.github.io/scicomp-workshop-tidyverse/" rel="" target="">
+    <a class="dropdown-item" href="https://nceas.github.io/scicomp-workshop-tidyverse/">
  <span class="dropdown-text">Tidyverse</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://njlyon0.github.io/asm-2022_shiny-workshop/" rel="" target="">
+    <a class="dropdown-item" href="https://njlyon0.github.io/asm-2022_shiny-workshop/">
  <span class="dropdown-text">R Shiny</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./issues.html">Project Management</a></li><li class="breadcrumb-item"><a href="./projects.html">GitHub Projects</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./issues.html">Project Management</a></li><li class="breadcrumb-item"><a href="./projects.html">GitHub Projects</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -152,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -184,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><code>git</code> &amp; GitHub</span></a>
+ <span class="menu-text">`git` &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -274,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -283,23 +287,29 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
   <li><a href="#what-is-a-project" id="toc-what-is-a-project" class="nav-link" data-scroll-target="#what-is-a-project">What is a Project?</a></li>
+  <li><a href="#project-ownership" id="toc-project-ownership" class="nav-link" data-scroll-target="#project-ownership">Project Ownership</a></li>
   <li><a href="#using-projects" id="toc-using-projects" class="nav-link" data-scroll-target="#using-projects">Using Projects</a></li>
-  <li><a href="#maximizing-project-utility" id="toc-maximizing-project-utility" class="nav-link" data-scroll-target="#maximizing-project-utility">Maximizing Project Utility</a></li>
-  <li><a href="#project-locations" id="toc-project-locations" class="nav-link" data-scroll-target="#project-locations">Project Locations</a>
+  <li><a href="#project-views" id="toc-project-views" class="nav-link" data-scroll-target="#project-views">Project “Views”</a>
   <ul class="collapse">
-  <li><a href="#organization-projects" id="toc-organization-projects" class="nav-link" data-scroll-target="#organization-projects">Organization Projects</a></li>
-  <li><a href="#user-projects" id="toc-user-projects" class="nav-link" data-scroll-target="#user-projects">User Projects</a></li>
-  <li><a href="#repository-projects" id="toc-repository-projects" class="nav-link" data-scroll-target="#repository-projects">Repository Projects</a></li>
+  <li><a href="#board-view" id="toc-board-view" class="nav-link" data-scroll-target="#board-view">Board View</a></li>
+  <li><a href="#table-view" id="toc-table-view" class="nav-link" data-scroll-target="#table-view">Table View</a></li>
+  <li><a href="#roadmap-view" id="toc-roadmap-view" class="nav-link" data-scroll-target="#roadmap-view">Roadmap View</a></li>
   </ul></li>
+  <li><a href="#integrating-issues" id="toc-integrating-issues" class="nav-link" data-scroll-target="#integrating-issues">Integrating Issues</a>
+  <ul class="collapse">
+  <li><a href="#adding-from-an-issue" id="toc-adding-from-an-issue" class="nav-link" data-scroll-target="#adding-from-an-issue">Adding from an Issue</a></li>
+  <li><a href="#adding-from-a-project" id="toc-adding-from-a-project" class="nav-link" data-scroll-target="#adding-from-a-project">Adding from a Project</a></li>
+  </ul></li>
+  <li><a href="#maximizing-project-utility" id="toc-maximizing-project-utility" class="nav-link" data-scroll-target="#maximizing-project-utility">Maximizing Project Utility</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p><img src="images/logos/nceas_logo_square.png" width="40%"> <img src="images/logos/lter_logo_square.png" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./issues.html">Project Management</a></li><li class="breadcrumb-item"><a href="./projects.html">GitHub Projects</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">GitHub Projects</h1>
 </div>
@@ -314,77 +324,91 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="module-learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
 <p>By the end of this module, you will be able to:</p>
 <ul>
 <li><u>Define</u> a project in the context of GitHub</li>
-<li><u>Summarize</u> the different features of projects created within (A) organizations, (B) users, and (C) repositories</li>
+<li><u>Identify</u> the three available project view options</li>
+<li><u>Explain</u> how issues can get added to projects</li>
 </ul>
 </section>
 <section id="what-is-a-project" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-project">What is a Project?</h2>
-<p>Projects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. <strong>A Project acts as an umbrella that includes many issues</strong> and tracks their inter-relationships and where they fit in a bigger-picture view of a project.</p>
+<p>Projects are GitHub’s primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. <strong>A project acts as an umbrella that includes many issues</strong> and tracks their inter-relationships and where they fit in a bigger-picture view of a project.</p>
+</section>
+<section id="project-ownership" class="level2">
+<h2 class="anchored" data-anchor-id="project-ownership">Project Ownership</h2>
+<p>Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the project. The list of all projects owned by an Organization/User can be accessed via the “projects” tab. Note that this tab’s name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization (“lter”) <em>not</em> a specific repository.</p>
+<p><img src="images/projects/projects-1-org.png" width="100%"></p>
+<p>Once a project has been created, it can be “linked” to any number of repositories owned by that entity. This can be done from the “Projects” tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository (“lter-sparc-soil-p”).</p>
+<p><img src="images/projects/projects-2-linking.png" width="100%"></p>
 </section>
 <section id="using-projects" class="level2">
 <h2 class="anchored" data-anchor-id="using-projects">Using Projects</h2>
-<p>Within the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues <em>and</em> ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.</p>
-<p>See below for a screencap of what such a Project looks like for one team member.</p>
-<p><img src="images/projects/projects-4-example.png" width="100%"></p>
-<p>When using a Project you can add or remove the columns (the above example has four columns) and individual issue “cards” can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the “Done” column).</p>
+<p>Within the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub project to let each team member track all of their Issues <em>and</em> ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.</p>
+<p>See below for a screenshot of what such a project looks like for one team member.</p>
+<p><img src="images/projects/projects-3-example.png" width="100%"></p>
+<p>When using a project you can add or remove the columns (the above example has four columns) and individual issue “cards” can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this project are automatically moved to the “Done” column).</p>
+</section>
+<section id="project-views" class="level2">
+<h2 class="anchored" data-anchor-id="project-views">Project “Views”</h2>
+<p>GitHub supports three different view options within projects. You can have as many views as you’d like, including duplicates of the same category of view. Views can be created or toggled between in the top left of the screen, just beneath the project title.</p>
+<p align="center">
+<img src="images/projects/projects-4-view-tabs.png" width="45%">
+</p>
+<p>Accepted project view options are “Board”, “Table”, and “Roadmap.” We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).</p>
+<section id="board-view" class="level3">
+<h3 class="anchored" data-anchor-id="board-view">Board View</h3>
+<p>The first view option (and in our opinion the best for working groups) is the “board” option. In this view, issues are tracked in vertical columns and can be dragged among columns at will. Columns are often used to denote issue status such that columns further to the right are closer to finished. Column names, colors, and description text can all be edited to fit your team’s needs.</p>
+<p><img src="images/projects/projects-3-example.png" width="100%"></p>
+</section>
+<section id="table-view" class="level3">
+<h3 class="anchored" data-anchor-id="table-view">Table View</h3>
+<p>The second view option is the ‘table’ option. This view stacks all current tasks vertically and automatically sorts them by the task status (equivalent to the columns in the board view). If your team typically uses an MS Excel / Google Sheet file to track your ongoing work, this project view would represent the closest user interface match.</p>
+<p><img src="images/projects/projects-5-table.png" width="100%"></p>
+</section>
+<section id="roadmap-view" class="level3">
+<h3 class="anchored" data-anchor-id="roadmap-view">Roadmap View</h3>
+<p>The final view option is the ‘roadmap’. This view allows for tracking of issues through time more explicitly than the other two view options. You can choose the temporal specificity that makes most sense for your work (allowed options include daily, monthly, quarterly, and yearly breakdowns). Tasks then show up as a long bar in their row extending from whatever their start date is to the user-defined end date. Note that for this view to work you will need to add specific start/end dates to <em>every</em> issue.</p>
+<p><img src="images/projects/projects-6-roadmap.png" width="100%"></p>
+</section>
+</section>
+<section id="integrating-issues" class="level2">
+<h2 class="anchored" data-anchor-id="integrating-issues">Integrating Issues</h2>
+<p>Once you’ve created the project(s) you want, issues can be added to them as desired! You can either add issues at the Issue creation stage or from the project itself after the Issue has been created.</p>
+<section id="adding-from-an-issue" class="level3">
+<h3 class="anchored" data-anchor-id="adding-from-an-issue">Adding from an Issue</h3>
+<p>When you first create an issue you can add it to one or more projects by clicking the gear icon in the sidebar of options on the right side of the screen.</p>
+<p><img src="images/projects/projects-7a-add-from-issue.png" width="100%"></p>
+<p>Upon clicking that icon, a small window will pop up and will allow you to choose any project (A) you’ve interacted with recently, (B) that is linked to this particular repository, and/or (C) that is owned by the Organization/User that owns the repository. If there are many projects that meet these criteria there is also a handy search bar that lets you search through for a specific project by name.</p>
+<p align="center">
+<img src="images/projects/projects-7b-add-from-issue.png" width="40%">
+</p>
+</section>
+<section id="adding-from-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="adding-from-a-project">Adding from a Project</h3>
+<p>If you’d prefer, you can add existing issues to a project from the project’s home screen. Once in the project, click the “Add item” button at the bottom of the screen and begin typing the name of the issue. Clicking an issue’s name will then automatically add it to the project and will allow you to “triage” it (i.e., add the issue to the column indicating its current status).</p>
+<p align="center">
+<img src="images/projects/projects-8-add-from-project.png" width="75%">
+</p>
+</section>
 </section>
 <section id="maximizing-project-utility" class="level2">
 <h2 class="anchored" data-anchor-id="maximizing-project-utility">Maximizing Project Utility</h2>
-<p>It may go without saying, but Projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of Projects are as follows:</p>
+<p>It may go without saying, but projects are at their most valuable as project management tools when you make effective use of GitHub Issues. Specifically, the three Issue capabilities that will benefit your adoption of projects are as follows:</p>
 <ol type="1">
 <li>Giving Issues clear and short titles</li>
 <li>“Assigning” Issues to particular users</li>
 <li>Using labels to group Issues into useful categories</li>
 </ol>
-<p>If your team is considering these three points, then adopting GitHub Projects will further empower your ability to track your internal tasks over time. Feel free to consult <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">our page on Issues</a> for more information!</p>
-</section>
-<section id="project-locations" class="level2">
-<h2 class="anchored" data-anchor-id="project-locations">Project Locations</h2>
-<p>Projects can be created in one of three places with meaningful differences for each:</p>
-<ol type="1">
-<li>A Project can be created for an Organization</li>
-<li>A Project can be created for a User</li>
-<li>A Project can be created for a Repository</li>
-</ol>
-<section id="organization-projects" class="level3">
-<h3 class="anchored" data-anchor-id="organization-projects">Organization Projects</h3>
-<p><img src="images/projects/projects-1-org.png" width="100%"></p>
-<p>A Project created for an Organization allows all GitHub users <em>with access to that organization</em> to add issues to the Project and move them around within a Project. This can be really valuable because no special settings need to be touched in order to allow all users to meaningfully interact with issues. Both <a href="https://github.com/lter">LTER</a> and <a href="https://github.com/NCEAS">NCEAS</a> have existing organizations that can support Projects created for working groups.</p>
-<ul>
-<li>Supports issues from <em>any repository</em></li>
-<li>Editable by any user <strong>in the organization</strong></li>
-</ul>
-</section>
-<section id="user-projects" class="level3">
-<h3 class="anchored" data-anchor-id="user-projects">User Projects</h3>
-<p><img src="images/projects/projects-2-user.png" width="100%"></p>
-<p>A Project created within a particular user’s “self” can also accept issues from any repository. However, the Project can only be interacted with by the user unless that user modifies their settings to specify other users who are granted special access to the Project.</p>
-<ul>
-<li>Supports issues from <em>any repository</em></li>
-<li>Editable by <strong>only this user</strong>*
-<ul>
-<li>* Unless that user tweaks their settings to allow other specified users to have admin-level powers in that Project</li>
-</ul></li>
-</ul>
-</section>
-<section id="repository-projects" class="level3">
-<h3 class="anchored" data-anchor-id="repository-projects">Repository Projects</h3>
-<p><img src="images/projects/projects-3-repo.png" width="100%"></p>
-<p>A Project created within a repository can only be used for issues posted on that repository and by users with access to the the repository. <strong>This is the most narrowly-defined type of Project.</strong> That said, it can be very valuable if you anticipate <strong>(1)</strong> that the repository that “owns” this Project will involve many large goals that would require the level of project management supported by GitHub Projects and <strong>(2)</strong> that these tasks will <em>never</em> grow to involve other repositories.</p>
-<ul>
-<li>Supports issues <strong>only from that repository</strong></li>
-<li>Editable by any user with access to the repository</li>
-</ul>
+<p>If your team is considering these three points, then adopting GitHub projects will further empower your ability to track your internal tasks over time. Feel free to consult <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">our page on Issues</a> for more information!</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -429,6 +453,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -497,13 +548,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -582,10 +635,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/NCEAS\.github\.io\/scicomp-workshop-collaborative-coding\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -595,8 +665,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -609,6 +688,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -652,6 +850,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -677,6 +876,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -734,20 +959,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/github\.com\/NCEAS\/scicomp-workshop-collaborative-coding");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
@@ -756,12 +967,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2022, NCEAS</div>
+    <div class="nav-footer-center">
+<p>Copyright 2022, NCEAS</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 
