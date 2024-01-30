@@ -7,6 +7,7 @@ title: "GitHub Projects"
 By the end of this module, you will be able to:
 
 - <u>Define</u> a project in the context of GitHub
+- <u>Identify</u> the three available project view options
 - <u>Explain</u> how issues can get added to projects
 
 ## What is a Project?
@@ -22,6 +23,34 @@ See below for a screencap of what such a Project looks like for one team member.
 <img src="images/projects/projects-1-example.png" width="100%"/>
 
 When using a Project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the "Done" column).
+
+## Project "Views"
+
+GitHub supports three different view options within projects. You can have as many views as you'd like, including duplicates of the same category of view. Views can be created or toggled between in the top left of the screen, just beneath the project title.
+
+<p align="center">
+<img src="images/projects/projects-2-view-tabs.png" width="45%">
+</p>
+
+Accepted project view options are "Board", "Tables", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
+
+### Board View
+
+The first view option (and in our opinion the best for working groups) is the "board" option. In this view, issues are tracked in vertical columns and can be dragged among columns at will. Columns are often used to denote issue status such that columns further to the right are closer to finished. Column names, colors, and description text can all be edited to fit your team's needs.
+
+<img src="images/projects/projects-1-example.png" width="100%"/>
+
+### Table View
+
+The second view option is the 'table' option. This view stacks all current tasks vertically and automatically sorts them by the task status (equivalent to the columns in the board view). If your team typically uses an MS Excel / Google Sheet file to track your ongoing work, this project view would represent the closest user interface match.
+
+<img src="images/projects/projects-3-table.png" width="100%">
+
+### Roadmap View
+
+The final view option is the 'roadmap'. This view allows for tracking of issues through time more explicitly than the other two view options. You can choose the temporal specificity that makes most sense for your work (allowed options include daily, monthly, quarterly, and yearly breakdowns). Tasks then show up as a long bar in their row extending from whatever their start date is to the user-defined end date. Note that for this view to work you will need to add specific start/end dates to _every_ issue.
+
+<img src="images/projects/projects-4-roadmap.png" width="100%">
 
 ## Project Ownership
 
