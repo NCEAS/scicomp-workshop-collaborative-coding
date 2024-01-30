@@ -54,11 +54,11 @@ The final view option is the 'roadmap'. This view allows for tracking of issues 
 
 ## Project Ownership
 
-Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them.
+Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
 
 <img src="images/projects/projects-5-org.png" width="100%"/>
 
-Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired.
+Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository ("lter-sparc-soil-p").
 
 <img src="images/projects/projects-6-linking.png" width="100%"/>
 
