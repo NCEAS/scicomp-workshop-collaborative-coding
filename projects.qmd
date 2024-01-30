@@ -14,13 +14,23 @@ By the end of this module, you will be able to:
 
 Projects are GitHub's primary strategic project management tool. While issues can be very useful for particular tasks, they are less valuable for making larger-scale plans and tracking evolving priorities. **A Project acts as an umbrella that includes many issues** and tracks their inter-relationships and where they fit in a bigger-picture view of a project.
 
+## Project Ownership
+
+Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
+
+<img src="images/projects/projects-1-org.png" width="100%"/>
+
+Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository ("lter-sparc-soil-p").
+
+<img src="images/projects/projects-2-linking.png" width="100%"/>
+
 ## Using Projects
 
 Within the team that created this workshop, we use GitHub Issues to track and document each task that we do for a working group. We then use a GitHub Project to let each team member track all of their Issues *and* ensure that we rotate through which group we are helping. This guarantees equitable effort for each working group and allows each team member to balance all of the tasks on their docket at any given moment.
 
 See below for a screencap of what such a Project looks like for one team member.
 
-<img src="images/projects/projects-1-example.png" width="100%"/>
+<img src="images/projects/projects-3-example.png" width="100%"/>
 
 When using a Project you can add or remove the columns (the above example has four columns) and individual issue "cards" can be clicked and dragged among columns. You can also automate a column so that Issues that meet certain criteria are automatically moved to a particular column (e.g., Issues added to this Project are automatically moved to the "Done" column).
 
@@ -29,7 +39,7 @@ When using a Project you can add or remove the columns (the above example has fo
 GitHub supports three different view options within projects. You can have as many views as you'd like, including duplicates of the same category of view. Views can be created or toggled between in the top left of the screen, just beneath the project title.
 
 <p align="center">
-<img src="images/projects/projects-2-view-tabs.png" width="45%">
+<img src="images/projects/projects-4-view-tabs.png" width="45%">
 </p>
 
 Accepted project view options are "Board", "Table", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
@@ -38,31 +48,21 @@ Accepted project view options are "Board", "Table", and "Roadmap." We will highl
 
 The first view option (and in our opinion the best for working groups) is the "board" option. In this view, issues are tracked in vertical columns and can be dragged among columns at will. Columns are often used to denote issue status such that columns further to the right are closer to finished. Column names, colors, and description text can all be edited to fit your team's needs.
 
-<img src="images/projects/projects-1-example.png" width="100%"/>
+<img src="images/projects/projects-3-example.png" width="100%"/>
 
 ### Table View
 
 The second view option is the 'table' option. This view stacks all current tasks vertically and automatically sorts them by the task status (equivalent to the columns in the board view). If your team typically uses an MS Excel / Google Sheet file to track your ongoing work, this project view would represent the closest user interface match.
 
-<img src="images/projects/projects-3-table.png" width="100%">
+<img src="images/projects/projects-5-table.png" width="100%">
 
 ### Roadmap View
 
 The final view option is the 'roadmap'. This view allows for tracking of issues through time more explicitly than the other two view options. You can choose the temporal specificity that makes most sense for your work (allowed options include daily, monthly, quarterly, and yearly breakdowns). Tasks then show up as a long bar in their row extending from whatever their start date is to the user-defined end date. Note that for this view to work you will need to add specific start/end dates to _every_ issue.
 
-<img src="images/projects/projects-4-roadmap.png" width="100%">
+<img src="images/projects/projects-6-roadmap.png" width="100%">
 
-## Project Ownership
-
-Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
-
-<img src="images/projects/projects-5-org.png" width="100%"/>
-
-Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired. Note in the top left of the screenshot below that we are in a repository ("lter-sparc-soil-p").
-
-<img src="images/projects/projects-6-linking.png" width="100%"/>
-
-## Integrating Issues & Projects
+## Integrating Issues
 
 Once you've created the Project(s) you want, issues can be added to them as desired! You can either add issues at the Issue creation stage or from the Project itself after the Issue has been created.
 
