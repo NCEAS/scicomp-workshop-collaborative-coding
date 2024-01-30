@@ -7,7 +7,7 @@ title: "GitHub Projects"
 By the end of this module, you will be able to:
 
 - <u>Define</u> a project in the context of GitHub
-- <u>Summarize</u> the different features of projects created within (A) organizations, (B) users, and (C) repositories
+- <u>Explain</u> how issues can get added to projects
 
 ## What is a Project?
 
