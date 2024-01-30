@@ -32,7 +32,7 @@ GitHub supports three different view options within projects. You can have as ma
 <img src="images/projects/projects-2-view-tabs.png" width="45%">
 </p>
 
-Accepted project view options are "Board", "Tables", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
+Accepted project view options are "Board", "Table", and "Roadmap." We will highlight the major features of each view below but note that in all included screen captures the actual issues in the project are the same! Picking a view option is essentially only a user interface change, not a fundamental change to how tasks are managed by or added to a given project (more on that later!).
 
 ### Board View
 
@@ -56,11 +56,11 @@ The final view option is the 'roadmap'. This view allows for tracking of issues 
 
 Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the Project. The list of all Projects owned by an Organization/User can be accessed via the "Projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them.
 
-<img src="images/projects/projects-2-org.png" width="100%"/>
+<img src="images/projects/projects-5-org.png" width="100%"/>
 
 Once a Project has been created, it can be "linked" to any number of repositories owned by that entity. This can be done from the "Projects" tab of each repository to which linking is desired.
 
-<img src="images/projects/projects-3-linking.png" width="100%"/>
+<img src="images/projects/projects-6-linking.png" width="100%"/>
 
 ## Integrating Issues & Projects
 
@@ -70,12 +70,12 @@ Once you've created the Project(s) you want, issues can be added to them as desi
 
 When you first create an issue you can add it to one or more Projects by clicking the gear icon in the sidebar of options on the right side of the screen.
 
-<img src="images/projects/projects-4-add-from-issue.png" width="100%"/>
+<img src="images/projects/projects-7a-add-from-issue.png" width="100%"/>
 
 Upon clicking that icon, a small window will pop up and will allow you to choose any Project (A) you've interacted with recently, (B) that is linked to this particular repository, and/or (C) that is owned by the Organization/User that owns the repository. If there are many projects that meet these criteria there is also a handy search bar that lets you search through for a specific Project by name.
 
 <p align="center">
-<img src="images/projects/projects-4b-add-from-issue.png" width="40%"/>
+<img src="images/projects/projects-7b-add-from-issue.png" width="40%"/>
 </p>
 
 ### Adding from a Project
@@ -83,7 +83,7 @@ Upon clicking that icon, a small window will pop up and will allow you to choose
 If you'd prefer, you can add existing issues to a Project from the Project's home screen. Once in the Project, click the "Add item" button at the bottom of the screen and begin typing the name of the issue. Clicking an issue's name will then automatically add it to the Project and will allow you to "triage" it (i.e., add the issue to the column indicating its current status).
 
 <p align="center">
-<img src="images/projects/projects-5-add-from-project.png" width="75%"/>
+<img src="images/projects/projects-8-add-from-project.png" width="75%"/>
 </p>
 
 ## Maximizing Project Utility
