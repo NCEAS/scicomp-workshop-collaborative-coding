@@ -16,7 +16,7 @@ Projects are GitHub's primary strategic project management tool. While issues ca
 
 ## Project Ownership
 
-projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the project. The list of all projects owned by an Organization/User can be accessed via the "projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
+Projects can only be created for a particular User or an Organization. In either case, any number of users can be allowed access to the project. The list of all projects owned by an Organization/User can be accessed via the "projects" tab. Note that this tab's name is consistent for Users and Organizations; Organizations just have more tabs to support the expanded set of tools available to them. Note that in the screenshot below we are in an organization ("lter") _not_ a specific repository.
 
 <img src="images/projects/projects-1-org.png" width="100%"/>
 
