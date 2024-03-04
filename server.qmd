@@ -95,3 +95,7 @@ usethis::git_default_branch_configure(name = "main")
 ```
 
 ## Working on the Server
+
+Once you're properly set up, working on the server should be completely seamless! Instead of opening RStudio on your computer you'll open a browser and work on the server from there but otherwise the feeling and process of version control should be identical. Eventually you may even want to make commits on your computer, push them to GitHub (after pulling!), then pull those same commits down to your server self and continue working there.
+
+You'll find working on the server to be dramatically faster for computationally-intense operations so we hope this guide has been helpful in getting you prepared to take advantage of that benefit!
