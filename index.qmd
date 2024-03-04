@@ -90,9 +90,9 @@ Begin by using the command line (a.k.a. "shell" or "Terminal") to check whether 
 ls -al ~/.ssh/
 ```
 
-If you do need to create an SSH key pair you can do so via RStudio. Click the "Tools" menu option then "Global Options..." then "Git/SVN" and finally "Create RSA Key...". You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice
+If you do need to create an SSH key pair you can do so via RStudio. Click the "Tools" menu option then "Global Options..." then "Git/SVN" and finally "Create RSA Key...". You will be prompted to enter a passphrase that will be required to access your SSH key later on. This step is technically optional but is considered a best practice.
 
-
+When you're ready, click "Create" and RStudio will generate the key pair and store them in the ".ssh" folder of your computer as "id_rsa" and "id_rsa.pub" for the private vs. public keys respectively.
 
 You may also find [GitHub's SSH documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or the [Happy Git with R SSH tutorial](https://happygitwithr.com/ssh-keys) helpful.
 
