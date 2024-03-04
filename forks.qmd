@@ -6,21 +6,21 @@ title: "Forks"
 
 By the end of this module, you will be able to:
 
-- <u>Define</u> "fork" in the context of `git`/GitHub
+- <u>Define</u> "fork" in the context of Git/GitHub
 - <u>Contrast</u> forks with branches
 - <u>Use</u> the fork feature on GitHub for an existing repository
 
 ## What is a Fork?
 
-A **fork** is a duplicate of a `git` repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.
+A **fork** is a duplicate of a Git repository that is owned by someone other than you. Any repository that you can view on GitHub, you can fork. Forks allow you to start with a complete repository and then edit it for your own use as needed.
 
-The difference between **forks** and **branches** is a source of great confusion for many (even veteran!) `git` users but hopefully this list helps to clarify:
+The difference between **forks** and **branches** is a source of great confusion for many (even veteran!) Git users but hopefully this list helps to clarify:
 
 1. A fork creates a new repository while a branch exists within a given repository
 
 2. A fork is owned by a different user/organization than the original, a branch does not change repository ownership
 
-3. A fork's "parent" repository is not recognized by `git` but `git` does 'know' which branch a given branch originates from.
+3. A fork's "parent" repository is not recognized by Git but Git does 'know' which branch a given branch originates from.
 
 ## Choosing Whether to Fork or to Branch
 
@@ -32,7 +32,7 @@ It is important to note that both forks and branches can be merged back into the
 
 ## Brief Overview of Fork Workflow
 
-Forking is (arguably) one of the more straightforward `git` workflows but before we cover it in detail, let's review the broader context.
+Forking is (arguably) one of the more straightforward Git workflows but before we cover it in detail, let's review the broader context.
 
 You begin by going to the GitHub page for a repository that you do not own. From there, there is a convenient "Fork" button you can click that (after a screen very much like that of creating a new repository) creates a duplicate of the repository in your profile's repository list.
 

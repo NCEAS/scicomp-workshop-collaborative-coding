@@ -12,7 +12,7 @@ By the end of this module, you will be able to:
 
 ## Overview
 
-The purpose of the `.gitignore` is evident in its name: anything included in it is *ignored by `git`*. This can be useful if you want to include data in your local version of your repository but don't want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.
+The purpose of the `.gitignore` is evident in its name: anything included in it is *ignored by Git*. This can be useful if you want to include data in your local version of your repository but don't want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.
 
 ## Creating a `.gitignore`
 
@@ -50,7 +50,7 @@ After you click it you'll be looking at a file that looks very similar to any ot
 <img src="images/git_ignore/ignore-6-viewing.png" width = "100%"/>
 </p>
 
-Now let's add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file `git` is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.
+Now let's add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.
 
 If we add `*.Rproj` to our `.gitignore`, the Git pane will show that the only change is that lines have been added to the `.gitignore`. The .Rproj file with the double yellow question marks next to it is gone!
 
@@ -81,7 +81,7 @@ There are many different opinions on what should go into a `.gitignore` but we h
 3. **Other Considerations**
 
     - Some people recommend adding <u>everything your script creates</u> to the `.gitignore`. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions
-    - Another way of thinking about this is to create a dedicated folder to store products in (e.g., "data", "exports", etc.) and then add that folder to the `.gitignore`. This means you don't need to worry about adding specific files to the `.gitignore` so long as all the files live in a folder you've already designated as something for `git` to not track
+    - Another way of thinking about this is to create a dedicated folder to store products in (e.g., "data", "exports", etc.) and then add that folder to the `.gitignore`. This means you don't need to worry about adding specific files to the `.gitignore` so long as all the files live in a folder you've already designated as something for Git to not track
 
 4. Do you have another idea for what you typically add to a `.gitignore`?
 
@@ -135,11 +135,11 @@ Ultimately, this is up to you and your team to decide! Hopefully our outlined re
 
 ## Ignoring Previously Tracked Content
 
-Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by `git` and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop `git` from tracking *future* changes to the file. If this is the case, you'll need to do the following:
+Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio's "Git" pane will notify you that the file changed by placing the blue "M" next to the file's name. Let's say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking *future* changes to the file. If this is the case, you'll need to do the following:
 
 1. Either (A) delete the file or (B) move it out of the repository's folder
 
-    - Either option will register as "deleting" the file from `git`'s perspective
+    - Either option will register as "deleting" the file from Git's perspective
 
 2. **Commit** the deletion
 
@@ -147,4 +147,4 @@ Imagine a situation where you commit a data file to your GitHub repository and p
 
 4. Add the name of that file to your `.gitignore`
 
-Once you've done these steps, even if you put the file back in your repository, `git` won't track its addition or any changes to it over time.
+Once you've done these steps, even if you put the file back in your repository, Git won't track its addition or any changes to it over time.

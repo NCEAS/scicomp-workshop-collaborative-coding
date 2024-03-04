@@ -12,7 +12,7 @@ By the end of this module, you will be able to:
 
 ## What is a Merge Conflict?
 
-Merge conflicts are a normal part of the `git` workflow so don't get discouraged when you run into them! They occur when `git` cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.
+Merge conflicts are a normal part of the Git workflow so don't get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.
 
 ## Brief Overview of Merge Conflict Workflow
 
@@ -70,7 +70,7 @@ After clicking **<span style="color:blue">Pull</span>**, we get a new error mess
 
 ![](images/conflicts/conflicts-7-birds-pull.png)
 
-Looking closer, the merge conflict prompted a new version of `test-script.R` to pop up. This version contains our edits and our collaborator's edits, along with the delimiter lines that start with `<<<<<<<`, `=======`, and `>>>>>>>`. `git` is urging us to manually fix the conflicted lines before continuing.
+Looking closer, the merge conflict prompted a new version of `test-script.R` to pop up. This version contains our edits and our collaborator's edits, along with the delimiter lines that start with `<<<<<<<`, `=======`, and `>>>>>>>`. Git is urging us to manually fix the conflicted lines before continuing.
 
 <p align="center"/>
 <img src="images/conflicts/conflicts-8-conflicted-lines.png" width="80%"/>

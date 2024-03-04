@@ -6,25 +6,25 @@ title: "Branches"
 
 By the end of this module, you will be able to:
 
-- <u>Define</u> "branch" in the context of `git`/GitHub 
+- <u>Define</u> "branch" in the context of Git/GitHub 
 - <u>Summarize</u> the main steps of a workflow that uses branches
 - <u>Create</u> a branch on an existing repository
 
 ## What is a Branch?
 
-A **branch** is essentially a working environment in your `git` repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don't want to risk damaging the version of your code that already works. Note that "branch" can be either a noun or a verb as with many of the `git` vocabulary words discussed earlier (e.g., "commit", "push", etc.).
+A **branch** is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don't want to risk damaging the version of your code that already works. Note that "branch" can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., "commit", "push", etc.).
 
 Branches are typically created with **the intent to put the work in the branch back into the main branch when you are done with it.** Implicit in that rationale is the fact that most branches are created with a specific task/sub-task in mind and known to be temporary from the outset.
 
-As an example, imagine that you want to put a better engine in your car but you don't want to risk damaging your car as you go about that job. In `git` terms you could create a branch to work on those mechanical improvements while at the same time preserving your original car separately (in the "main" branch). When you're done experimenting and happy with the new version of your car, you can merge the two cars keeping all of the improvements you made in your branch.
+As an example, imagine that you want to put a better engine in your car but you don't want to risk damaging your car as you go about that job. In Git terms you could create a branch to work on those mechanical improvements while at the same time preserving your original car separately (in the "main" branch). When you're done experimenting and happy with the new version of your car, you can merge the two cars keeping all of the improvements you made in your branch.
 
-Even if you think you've never worked with `git` branches you actually have! All `git` repositories actually start in a branch named "main" so even if you've never intentionally created a branch, you've been working in your "main" branch all along.
+Even if you think you've never worked with Git branches you actually have! All Git repositories actually start in a branch named "main" so even if you've never intentionally created a branch, you've been working in your "main" branch all along.
 
 ## Brief Overview of Branch Workflow
 
-Before diving into the specifics of how to use branches while working with `git`, let's take a look at a general overview of that process.
+Before diving into the specifics of how to use branches while working with Git, let's take a look at a general overview of that process.
 
-As with many other `git` operations, the first thing to do is **<span style="color:blue">pull</span>** from GitHub to your local repository to ensure that you're working with the most up-to-date version of everything in the repo (see **Step 1** below).
+As with many other Git operations, the first thing to do is **<span style="color:blue">pull</span>** from GitHub to your local repository to ensure that you're working with the most up-to-date version of everything in the repo (see **Step 1** below).
 
 Once that is done, you can create a branch on your local machine (automatically shifting your RStudio project into that new branch). Doing this on your machine also updates GitHub to show that there are multiple branches (see **Step 2** below).
 
@@ -38,7 +38,7 @@ Given that most branches are not used again after they are merged, it is often a
 
 However, deletion of the branch either locally or via GitHub **must** come *after* step 5!
 
-As you can see from the above text and the below diagram, branches have a few more moving parts than the `git` and GitHub operations we've discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas*ier*) workflow for working together while avoiding conflicts (again, see "Appendix A: Conflicts").
+As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we've discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas*ier*) workflow for working together while avoiding conflicts (again, see "Appendix A: Conflicts").
 
 <p align="center">
 <img src="images/branches/git-branch-workflow.png" width="75%"/>
@@ -64,7 +64,7 @@ Once you're happy with the name, click **"Create"** (you can ignore the other op
 <img src="images/branches/branches-2-name-new-branch.png" width="65%"/>
 </p>
 
-This will create a confirmation message that is superficially similar to the format of messages returned by other `git` actions.
+This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.
 
 <p align="center">
 <img src="images/branches/branches-2b-success-dialogue.png" width="75%"/>
@@ -85,7 +85,7 @@ You can now work in a branch *in the same way* that you work with GitHub via RSt
 3. **<span style="color:blue">Pull</span>** from GitHub to reduce the chances of a conflict
 4. **<span style="color:green">Push</span>** your committed changes to GitHub
 
-The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in `git` is functionally done in the "main" branch of your repository.
+The reason you use the same workflow is--as previously stated--even if you don't typically use branches, all work in Git is functionally done in the "main" branch of your repository.
 
 For a more in-depth review of the RStudio-GitHub workflow, see Chapter 3: Using GitHub via Rstudio
 

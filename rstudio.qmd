@@ -7,12 +7,12 @@ title: "RStudio"
 By the end of this module, you will be able to:
 
 - <u>Describe</u> the computer-to-GitHub order of operations
-- <u>Define</u> fundamental `git` vocabulary
+- <u>Define</u> fundamental Git vocabulary
 - <u>Create</u> a local version-controlled repository that is connected to GitHub
 
-## Overview of `git` Workflow
+## Overview of Git Workflow
 
-Before we get into using `git` and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.
+Before we get into using Git and GitHub through RStudio, it will be helpful to review the major steps of including version control as you work on code.
 
 Beginning on your local computer, you make **<span style="color:gold">changes</span>** to a file in a folder that you have previously marked for version control tracking (i.e., a **working directory**). Once those changes are made you can **stage changes** within your local computer. After staging, it is best to <span style="color:blue">retrieve the latest file versions from the cloud</span>. You likely will already be up-to-date but this preemptive step can save you a lot of heartache down the line. Once you've confirmed that you have the latest file versions, you can <span style="color:green">shift the revised file(s) to the cloud</span> where any GitHub users with access to your project can access the most recent file and look at the history of all previous changes.
 
@@ -20,7 +20,7 @@ Beginning on your local computer, you make **<span style="color:gold">changes</s
 <img src="images/rstudio/git-workflow.png" width="70%"/>
 </p>
 
-## `git` Vocabulary
+## Git Vocabulary
 
 Finally, it will be helpful to introduce four key pieces of vocabulary before we dive into the interactive component of this workshop.
 
@@ -38,7 +38,7 @@ Finally, it will be helpful to introduce four key pieces of vocabulary before we
 
 ## Cloning a Repository
 
-Now, the first step in using `git` with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, **GitHub is in dark mode** while **RStudio is in light mode**. To clone a repository, follow these steps:
+Now, the first step in using Git with RStudio is cloning the repository from GitHub. Note for clarity that in the screenshots below, **GitHub is in dark mode** while **RStudio is in light mode**. To clone a repository, follow these steps:
 
 Navigate to the repository on GitHub and click on **<span style="color:green">Code</span>**. Select **HTTPS** and copy the link.
 
@@ -59,7 +59,7 @@ Select **Version Control**.
 <img src="images/rstudio/rstudio-9-version-control.png" width="75%"/>
 </p>
 
-Select **`git`**.
+Select **Git**.
 
 <p align="center">
 <img src="images/rstudio/rstudio-10-clone.png" width="75%"/>
@@ -77,14 +77,14 @@ Now we have finished cloning the repository to our RStudio! Notice that we are w
 
 ## Workflow Refresher
 
-The typical workflow with `git` goes like this:
+The typical workflow with Git goes like this:
 
 **Step 1**: You modify files in your working directory and save them as usual.
 
 **Step 2**: You **stage** files to mark your intention to "commit" them and then **commit** that version of those files.
 
     - In RStudio, "staging" is done by checking the box next to a given file in the "Git" tab
-    - Committing files permanently stores them as snapshots to your `git` directory
+    - Committing files permanently stores them as snapshots to your Git directory
 
 **Step 3**: You **pull** the most recent changes to make sure you've been editing the latest versions.
 
@@ -107,19 +107,19 @@ This 2-step process enables you to flexibly group files into a specific commit. 
 
 ## Creating a New File
 
-Let's try out a simple `git` workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to **File** > **New File** > **R Script**. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `angel-script.R`. 
+Let's try out a simple Git workflow by first creating a new file. This is **Step 1** of the process. We can add new R scripts and files to our repository through RStudio. Try creating a new script by going to **File** > **New File** > **R Script**. Feel free to type anything you want into this script as an example. Name this script after yourself. In the screenshot below, I have named my script `angel-script.R`. 
 
-Once you are done, navigate to the **`git`** tab on the upper left corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some temporary files are not tracked by `git`. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
+Once you are done, navigate to the **Git** tab on the upper left corner. You should see your new script show up there along with a `.gitignore` and `git-practice.Rproj` file. Do not worry about the `.gitignore` file for now, it was created by RStudio to make sure that some temporary files are not tracked by Git. The `git-practice.Rproj` file will save your settings and open tabs when you close the project, and will restore these settings the next time you open it.
 
 <img src="images/rstudio/rstudio-13-new-script.png" width="100%"/>
 
-Notice that there are color-coded icons next to the files in the "Git" tab. These icons are shorthand for the status--according to `git`--of every* file in your working directory. Not technically "every" file because files that are tracked but haven't been modified are not included. See below for definitions.
+Notice that there are color-coded icons next to the files in the "Git" tab. These icons are shorthand for the status--according to Git--of every* file in your working directory. Not technically "every" file because files that are tracked but haven't been modified are not included. See below for definitions.
 
 <p align="center">
 <img src="images/rstudio/rstudio-icons.png" width="65%"/>
 </p>
 
-In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` files have never been tracked by `git` (since these files were just created). Note also that the `README.md` file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.
+In our case, it means that our R script, `.gitignore`, and `git-practice.Rproj` files have never been tracked by Git (since these files were just created). Note also that the `README.md` file is not listed, but it exists (check the Files pane). It is because files that are tracked but have no modifications since the last commit are not listed.
 
 ### Adding our Script to the Next Commit
 
@@ -129,11 +129,11 @@ Let us look at the diff of our script. Click on the **Diff** tab.
 <img src="images/rstudio/rstudio-13c-diff.png" width="80%"/>
 </p>
 
-Checking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for `git`. We would like to save a snapshot of this version of our script. Since we've just done **Step 1**, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:
+Checking our script, we can see the new lines that we just typed are in green, which indicates that these lines have been added for Git. We would like to save a snapshot of this version of our script. Since we've just done **Step 1**, here are the rest of the steps we will need to do to get our script to show up on our GitHub repository:
 
 **Step 2**: Add the file to the next commit by checking the box in front of the file name. Note that the two `?` icons will change to a single `A` on the left to show you that this file is now staged to be part of the next commit.
 
-**Step 3**: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the **Commit** button to save this version of the script in the `git` database.
+**Step 3**: In the right pane, type a short but descriptive commit message detailing what you have done so far. Then click on the **Commit** button to save this version of the script in the Git database.
 
 <img src="images/rstudio/rstudio-14-commit-message.png" width="90%"/>
 
@@ -141,17 +141,17 @@ If all of the above steps went well, you should see something like this:
 
 <img src="images/rstudio/rstudio-15-finished-commiting.png" width="90%"/>
 
-Notice that `git` tells us that `1 file changed` because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
+Notice that Git tells us that `1 file changed` because we've just added a new file to our commit. Now close the window. Before sending our changes back to GitHub, we should make sure that the copy of the repository on RStudio is completely up-to-date with the one on GitHub to avoid any conflicts.
 
 ### Getting the Latest Updates
 
-There are two `git` commands to exchange between a local and remote versions of a repository: 
+There are two Git commands to exchange between a local and remote versions of a repository: 
 
-- `pull`: `git` will get the latest remote version and try to merge it with your local version 
+- `pull`: Git will get the latest remote version and try to merge it with your local version 
 
-- `push`: `git` will send your local version to the remote version of the repository (in our case GitHub)
+- `push`: Git will send your local version to the remote version of the repository (in our case GitHub)
 
-**Before sending your local version to the remote**, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way `git` protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:
+**Before sending your local version to the remote**, you should always get the latest remote version first. In other words, you should pull first and push second. This is the way Git protects the remote version against incompatibilities with the local version. You always deal with potential problems on your local machine. Therefore your sequence will always be:
 
 1. Commit
 2. `pull`
@@ -203,4 +203,4 @@ If your personal access token (PAT) was not set up correctly with RStudio or if 
 
 Great! Now that your script has been added to the group repository, you should try to repeat the same workflow over again just to get a feel for how it works. Go back to RStudio and edit your own script. Save those edits, add your edited file to the staging area, write a commit message, then commit your changes. After committing, make sure to pull first then push after! When you pull, you might notice that scripts from your group members/collaborators will show up in your RStudio files. 
 
-Make sure to work on your own script. If you and another group member work on the same script at the same time, this may lead to merge conflicts with `git`. If two people were to work on the same script, they may be making different edits on the same lines, and `git` would not know which edits to keep. To avoid merge conflicts, be mindful of what files you are working on and always communicate this to your group members!
+Make sure to work on your own script. If you and another group member work on the same script at the same time, this may lead to merge conflicts with Git. If two people were to work on the same script, they may be making different edits on the same lines, and Git would not know which edits to keep. To avoid merge conflicts, be mindful of what files you are working on and always communicate this to your group members!
