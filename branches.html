@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">`git` &amp; GitHub</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -323,29 +323,29 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
 <p>By the end of this module, you will be able to:</p>
 <ul>
-<li><u>Define</u> “branch” in the context of <code>git</code>/GitHub</li>
+<li><u>Define</u> “branch” in the context of Git/GitHub</li>
 <li><u>Summarize</u> the main steps of a workflow that uses branches</li>
 <li><u>Create</u> a branch on an existing repository</li>
 </ul>
 </section>
 <section id="what-is-a-branch" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-branch">What is a Branch?</h2>
-<p>A <strong>branch</strong> is essentially a working environment in your <code>git</code> repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don’t want to risk damaging the version of your code that already works. Note that “branch” can be either a noun or a verb as with many of the <code>git</code> vocabulary words discussed earlier (e.g., “commit”, “push”, etc.).</p>
+<p>A <strong>branch</strong> is essentially a working environment in your Git repository that is separate from your main working area. This can be incredibly useful when you have a task to work on but you don’t want to risk damaging the version of your code that already works. Note that “branch” can be either a noun or a verb as with many of the Git vocabulary words discussed earlier (e.g., “commit”, “push”, etc.).</p>
 <p>Branches are typically created with <strong>the intent to put the work in the branch back into the main branch when you are done with it.</strong> Implicit in that rationale is the fact that most branches are created with a specific task/sub-task in mind and known to be temporary from the outset.</p>
-<p>As an example, imagine that you want to put a better engine in your car but you don’t want to risk damaging your car as you go about that job. In <code>git</code> terms you could create a branch to work on those mechanical improvements while at the same time preserving your original car separately (in the “main” branch). When you’re done experimenting and happy with the new version of your car, you can merge the two cars keeping all of the improvements you made in your branch.</p>
-<p>Even if you think you’ve never worked with <code>git</code> branches you actually have! All <code>git</code> repositories actually start in a branch named “main” so even if you’ve never intentionally created a branch, you’ve been working in your “main” branch all along.</p>
+<p>As an example, imagine that you want to put a better engine in your car but you don’t want to risk damaging your car as you go about that job. In Git terms you could create a branch to work on those mechanical improvements while at the same time preserving your original car separately (in the “main” branch). When you’re done experimenting and happy with the new version of your car, you can merge the two cars keeping all of the improvements you made in your branch.</p>
+<p>Even if you think you’ve never worked with Git branches you actually have! All Git repositories actually start in a branch named “main” so even if you’ve never intentionally created a branch, you’ve been working in your “main” branch all along.</p>
 </section>
 <section id="brief-overview-of-branch-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="brief-overview-of-branch-workflow">Brief Overview of Branch Workflow</h2>
-<p>Before diving into the specifics of how to use branches while working with <code>git</code>, let’s take a look at a general overview of that process.</p>
-<p>As with many other <code>git</code> operations, the first thing to do is <strong><span style="color:blue">pull</span></strong> from GitHub to your local repository to ensure that you’re working with the most up-to-date version of everything in the repo (see <strong>Step 1</strong> below).</p>
+<p>Before diving into the specifics of how to use branches while working with Git, let’s take a look at a general overview of that process.</p>
+<p>As with many other Git operations, the first thing to do is <strong><span style="color:blue">pull</span></strong> from GitHub to your local repository to ensure that you’re working with the most up-to-date version of everything in the repo (see <strong>Step 1</strong> below).</p>
 <p>Once that is done, you can create a branch on your local machine (automatically shifting your RStudio project into that new branch). Doing this on your machine also updates GitHub to show that there are multiple branches (see <strong>Step 2</strong> below).</p>
 <p>Once you have created a branch you can work in it locally (and via GitHub directly) as you would normally. You can <strong><span style="color:gold">edit</span></strong> your files locally, <strong>commit</strong> those changes, <strong><span style="color:blue">pull</span></strong> from GitHub (within the branch), and <strong><span style="color:green">push</span></strong> to GitHub (see <strong>Steps 3-4</strong> below).</p>
 <p>When you are done working with the branch (i.e., you’ve finished the task for which you created the branch), you can use GitHub to merge your branch with the main one (see <strong>Step 5</strong> below). This puts all of the content in your branch into the main one now (which puts your local version of the “main” branch behind!).</p>
 <p>Once the two branches are merged on GitHub, go back to your local computer, manually change the branch to the main branch and pull (see <strong>Step 7</strong> below). This updates your local version of the main branch and avoids future problems.</p>
 <p>Given that most branches are not used again after they are merged, it is often a good housekeeping step to then <strong>delete</strong> your branch on GitHub and locally once you have successfully merged the pull request (see <strong>Steps 6 &amp; 8</strong> below). Note that in the below diagram step 6 and 8 occur on either side of step 7 but in truth they can both come after depending on your preference.</p>
 <p>However, deletion of the branch either locally or via GitHub <strong>must</strong> come <em>after</em> step 5!</p>
-<p>As you can see from the above text and the below diagram, branches have a few more moving parts than the <code>git</code> and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts (again, see “Appendix A: Conflicts”).</p>
+<p>As you can see from the above text and the below diagram, branches have a few more moving parts than the Git and GitHub operations we’ve discussed so far. That said, they can be a powerful tool in service of collaborative work because you can have multiple branches active at the same all working on separate tasks. This approach can be an easy (or at least eas<em>ier</em>) workflow for working together while avoiding conflicts (again, see “Appendix A: Conflicts”).</p>
 <p align="center">
 <img src="images/branches/git-branch-workflow.png" width="75%">
 </p>
@@ -363,7 +363,7 @@ ul.task-list li input[type="checkbox"] {
 <p align="center">
 <img src="images/branches/branches-2-name-new-branch.png" width="65%">
 </p>
-<p>This will create a confirmation message that is superficially similar to the format of messages returned by other <code>git</code> actions.</p>
+<p>This will create a confirmation message that is superficially similar to the format of messages returned by other Git actions.</p>
 <p align="center">
 <img src="images/branches/branches-2b-success-dialogue.png" width="75%">
 </p>
@@ -381,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong><span style="color:blue">Pull</span></strong> from GitHub to reduce the chances of a conflict</li>
 <li><strong><span style="color:green">Push</span></strong> your committed changes to GitHub</li>
 </ol>
-<p>The reason you use the same workflow is–as previously stated–even if you don’t typically use branches, all work in <code>git</code> is functionally done in the “main” branch of your repository.</p>
+<p>The reason you use the same workflow is–as previously stated–even if you don’t typically use branches, all work in Git is functionally done in the “main” branch of your repository.</p>
 <p>For a more in-depth review of the RStudio-GitHub workflow, see Chapter 3: Using GitHub via Rstudio</p>
 </section>
 <section id="closing-a-branch" class="level2">
@@ -666,6 +666,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -707,7 +712,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

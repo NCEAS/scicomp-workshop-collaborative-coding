@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">`git` &amp; GitHub</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -332,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>The purpose of the <code>.gitignore</code> is evident in its name: anything included in it is <em>ignored by <code>git</code></em>. This can be useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.</p>
+<p>The purpose of the <code>.gitignore</code> is evident in its name: anything included in it is <em>ignored by Git</em>. This can be useful if you want to include data in your local version of your repository but don’t want to risk sharing that data by committing it to a GitHub repository you plan to make public at some point. This file exists at the top level of every repository and can be customized however is most useful to you and your collaborators.</p>
 </section>
 <section id="creating-a-.gitignore" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-.gitignore">Creating a <code>.gitignore</code></h2>
@@ -360,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
 <p align="center">
 <img src="images/git_ignore/ignore-6-viewing.png" width="100%">
 </p>
-<p>Now let’s add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file <code>git</code> is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.</p>
+<p>Now let’s add something to it! As you can see from the Git pane of the above image (top right), after cloning our new repository, the only file Git is flagging as untracked is the .Rproj file created whenever you make a new RStudio project.</p>
 <p>If we add <code>*.Rproj</code> to our <code>.gitignore</code>, the Git pane will show that the only change is that lines have been added to the <code>.gitignore</code>. The .Rproj file with the double yellow question marks next to it is gone!</p>
 <p align="center">
 <img src="images/git_ignore/ignore-7-editing.png" width="100%">
@@ -386,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Other Considerations</strong></p>
 <ul>
 <li>Some people recommend adding <u>everything your script creates</u> to the <code>.gitignore</code>. The theory being that if someone wants to see those outputs, they would only need to run your script(s) in order to create their own versions</li>
-<li>Another way of thinking about this is to create a dedicated folder to store products in (e.g., “data”, “exports”, etc.) and then add that folder to the <code>.gitignore</code>. This means you don’t need to worry about adding specific files to the <code>.gitignore</code> so long as all the files live in a folder you’ve already designated as something for <code>git</code> to not track</li>
+<li>Another way of thinking about this is to create a dedicated folder to store products in (e.g., “data”, “exports”, etc.) and then add that folder to the <code>.gitignore</code>. This means you don’t need to worry about adding specific files to the <code>.gitignore</code> so long as all the files live in a folder you’ve already designated as something for Git to not track</li>
 </ul></li>
 <li><p>Do you have another idea for what you typically add to a <code>.gitignore</code>?</p>
 <ul>
@@ -446,17 +446,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ignoring-previously-tracked-content" class="level2">
 <h2 class="anchored" data-anchor-id="ignoring-previously-tracked-content">Ignoring Previously Tracked Content</h2>
-<p>Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by <code>git</code> and every time you alter that file RStudio’s “Git” pane will notify you that the file changed by placing the blue “M” next to the file’s name. Let’s say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop <code>git</code> from tracking <em>future</em> changes to the file. If this is the case, you’ll need to do the following:</p>
+<p>Imagine a situation where you commit a data file to your GitHub repository and push that commit. Now your data file is tracked by Git and every time you alter that file RStudio’s “Git” pane will notify you that the file changed by placing the blue “M” next to the file’s name. Let’s say that eventually you decide that you want to (1) remove the file from your GitHub repository and (2) stop Git from tracking <em>future</em> changes to the file. If this is the case, you’ll need to do the following:</p>
 <ol type="1">
 <li><p>Either (A) delete the file or (B) move it out of the repository’s folder</p>
 <ul>
-<li>Either option will register as “deleting” the file from <code>git</code>’s perspective</li>
+<li>Either option will register as “deleting” the file from Git’s perspective</li>
 </ul></li>
 <li><p><strong>Commit</strong> the deletion</p></li>
 <li><p><strong><span style="color:green">Push</span></strong> that change</p></li>
 <li><p>Add the name of that file to your <code>.gitignore</code></p></li>
 </ol>
-<p>Once you’ve done these steps, even if you put the file back in your repository, <code>git</code> won’t track its addition or any changes to it over time.</p>
+<p>Once you’ve done these steps, even if you put the file back in your repository, Git won’t track its addition or any changes to it over time.</p>
 
 
 </section>
@@ -696,6 +696,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -737,7 +742,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

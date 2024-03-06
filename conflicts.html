@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">`git` &amp; GitHub</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -329,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-a-merge-conflict" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-merge-conflict">What is a Merge Conflict?</h2>
-<p>Merge conflicts are a normal part of the <code>git</code> workflow so don’t get discouraged when you run into them! They occur when <code>git</code> cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.</p>
+<p>Merge conflicts are a normal part of the Git workflow so don’t get discouraged when you run into them! They occur when Git cannot figure out how to automatically merge new changes together. This can happen when you and your collaborators change the same lines in the same file without first pulling the changes that the other party has made.</p>
 </section>
 <section id="brief-overview-of-merge-conflict-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="brief-overview-of-merge-conflict-workflow">Brief Overview of Merge Conflict Workflow</h2>
@@ -368,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/conflicts/conflicts-6-birds-push.png" class="img-fluid"></p>
 <p>After clicking <strong><span style="color:blue">Pull</span></strong>, we get a new error message: “Merge conflict in test-script.R”.</p>
 <p><img src="images/conflicts/conflicts-7-birds-pull.png" class="img-fluid"></p>
-<p>Looking closer, the merge conflict prompted a new version of <code>test-script.R</code> to pop up. This version contains our edits and our collaborator’s edits, along with the delimiter lines that start with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. <code>git</code> is urging us to manually fix the conflicted lines before continuing.</p>
+<p>Looking closer, the merge conflict prompted a new version of <code>test-script.R</code> to pop up. This version contains our edits and our collaborator’s edits, along with the delimiter lines that start with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. Git is urging us to manually fix the conflicted lines before continuing.</p>
 <p align="center">
 <img src="images/conflicts/conflicts-8-conflicted-lines.png" width="80%">
 </p>
@@ -650,6 +650,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -691,7 +696,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

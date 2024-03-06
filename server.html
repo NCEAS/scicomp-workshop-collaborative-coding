@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">`git` &amp; GitHub</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -326,15 +326,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#necessary-software" id="toc-necessary-software" class="nav-link" data-scroll-target="#necessary-software">Necessary Software</a></li>
   <li><a href="#get-your-invite-ready" id="toc-get-your-invite-ready" class="nav-link" data-scroll-target="#get-your-invite-ready">Get your Invite Ready!</a></li>
   <li><a href="#signing-into-the-server" id="toc-signing-into-the-server" class="nav-link" data-scroll-target="#signing-into-the-server">Signing into the Server</a></li>
-  </ul></li>
-  <li><a href="#working-on-the-server" id="toc-working-on-the-server" class="nav-link" data-scroll-target="#working-on-the-server">Working on the Server</a>
-  <ul class="collapse">
-  <li><a href="#step-1-connect-server-rstudio-with-github" id="toc-step-1-connect-server-rstudio-with-github" class="nav-link" data-scroll-target="#step-1-connect-server-rstudio-with-github">Step 1: Connect Server RStudio with GitHub</a></li>
-  <li><a href="#step-2-create-github-token" id="toc-step-2-create-github-token" class="nav-link" data-scroll-target="#step-2-create-github-token">Step 2: Create GitHub Token</a></li>
-  <li><a href="#step-3-store-github-token" id="toc-step-3-store-github-token" class="nav-link" data-scroll-target="#step-3-store-github-token">Step 3: Store GitHub Token</a></li>
-  <li><a href="#step-4-preserve-github-token" id="toc-step-4-preserve-github-token" class="nav-link" data-scroll-target="#step-4-preserve-github-token">Step 4: Preserve GitHub Token</a></li>
+  <li><a href="#connecting-github-and-the-server" id="toc-connecting-github-and-the-server" class="nav-link" data-scroll-target="#connecting-github-and-the-server">Connecting GitHub and the Server</a></li>
   <li><a href="#optional-other-steps" id="toc-optional-other-steps" class="nav-link" data-scroll-target="#optional-other-steps">Optional Other Steps</a></li>
   </ul></li>
+  <li><a href="#working-on-the-server" id="toc-working-on-the-server" class="nav-link" data-scroll-target="#working-on-the-server">Working on the Server</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -415,53 +410,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <p>If the above steps have not resulted in successfully accessing Aurora, consult <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/first_login_to_nceas_analytical_server">NCEAS’ instructions on first login</a> and/or <a href="https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh.html">SSH-specific instructions for Mac vs.&nbsp;Windows</a> and/or email us!</p>
 </section>
-</section>
-<section id="working-on-the-server" class="level2">
-<h2 class="anchored" data-anchor-id="working-on-the-server">Working on the Server</h2>
-<section id="step-1-connect-server-rstudio-with-github" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-connect-server-rstudio-with-github">Step 1: Connect Server RStudio with GitHub</h3>
-<p>To begin, load the <code>usethis</code> package (install if needed).</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("usethis")</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="connecting-github-and-the-server" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-github-and-the-server">Connecting GitHub and the Server</h3>
+<p>Your server “self” is essentially a different computer that you access via a browser (or command line in some cases). Because of this, you will need to tell GitHub that your server self is allowed to access your GitHub self’s content. To do this you’ll need to authenticate via personal access token or SSH key pair. Revisit our <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/#connect-git-and-github">authentication instructions</a> in the “Workshop Preparation” section of the workshop home page for details.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>Next, configure your name and the email address you use for your GitHub account.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Jane Doe"</span>,</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">user.email =</span> <span class="st">"jane@example.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-title-container flex-fill">
+Server + PAT Note
 </div>
-<p>If you would like to check that this worked, you can go to the “Terminal” tab (next to the “Console” tab) and run <code>git config --global --list</code>.</p>
-</section>
-<section id="step-2-create-github-token" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-create-github-token">Step 2: Create GitHub Token</h3>
-<p>You may use your token that you already generated for your local RStudio if that is easiest, but you can also create a new token specifically for your Server identity.</p>
-<p>To create a token, you can again use the <code>usethis</code> package to send you to the relevant part of the GitHub website.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Once you have walked through that process and created a new token <strong>COPY</strong> the long string of letters and numbers. It is often a good move to take a screenshot of the token and store it on your computer for a rainy day.</p>
-</section>
-<section id="step-3-store-github-token" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-store-github-token">Step 3: Store GitHub Token</h3>
-<p>To store the token in your server identity, run the following line of code:</p>
+<div class="callout-body-container callout-body">
+<p>If you choose token-based authentication you’ll also need to tell the server to store your token for some amount of time otherwise the server will “forget” it between sessions.</p>
+<p>In the Terminal pane of the server’s RStudio session run the following code:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper <span class="st">'cache --timeout=10000000'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>In the “Console” tab you will be prompted to follow a short set of questions (answered via entering numbers in the Console) including the Console requesting your GitHub token.</p>
-<p><strong>PASTE</strong> the long string you copied in the previous step into the supplied field and continue. Note that if you did not copy the token (or copied something else between then and now thus losing the token from your clipboard) you can refer to the screenshot we recommended you take upon first generating the token.</p>
-</section>
-<section id="step-4-preserve-github-token" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-preserve-github-token">Step 4: Preserve GitHub Token</h3>
-<p>You will also need to tell the server to remember your token so that you don’t need to re-do the “Store GitHub Token” section every time you start a new R session.</p>
-<p>Unfortunately, there are two limitations to this step:</p>
-<ol type="1">
-<li><p>Storage can only be done in the “Terminal” pane with the command line (don’t worry, it’s only one line!)</p></li>
-<li><p>Storage must be for a finite amount of time (though it can be a long time!)</p></li>
-</ol>
-<p>To make the system remember your token, in the “Terminal” pane of RStudio type the following:</p>
-<p><code>git config --global credential.helper 'cache --timeout=10000000'</code></p>
-<p>This will cache your “credentials” (i.e., your token) for a long time so that you need not worry about this for the time being.</p>
-<p>Not running the above line will make your personal access token expire immediately in the system, even though GitHub considers its expiration date (that you set earlier) separately.</p>
+<p>This tells your server self to remember your token for 10 million minutes (roughly 20 years).</p>
+</div>
+</div>
 </section>
 <section id="optional-other-steps" class="level3">
 <h3 class="anchored" data-anchor-id="optional-other-steps">Optional Other Steps</h3>
@@ -470,11 +439,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The default branch name (for new repositories)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch_configure</span>(<span class="at">name =</span> <span class="st">"main"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch_configure</span>(<span class="at">name =</span> <span class="st">"main"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
 </section>
+</section>
+<section id="working-on-the-server" class="level2">
+<h2 class="anchored" data-anchor-id="working-on-the-server">Working on the Server</h2>
+<p>Once you’re properly set up, working on the server should be completely seamless! Instead of opening RStudio on your computer you’ll open a browser and work on the server from there but otherwise the feeling and process of version control should be identical. Eventually you may even want to make commits on your computer, push them to GitHub (after pulling!), then pull those same commits down to your server self and continue working there.</p>
+<p>You’ll find working on the server to be dramatically faster for computationally-intense operations so we hope this guide has been helpful in getting you prepared to take advantage of that benefit!</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -712,6 +686,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -753,7 +732,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

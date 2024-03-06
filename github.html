@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SciComp Workshop - Collaborative Coding with GitHub - git &amp; GitHub</title>
+<title>SciComp Workshop - Collaborative Coding with GitHub - Git &amp; GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta name="twitter:title" content="SciComp Workshop - Collaborative Coding with GitHub - git &amp; GitHub">
+<meta name="twitter:title" content="SciComp Workshop - Collaborative Coding with GitHub - Git &amp; GitHub">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">Core Topics</a></li><li class="breadcrumb-item"><a href="./github.html">`git` &amp; GitHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">Core Topics</a></li><li class="breadcrumb-item"><a href="./github.html">Git &amp; GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">`git` &amp; GitHub</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -287,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#module-learning-objectives" id="toc-module-learning-objectives" class="nav-link active" data-scroll-target="#module-learning-objectives">Module Learning Objectives</a></li>
   <li><a href="#version-control-background" id="toc-version-control-background" class="nav-link" data-scroll-target="#version-control-background">Version Control Background</a></li>
-  <li><a href="#git-specific-background" id="toc-git-specific-background" class="nav-link" data-scroll-target="#git-specific-background"><code>git</code>-Specific Background</a></li>
+  <li><a href="#git-specific-background" id="toc-git-specific-background" class="nav-link" data-scroll-target="#git-specific-background">Git-Specific Background</a></li>
   <li><a href="#exploring-github" id="toc-exploring-github" class="nav-link" data-scroll-target="#exploring-github">Exploring GitHub</a>
   <ul class="collapse">
   <li><a href="#looking-at-a-github-repository" id="toc-looking-at-a-github-repository" class="nav-link" data-scroll-target="#looking-at-a-github-repository">Looking at a GitHub Repository</a></li>
@@ -302,9 +302,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">Core Topics</a></li><li class="breadcrumb-item"><a href="./github.html">`git` &amp; GitHub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./motivations.html">Core Topics</a></li><li class="breadcrumb-item"><a href="./github.html">Git &amp; GitHub</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><code>git</code> &amp; GitHub</h1>
+<h1 class="title">Git &amp; GitHub</h1>
 </div>
 
 
@@ -325,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="module-learning-objectives">Module Learning Objectives</h2>
 <p>By the end of this module, you will be able to:</p>
 <ul>
-<li><u>Describe</u> the difference between <code>git</code> and GitHub</li>
+<li><u>Describe</u> the difference between Git and GitHub</li>
 <li><u>Navigate</u> GitHub via a web browser</li>
 <li><u>Use</u> GitHub to create a new repository</li>
 <li><u>Edit</u> a new repository through GitHub’s interface</li>
@@ -333,25 +333,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="version-control-background" class="level2">
 <h2 class="anchored" data-anchor-id="version-control-background">Version Control Background</h2>
-<p>Version control systems (including <code>git</code>) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).</p>
+<p>Version control systems (including Git) are built to preserve the iterative versions that we create on the way to a final product. For instance, when writing a scientific manuscript we might have several discrete stages (e.g., separate drafts after successive rounds of feedback from collaborators) as well as the sort of small-scale changes we don’t necessarily preserve in separate files (e.g., workshopping a particular sentence for rhetorical flow).</p>
 <p><strong>Version control systems provide a framework for preserving these changes without cluttering your computer with all of the files that precede the final version.</strong></p>
 <p align="center">
 <img src="images/comics/phd_comics_final.png" align="center" width="60%">
 </p>
 </section>
 <section id="git-specific-background" class="level2">
-<h2 class="anchored" data-anchor-id="git-specific-background"><code>git</code>-Specific Background</h2>
-<p><code>git</code> can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In <code>git</code> (and other version control systems) terms, this “tracked folder” is called a <strong>repository</strong> (which formally is a specific data structure storing versioning information).</p>
+<h2 class="anchored" data-anchor-id="git-specific-background">Git-Specific Background</h2>
+<p>Git can be enabled on a specific folder/directory on your file system to version files within that directory (including sub-directories). In Git (and other version control systems) terms, this “tracked folder” is called a <strong>repository</strong> (which formally is a specific data structure storing versioning information).</p>
 <p>Although there many ways to start a new repository, <a href="https://github.com/">GitHub</a> (or any other cloud solutions, such as <a href="https://about.gitlab.com/">GitLab</a>) provide among the most convenient way of starting a repository.</p>
-<p>Let’s distinguish between <code>git</code> and GitHub:</p>
+<p>Let’s distinguish between Git and GitHub:</p>
 <ul>
-<li><strong><code>git</code></strong>: version control software used to track files in a folder (a repository)
+<li><strong>Git</strong>: version control software used to track files in a folder (a repository)
 <ul>
-<li><code>git</code> creates the versioned history of a repository</li>
+<li>Git creates the versioned history of a repository</li>
 </ul></li>
-<li><strong>GitHub</strong>: website that allows users to store their <code>git</code> repositories and share them with others (i.e.&nbsp;a graphical user interface or “GUI”)</li>
+<li><strong>GitHub</strong>: website that allows users to store their Git repositories and share them with others (i.e.&nbsp;a graphical user interface or “GUI”)</li>
 </ul>
-<p><strong>GitHub is a company that hosts <code>git</code> repositories online</strong> and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to <code>git</code>, also adding great visualization/rendering capacities of your data.</p>
+<p><strong>GitHub is a company that hosts Git repositories online</strong> and provides several collaboration features. GitHub fosters a great user community and has built a nice web interface to Git, also adding great visualization/rendering capacities of your data.</p>
 <ul>
 <li><strong>GitHub.com</strong>: <a href="https://github.com" class="uri">https://github.com</a></li>
 <li><strong>A user account</strong>: <a href="https://github.com/brunj7" class="uri">https://github.com/brunj7</a></li>
@@ -384,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/github/github-8-commit-history.png" width="100%"></p>
 <p>And finally, if we examine one of the changes made on April 25, we can see exactly what was changed in each file:</p>
 <p><img src="images/github/github-9-specific-changes.png" width="100%"></p>
-<p>The red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what <code>git</code> and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.</p>
+<p>The red lines have been deleted while the green lines are new additions. Tracking these changes, and seeing how they relate to released versions of software and files is exactly what Git and GitHub are good for. We will show how they can really be effective for tracking versions of scientific code, figures, and manuscripts to accomplish a reproducible workflow.</p>
 <p>Note: it is possible to edit and add files entirely on the GitHub website, by navigating to the specific file or repository. However, for this workshop, we will be editing and adding files through RStudio instead.</p>
 <p><img src="images/github/github-10-edit-file.png" width="100%"></p>
 <p><img src="images/github/github-11-add-file.png" width="100%"></p>
@@ -673,6 +673,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -714,7 +719,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
