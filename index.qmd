@@ -8,7 +8,7 @@ This workshop provides an overview of what "version control" systems are and how
 
 <img src = "images/logos/github_logo.png" align = "right" width = "17%" />
 
-To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. Depending on whether you've used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "Content Creators" tab. 
+To maximize the value of this workshop to you, **we recommend that you take the following steps before the day of the workshop**. Depending on whether you've used RStudio and/or GitHub before you may have already completed some or all of these steps but please read through the following materials regardless to ensure that all participants arrive with a common foundation of installed programs. If anything is unclear, feel free to reach out to us; our contact information can be found in the "SciComp Team" dropdown menu in the "People" page.
 
 ## Workshop Preparation
 
