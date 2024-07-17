@@ -33,6 +33,7 @@ website:
       - section: "Project Management"
         contents: 
           - issues.qmd
+          - milestones.qmd
           - projects.qmd
           - readmes.qmd
           - portfolio.qmd
