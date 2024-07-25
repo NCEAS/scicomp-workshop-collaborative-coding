@@ -34,17 +34,23 @@ With R and RStudio installed you can now install Git! Git is the software that a
 
 Consult Dr. Bryan's [Git installation instructions](https://happygitwithr.com/install-git.html) and _be sure to follow the steps relevant for **your** operating system!_ **If you are a Windows user**, be sure to follow along with "Option 1" in the instructions linked above! That variant gives some under-the-hood tools we'll implicitly rely on later.
 
-:::callout-tip
-## RStudio not detecting Git?
+### 4. Check that Git was installed correctly
 
-If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio. Check if RStudio is able to detect it now by going to Tools -> Global Options -> Git/SVN. If you see a file path under "Git executable" then you are good to go!
-:::
+To check that Git was installed correctly, you can follow the [Git already installed?](https://happygitwithr.com/install-git.html#git-already-installed) section of Dr. Bryan's book. 
 
-### 4. Create a GitHub Account
+In a nutshell, if you're a Mac user, [find and open the Terminal](https://happygitwithr.com/shell#macos-1). Then type `which git` to check that it exists at a valid location on your computer. 
+
+If you're a Windows user, [find and open Git Bash](https://happygitwithr.com/shell#accessing-git-bash-outside-of-rstudio). Then type `which git` to check that it exists at a valid location on your computer.
+
+Once you've installed Git successfully, RStudio should be able to detect it. Check if RStudio is able to detect it now by going to Tools -> Global Options -> Git/SVN. If you see a file path under "Git executable" then you are good to go!
+
+If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio before checking again.
+
+### 5. Create a GitHub Account
 
 Now that you're all done installing programs, it's time to create an account on [GitHub](https://github.com/). GitHub is how you'll be able to collaborate with others. Dr. Bryan has some nice guidelines for [picking a good username](https://happygitwithr.com/github-acct#username-advice) and we also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub. 
 
-### 5. Connect Git and GitHub
+### 6. Connect Git and GitHub
 
 The last step to take before you're all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you'll need to _authenticate_ yourself. There are two paths for authentication:
 
@@ -74,11 +80,19 @@ usethis::create_github_token()
 
 _Copy your token at the end of the above step._ Once you leave the page where your token is displayed you'll <u>never</u> get to see it again! So if you close that page without copying it you'll need to make a new one in order to continue.
 
+Once you've copied your token, run the code below to save your credentials in RStudio.
+
 ```{r token-process-2, eval = FALSE}
 # Now, give your token to RStudio
 gitcreds::gitcreds_set()
 ## After you run this line you'll follow some prompts in the "Console" tab of RStudio
 ```
+
+This line of code will prompt you to paste your token in the "Console" tab. After you do so, your token will be safely stored in RStudio! 
+
+<p align="center">
+<img src="images/external_images/gitcreds_set.png" width="75%"/>
+</p>
 
 ##### Further Information
 
@@ -118,6 +132,10 @@ Finally, you need to share the public key with your GitHub self. Once again we'l
 
 You may also find [GitHub's SSH documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or the [Happy Git with R SSH tutorial](https://happygitwithr.com/ssh-keys) helpful.
 :::
+
+### 7. You're good to go!
+
+After following all the previous preparation steps, your setup should now be complete.
 
 ## GitHub + Science Publications
 
