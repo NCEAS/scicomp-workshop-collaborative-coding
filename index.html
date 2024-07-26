@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -331,8 +331,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-r" id="toc-install-r" class="nav-link" data-scroll-target="#install-r">1. Install R</a></li>
   <li><a href="#install-rstudio" id="toc-install-rstudio" class="nav-link" data-scroll-target="#install-rstudio">2. Install RStudio</a></li>
   <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git">3. Install Git</a></li>
-  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link" data-scroll-target="#create-a-github-account">4. Create a GitHub Account</a></li>
-  <li><a href="#connect-git-and-github" id="toc-connect-git-and-github" class="nav-link" data-scroll-target="#connect-git-and-github">5. Connect Git and GitHub</a></li>
+  <li><a href="#check-that-git-was-installed-correctly" id="toc-check-that-git-was-installed-correctly" class="nav-link" data-scroll-target="#check-that-git-was-installed-correctly">4. Check that Git was installed correctly</a></li>
+  <li><a href="#create-a-github-account" id="toc-create-a-github-account" class="nav-link" data-scroll-target="#create-a-github-account">5. Create a GitHub Account</a></li>
+  <li><a href="#connect-git-and-github" id="toc-connect-git-and-github" class="nav-link" data-scroll-target="#connect-git-and-github">6. Connect Git and GitHub</a></li>
+  <li><a href="#celebrate" id="toc-celebrate" class="nav-link" data-scroll-target="#celebrate">7. Celebrate!</a></li>
   </ul></li>
   <li><a href="#github-science-publications" id="toc-github-science-publications" class="nav-link" data-scroll-target="#github-science-publications">GitHub + Science Publications</a></li>
   </ul>
@@ -387,26 +389,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="install-git">3. Install Git</h3>
 <p>With R and RStudio installed you can now install Git! Git is the software that actually does the behind-the-scenes version control operations we’ll cover in this workshop. Jennifer Bryan’s “Happy Git and GitHub for the useR” digital book does a really nice job covering how to install Git for different computer operating systems (i.e., Mac vs.&nbsp;Windows vs.&nbsp;Linux).</p>
 <p>Consult Dr.&nbsp;Bryan’s <a href="https://happygitwithr.com/install-git.html">Git installation instructions</a> and <em>be sure to follow the steps relevant for <strong>your</strong> operating system!</em> <strong>If you are a Windows user</strong>, be sure to follow along with “Option 1” in the instructions linked above! That variant gives some under-the-hood tools we’ll implicitly rely on later.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-RStudio not detecting Git?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio. Check if RStudio is able to detect it now by going to Tools -&gt; Global Options -&gt; Git/SVN. If you see a file path under “Git executable” then you are good to go!</p>
-</div>
-</div>
+</section>
+<section id="check-that-git-was-installed-correctly" class="level3">
+<h3 class="anchored" data-anchor-id="check-that-git-was-installed-correctly">4. Check that Git was installed correctly</h3>
+<p>To check that Git was installed correctly, you can follow the <a href="https://happygitwithr.com/install-git.html#git-already-installed">Git already installed?</a> section of Dr.&nbsp;Bryan’s book.</p>
+<p>In a nutshell, if you’re a Mac user, <a href="https://happygitwithr.com/shell#macos-1">find and open the Terminal</a>. Then type <code>which git</code> to check that it exists at a valid location on your computer.</p>
+<p>If you’re a Windows user, <a href="https://happygitwithr.com/shell#accessing-git-bash-outside-of-rstudio">find and open Git Bash</a>. Then type <code>which git</code> to check that it exists at a valid location on your computer.</p>
+<p>Once you’ve installed Git successfully, RStudio should be able to detect it. Check if RStudio is able to detect it now by going to Tools -&gt; Global Options -&gt; Git/SVN. If you see a file path under “Git executable” then you are good to go!</p>
+<p>If you had your RStudio session open while you installed Git for the first time, RStudio may not have detected Git on your computer. In that case, please close and restart RStudio before checking again.</p>
 </section>
 <section id="create-a-github-account" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-github-account">4. Create a GitHub Account</h3>
+<h3 class="anchored" data-anchor-id="create-a-github-account">5. Create a GitHub Account</h3>
 <p>Now that you’re all done installing programs, it’s time to create an account on <a href="https://github.com/">GitHub</a>. GitHub is how you’ll be able to collaborate with others. Dr.&nbsp;Bryan has some nice guidelines for <a href="https://happygitwithr.com/github-acct#username-advice">picking a good username</a> and we also recommend adding a picture of yourself so that group members can more confidently identify one another on GitHub.</p>
 </section>
 <section id="connect-git-and-github" class="level3">
-<h3 class="anchored" data-anchor-id="connect-git-and-github">5. Connect Git and GitHub</h3>
+<h3 class="anchored" data-anchor-id="connect-git-and-github">6. Connect Git and GitHub</h3>
 <p>The last step to take before you’re all set for the workshop is to get these components talking to one another! You set a password for your GitHub which is used for logging in to GitHub but to actually put your code changes from your computer up to GitHub you’ll need to <em>authenticate</em> yourself. There are two paths for authentication:</p>
 <ol type="1">
 <li>Personal Access Token (PAT)</li>
@@ -432,11 +429,16 @@ RStudio not detecting Git?
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><em>Copy your token at the end of the above step.</em> Once you leave the page where your token is displayed you’ll <u>never</u> get to see it again! So if you close that page without copying it you’ll need to make a new one in order to continue.</p>
+<p>Once you’ve copied your token, run the code below to save your credentials in RStudio.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Now, give your token to RStudio</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="do">## After you run this line you'll follow some prompts in the "Console" tab of RStudio</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>This line of code will prompt you to paste your token in the “Console” tab. After you do so, your token will be safely stored in RStudio!</p>
+<p align="center">
+<img src="images/external_images/gitcreds_set.png" width="75%">
+</p>
 <section id="further-information" class="level5">
 <h5 class="anchored" data-anchor-id="further-information">Further Information</h5>
 <p>You may also find <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub’s PAT tutorial</a> or the <a href="https://happygitwithr.com/https-pat.html">Happy Git with R PAT tutorial</a> helpful.</p>
@@ -477,6 +479,10 @@ Older Computer?
 </div>
 </div>
 </div>
+</section>
+<section id="celebrate" class="level3">
+<h3 class="anchored" data-anchor-id="celebrate">7. Celebrate!</h3>
+<p>After following all the previous preparation steps, your setup should now be complete.</p>
 </section>
 </section>
 <section id="github-science-publications" class="level2">
