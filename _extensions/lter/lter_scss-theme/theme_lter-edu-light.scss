@@ -1,6 +1,7 @@
 /*-- scss:defaults --*/
 
 // Colors
+/* LTER Network Office logo colors */
 $lter-green-1: #97AE3F;
 $lter-green-2: #5A5C37;
 $lter-green-3: #374228;
@@ -21,35 +22,42 @@ $black: #08090A;
 
 // Fonts
 $font-size: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 // Base document colors
-$navbar-bg: $lter-green-3; // navbar
+$navbar-bg: $lter-green-1; // navbar
 $navbar-fg: $cream; // navbar foreground elements
-$navbar-hl: $lter-green-1; // highlight color when on a page
-$body-bg: $black; // page background
-$body-color: $cream; // page text
-$footer-bg: $lter-blue-2; // footer
-$link-color: $lter-tan; // hyperlinks
+$sidebar-bg: $lter-blue-1; // sidebar
+$sidebar-fg: $cream; // sidebar foreground elements
+$navbar-hl: $lter-green-3; // highlight color when on a page
+$body-bg: $cream; // page background
+$body-color: $black; // page text
+$footer-bg: $lter-green-1; // footer
+$footer-fg: $cream; // footer text
+$link-color: $lter-blue-2; // hyperlinks
 
 // Code text
-$code-bg: $gray-3; // inline code background color
-$code-block-bg: $gray-3; // code block background color
-$code-color: $lter-orange; // inline code text color
+$code-bg: $gray-0; // inline code background color
+$code-block-bg: $gray-0; // code block background color
+$code-color: $lter-green-2; // inline code text color
 
 /*-- scss:rules --*/
 
+// Code chunk ouput
+pre code:not(.sourceCode) { background-color: $gray-0; }
+
 // Active tabset panel (tab then tab content)
 .nav-tabs .nav-link.active { 
-  background-color: $gray-3; 
+  background-color: #FFF; 
   color: $black;
 }
-.tab-content { background-color: $gray-3; }
+.tab-content { background-color: #FFF; }
 
 // Navbar dropdown elements
 .dropdown-menu{
   --bs-dropdown-link-hover-color: #f4f3ee;
-  --bs-dropdown-link-hover-bg: #97AE3F;
+  --bs-dropdown-link-hover-bg: #4AB2CB;
 }
 
 // Underline URLs

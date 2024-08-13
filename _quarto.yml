@@ -67,8 +67,8 @@ website:
 format:
   html:
     theme:
-       light: scicomplight.scss
-       dark: scicompdark.scss
+       light: _extensions/lter/lter_scss-theme/theme_lter-edu-light.scss
+       dark: _extensions/lter/lter_scss-theme/theme_lter-edu-dark.scss
     mainfont: Lato
     toc: true
     link-external-newwindow: true
